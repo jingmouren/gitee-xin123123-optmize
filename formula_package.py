@@ -21,3 +21,4 @@ def boll_signal(close, timeperiod, std):
     signal[close > upper] = 1
     signal[close < lower] = -1
     return signal
+
