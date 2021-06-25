@@ -29,7 +29,11 @@ class DataSim:
             if len(sim_data) == 0:
                 sim_data = pd.DataFrame(self.data.iloc[0, :]).T
             else:
-                temp_data = pd.DataFrame(sim_data.iloc[-1, :] + self.diff_.iloc[rnd[i], :]).T
+                tt = sim_data.iloc[-1, :]
+                tt['开盘价'] = tt['收盘价']
+                tt['最高价'] = tt['收盘价']
+                tt['最低价'] = tt['收盘价']
+                temp_data = pd.DataFrame(tt + self.diff_.iloc[rnd[i], :]).T
                 sim_data = pd.concat([sim_data, temp_data], axis=0)
         sim_data.index = self.data.index
         return sim_data
@@ -41,8 +45,10 @@ test1 = DataSim(start_date, end_date, file_dir)
 test1.relative_cal()
 sim_data = test1.random_cal()
 sim_data.to_csv('./data/sim_RB.csv')
-# sim_data['收盘价'].plot()
-# plt.show()
+a = pd.DataFrame(sim_data['收盘价'])
+a.columns = ['a']
+a.plot()
+plt.show()
 
 
 test1 = vector_backtest(start_date, end_date, './data/sim_RB.csv', cal_way='open')
