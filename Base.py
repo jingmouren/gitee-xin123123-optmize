@@ -23,11 +23,16 @@ class vector_backtest:
         elif self.cal_way == 'close':
             ret = (data['收盘价'].diff() / data['收盘价'].shift()).fillna(0)
             singal = (self.signal.shift(1)).fillna(0)  # 收盘价
+        self.baseret = ret
+        self.basejz = (1 + self.baseret).cumprod()
         self.ret = ret * singal
         self.jz = (1 + self.ret).cumprod()
-
+        self.singal = singal
     def jz_plot(self):
-        self.jz.plot()
+        df = pd.concat([self.basejz, self.jz], axis=1)
+        df.columns = ['base', 'stragety']
+        df.plot()
+        # self.jz.plot()
         plt.show()
 
     def analysis(self):
