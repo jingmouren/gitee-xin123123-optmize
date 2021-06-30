@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="135e26bf-cb8f-4b01-9cfd-6604a1ca521b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notebook/.ipynb_checkpoints/gplearn__test-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notebook/.ipynb_checkpoints/gplearn_feature-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notebook/01-基本概念介绍.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notebook/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notebook/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notebook/data/customers.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notebook/data/transactions.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notebook/gplearn__test.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notebook/gplearn_feature.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/Untitled1.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/集成学习算法测试.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebook/集成学习算法测试.ipynb" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1uViwbffxNSd0wz0ZfNMQWUW1AB" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/notebook" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="135e26bf-cb8f-4b01-9cfd-6604a1ca521b" name="Default Changelist" comment="" />
+      <created>1624757396853</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1624757396853</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
