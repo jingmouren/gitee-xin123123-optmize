@@ -7,7 +7,6 @@ from sklearn.base import TransformerMixin, BaseEstimator
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler
 
-
 def data_get(filename):
     with open(filename, 'rb') as f:
         df = pd.read_csv(f, encoding='gbk')
@@ -19,6 +18,7 @@ def data_get(filename):
     df = df.drop(['trade_status'], dim='variable')
     return df, y, trade_status
     pass
+
 
 class MATransformer(TransformerMixin, BaseEstimator):
     def __init__(self, n_sma):
