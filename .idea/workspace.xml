@@ -1,19 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="135e26bf-cb8f-4b01-9cfd-6604a1ca521b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notebook/.ipynb_checkpoints/gplearn__test-checkpoint.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notebook/.ipynb_checkpoints/gplearn_feature-checkpoint.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notebook/01-基本概念介绍.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notebook/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notebook/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notebook/data/customers.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notebook/data/transactions.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notebook/gplearn__test.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notebook/gplearn_feature.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notebook/Untitled1.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/notebook/集成学习算法测试.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebook/集成学习算法测试.ipynb" afterDir="false" />
+    <list default="true" id="135e26bf-cb8f-4b01-9cfd-6604a1ca521b" name="Default Changelist" comment="添加gplearn">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +20,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.gitee.ui.GiteeSettingsConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -46,6 +36,14 @@
       <option name="presentableId" value="Default" />
       <updated>1624757396853</updated>
     </task>
+    <task id="LOCAL-00001" summary="添加gplearn">
+      <created>1625061244129</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1625061244129</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -58,5 +56,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="添加gplearn" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加gplearn" />
   </component>
 </project>
