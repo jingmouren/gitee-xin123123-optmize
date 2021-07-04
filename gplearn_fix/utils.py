@@ -1,7 +1,7 @@
-"""Utilities that are required by gplearn（暂时放弃不用）.
+"""Utilities that are required by gplearn_fix.
 
 Most of these functions are slightly modified versions of some key utility
-functions from scikit-learn that gplearn（暂时放弃不用） depends upon. They reside here in
+functions from scikit-learn that gplearn_fix depends upon. They reside here in
 order to maintain compatibility across different versions of scikit-learn.
 
 """

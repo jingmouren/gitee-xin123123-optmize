@@ -7,7 +7,7 @@ from analysis_model import Analysis
 from scipy.special import comb, perm
 import itertools
 from tqdm import tqdm
-from gplearn.genetic import SymbolicTransformer, SymbolicRegressor
+from gplearn_fix.genetic import SymbolicTransformer, SymbolicRegressor
 start_date = '20100101'
 end_date = '20200601'
 file_dir = r"./data/RB_data.csv"
