@@ -75,7 +75,8 @@ if __name__ == "__main__":
     sim_data.to_csv('./data/sim_RB.csv')
     a = pd.DataFrame(sim_data['Close'])
 
-
+    #### 样本外模拟测试 #########
+    file_dir = r"./data/sim_RB.csv"
     ###### rsi ###########
     xx = Multi_param_backtest('./参数表/rsi.csv')
     jz1 = xx.portfolio_cal(start_date, end_date, file_dir, rsi_signal)
@@ -99,6 +100,7 @@ if __name__ == "__main__":
 
 
     # 作图
+
     cmb = pd.concat([jz1, jz2, jz3, jz, a], axis=1).loc[start_date:end_date, :].ffill().bfill()
     cmb.columns = ['rsi', 'cmo', 'boll', 'macd', 'init']
     cmb = cmb/cmb.iloc[0, :]
