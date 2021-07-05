@@ -128,7 +128,7 @@ def evolve(pc, popsize, rankfunction, maxgen=500,
             else:
                 # Add a random node to mix things up
                 newpop.append(makerandomtree(pc))
-
+            print(scores[0][1])
         population = newpop
     scores[0][1].display()
     return scores[0][1]
