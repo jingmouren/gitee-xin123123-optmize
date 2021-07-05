@@ -1,6 +1,6 @@
 """Genetic Programming in Python, with a scikit-learn inspired API
 
-The :mod:`gplearn（暂时放弃不用）.genetic` module implements Genetic Programming. These
+The :mod:`gplearn_fix.genetic` module implements Genetic Programming. These
 are supervised learning methods based on applying evolutionary operations on
 computer programs.
 """
@@ -25,8 +25,8 @@ from sklearn.utils.validation import check_X_y, check_array
 from sklearn.utils.multiclass import check_classification_targets
 
 from ._program import _Program
-from .fitness import _Fitness, _fitness_map
-from .functions import _function_map, _Function, sig1 as sigmoid
+# from .fitness import _Fitness, _fitness_map
+from .functions import _function_map, _ts_function_map, _fixed_function_map, _Function, sig1 as sigmoid
 from .utils import _partition_estimators
 from .utils import check_random_state
 
@@ -37,6 +37,7 @@ MAX_INT = np.iinfo(np.int32).max
 
 def _parallel_evolve(n_programs, parents, X, y, sample_weight, seeds, params):
     """Private function used to build a batch of programs within a job."""
+
     n_samples, n_features = X.shape
     # Unpack parameters
     tournament_size = params['tournament_size']
@@ -48,7 +49,6 @@ def _parallel_evolve(n_programs, parents, X, y, sample_weight, seeds, params):
     init_depth = params['init_depth']
     init_method = params['init_method']
     const_range = params['const_range']
-    metric = params['_metric']
     transformer = params['_transformer']
     parsimony_coefficient = params['parsimony_coefficient']
     method_probs = params['method_probs']
@@ -62,10 +62,7 @@ def _parallel_evolve(n_programs, parents, X, y, sample_weight, seeds, params):
         """Find the fittest individual from a sub-population."""
         contenders = random_state.randint(0, len(parents), tournament_size)
         fitness = [parents[p].fitness_ for p in contenders]
-        if metric.greater_is_better:
-            parent_index = contenders[np.argmax(fitness)]
-        else:
-            parent_index = contenders[np.argmin(fitness)]
+        parent_index = contenders[np.argmax(fitness)]
         return parents[parent_index], parent_index
 
     # Build programs
@@ -124,7 +121,6 @@ def _parallel_evolve(n_programs, parents, X, y, sample_weight, seeds, params):
                            init_depth=init_depth,
                            init_method=init_method,
                            n_features=n_features,
-                           metric=metric,
                            transformer=transformer,
                            const_range=const_range,
                            p_point_replace=p_point_replace,
@@ -231,6 +227,7 @@ class BaseSymbolic(BaseEstimator, metaclass=ABCMeta):
         self.verbose = verbose
         self.random_state = random_state
 
+
     def _verbose_reporter(self, run_details=None):
         """A report of the progress of the evolution process.
 
@@ -293,6 +290,7 @@ class BaseSymbolic(BaseEstimator, metaclass=ABCMeta):
             Returns self.
 
         """
+        self.feature_names = list(X.columns)
         random_state = check_random_state(self.random_state)
 
         # Check arrays
@@ -354,6 +352,36 @@ class BaseSymbolic(BaseEstimator, metaclass=ABCMeta):
         if not self._function_set:
             raise ValueError('No valid functions found in `function_set`.')
 
+        self._ts_function_set = []
+        for tsfunction in self.ts_function_set:
+            if isinstance(tsfunction, str):
+                if tsfunction not in _ts_function_map:
+                    raise ValueError('invalid function name %s found in '
+                                     '`function_set`.' % tsfunction)
+                self._ts_function_set.append(_ts_function_map[tsfunction])
+            elif isinstance(tsfunction, _Function):
+                self._ts_function_set.append(tsfunction)
+            else:
+                raise ValueError('invalid type %s found in `function_set`.'
+                                 % type(tsfunction))
+        if not self._ts_function_set:
+            raise ValueError('No valid functions found in `function_set`.')
+
+        self._fix_function_set = []
+        for fixfunction in self.fixed_function_set:
+            if isinstance(fixfunction, str):
+                if fixfunction not in _fixed_function_map:
+                    raise ValueError('invalid function name %s found in '
+                                     '`function_set`.' % fixfunction)
+                self._fix_function_set.append(_fixed_function_map[fixfunction])
+            elif isinstance(fixfunction, _Function):
+                self._fix_function_set.append(fixfunction)
+            else:
+                raise ValueError('invalid type %s found in `function_set`.'
+                                 % type(fixfunction))
+        if not self._fix_function_set:
+            raise ValueError('No valid functions found in `function_set`.')
+
         # For point-mutation to find a compatible replacement node
         self._arities = {}
         for function in self._function_set:
@@ -361,21 +389,6 @@ class BaseSymbolic(BaseEstimator, metaclass=ABCMeta):
             self._arities[arity] = self._arities.get(arity, [])
             self._arities[arity].append(function)
 
-        if isinstance(self.metric, _Fitness):
-            self._metric = self.metric
-        elif isinstance(self, RegressorMixin):
-            if self.metric not in ('mean absolute error', 'mse', 'rmse',
-                                   'pearson', 'spearman'):
-                raise ValueError('Unsupported metric: %s' % self.metric)
-            self._metric = _fitness_map[self.metric]
-        elif isinstance(self, ClassifierMixin):
-            if self.metric != 'log loss':
-                raise ValueError('Unsupported metric: %s' % self.metric)
-            self._metric = _fitness_map[self.metric]
-        elif isinstance(self, TransformerMixin):
-            if self.metric not in ('pearson', 'spearman'):
-                raise ValueError('Unsupported metric: %s' % self.metric)
-            self._metric = _fitness_map[self.metric]
 
         self._method_probs = np.array([self.p_crossover,
                                        self.p_subtree_mutation,
@@ -429,14 +442,13 @@ class BaseSymbolic(BaseEstimator, metaclass=ABCMeta):
                                  'got %d.' % (self._transformer.arity))
 
         params = self.get_params()
-        params['_metric'] = self._metric
         if hasattr(self, '_transformer'):
             params['_transformer'] = self._transformer
         else:
             params['_transformer'] = None
         params['function_set'] = self._function_set
-        params['ts_function_set'] = self.ts_function_set
-        params['fixed_function_set'] = self.fixed_function_set
+        params['ts_function_set'] = self._ts_function_set
+        params['fixed_function_set'] = self._fix_function_set
         params['arities'] = self._arities
         params['method_probs'] = self._method_probs
         params['d_ls'] = self.d_ls
@@ -532,10 +544,7 @@ class BaseSymbolic(BaseEstimator, metaclass=ABCMeta):
                 self._programs[gen - 1] = None
 
             # Record run details
-            if self._metric.greater_is_better:
-                best_program = population[np.argmax(fitness)]
-            else:
-                best_program = population[np.argmin(fitness)]
+            best_program = population[np.argmax(fitness)]
 
             self.run_details_['generation'].append(gen)
             self.run_details_['average_length'].append(np.mean(length))
@@ -553,22 +562,14 @@ class BaseSymbolic(BaseEstimator, metaclass=ABCMeta):
                 self._verbose_reporter(self.run_details_)
 
             # Check for early stopping
-            if self._metric.greater_is_better:
-                best_fitness = fitness[np.argmax(fitness)]
-                if best_fitness >= self.stopping_criteria:
-                    break
-            else:
-                best_fitness = fitness[np.argmin(fitness)]
-                if best_fitness <= self.stopping_criteria:
-                    break
+            best_fitness = fitness[np.argmax(fitness)]
+            if best_fitness >= self.stopping_criteria:
+                break
 
         if isinstance(self, TransformerMixin):
             # Find the best individuals in the final generation
             fitness = np.array(fitness)
-            if self._metric.greater_is_better:
-                hall_of_fame = fitness.argsort()[::-1][:self.hall_of_fame]
-            else:
-                hall_of_fame = fitness.argsort()[:self.hall_of_fame]
+            hall_of_fame = fitness.argsort()[::-1][:self.hall_of_fame]
             evaluation = np.array([gp.execute(X) for gp in
                                    [self._programs[-1][i] for
                                     i in hall_of_fame]])
@@ -596,10 +597,7 @@ class BaseSymbolic(BaseEstimator, metaclass=ABCMeta):
 
         else:
             # Find the best individual in the final generation
-            if self._metric.greater_is_better:
-                self._program = self._programs[-1][np.argmax(fitness)]
-            else:
-                self._program = self._programs[-1][np.argmin(fitness)]
+            self._program = self._programs[-1][np.argmax(fitness)]
 
         return self
 

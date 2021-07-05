@@ -12,9 +12,9 @@ from sklearn.datasets import load_boston, load_breast_cancer
 from sklearn.utils._testing import assert_equal, assert_raises
 from sklearn.utils.validation import check_random_state
 
-from gplearn.functions import _protected_sqrt, make_function
-from gplearn.genetic import SymbolicRegressor, SymbolicTransformer
-from gplearn.genetic import SymbolicClassifier
+from gplearn_fix.functions import _protected_sqrt, make_function
+from gplearn_fix.genetic import SymbolicRegressor, SymbolicTransformer
+from gplearn_fix.genetic import SymbolicClassifier
 
 # load the boston dataset and randomly permute it
 rng = check_random_state(0)

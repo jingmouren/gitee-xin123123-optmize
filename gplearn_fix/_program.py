@@ -1,8 +1,8 @@
-"""The underlying data structure used in gplearn（暂时放弃不用）.
+"""The underlying data structure used in gplearn_fix.
 
-The :mod:`gplearn（暂时放弃不用）._program` module contains the underlying representation of a
+The :mod:`gplearn_fix._program` module contains the underlying representation of a
 computer program. It is used for creating and evolving programs used in the
-:mod:`gplearn（暂时放弃不用）.genetic` module.
+:mod:`gplearn_fix.genetic` module.
 """
 
 # Author: Trevor Stephens <trevorstephens.com>
@@ -43,7 +43,7 @@ class _Program(object):
     """A program-like representation of the evolved program.
 
     This is the underlying data-structure used by the public classes in the
-    :mod:`gplearn（暂时放弃不用）.genetic` module. It should not be used directly by the user.
+    :mod:`gplearn_fix.genetic` module. It should not be used directly by the user.
 
     Parameters
     ----------
@@ -149,7 +149,6 @@ class _Program(object):
                  init_method,
                  n_features,
                  const_range,
-                 metric,
                  p_point_replace,
                  parsimony_coefficient,
                  random_state,
@@ -166,7 +165,7 @@ class _Program(object):
         self.init_method = init_method
         self.n_features = n_features
         self.const_range = const_range
-        self.metric = metric
+
         self.p_point_replace = p_point_replace
         self.parsimony_coefficient = parsimony_coefficient
         self.transformer = transformer
@@ -237,7 +236,7 @@ class _Program(object):
                                         choice < len(self.function_set) + len(self.ts_function_set)):
                 function = random_state.randint(len(self.function_set))
                 # function = self.function_set[function]
-                if choice < len(self.function_set):
+                if function < len(self.function_set):
                     function = self.function_set[function]
                 else:
                     function = make_ts_function(self.ts_function_set[function - len(self.function_set)],
@@ -556,18 +555,20 @@ class _Program(object):
 
         """
         signal = self.execute(X)
-        if np.isnan(signal).sum() / len(signal) > 0.01:
-            return np.nan
-        elif len(set(signal)) / len(signal) < 0.1:
-            return np.nan
+        # if np.isnan(signal).sum() / len(signal) > 0.01:
+        #     return np.nan
+        # elif len(set(signal)) / len(signal) < 0.1:
+        #     return np.nan
 
-        data = pd.concat([signal, close], axis=1)
-        data.columns = ['signal', 'close']
-        data['ret'] = (data['close'].diff()/data['close'].shift()).fillna(0)
+        data = pd.DataFrame([signal, close]).T
+        data.columns = ['signal', 'ret']
+        # data['ret'] = (data['close'].diff()/data['close'].shift()).fillna(0)
         data['signal'] = data['signal'].apply(lambda x: 1 if x > 0 else -1)
         data['ret'] = data['ret'] * data['signal']
-
-        raw_fitness = data['ret'].sum()
+        jz = (1 + data['ret']).cumprod()
+        jz_cummax = jz.cummax()
+        jz_trace = 1 - jz / jz_cummax
+        raw_fitness = (jz.iloc[-1] - 1) / jz_trace.max()
 
         return raw_fitness
 
@@ -586,10 +587,10 @@ class _Program(object):
             The penalized fitness of the program.
 
         """
-        if parsimony_coefficient is None:
-            parsimony_coefficient = self.parsimony_coefficient
-        penalty = parsimony_coefficient * len(self.program) * self.metric.sign
-        return self.raw_fitness_ - penalty
+        # if parsimony_coefficient is None:
+        #     parsimony_coefficient = self.parsimony_coefficient
+        # penalty = parsimony_coefficient * len(self.program) * self.metric.sign
+        return self.raw_fitness_ #- penalty
 
     def get_subtree(self, random_state, program=None):
         """Get a random subtree from the program.

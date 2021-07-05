@@ -18,10 +18,10 @@ class vector_backtest:
     def run(self):
         data = self.data
         if self.cal_way == 'open':
-            ret = (data['开盘价'].diff() / data['开盘价'].shift()).fillna(0)
+            ret = (data['Open'].diff() / data['Open'].shift()).fillna(0)
             singal = (self.signal.shift(2)).fillna(0)  # 收盘价
         elif self.cal_way == 'close':
-            ret = (data['收盘价'].diff() / data['收盘价'].shift()).fillna(0)
+            ret = (data['Close'].diff() / data['Close'].shift()).fillna(0)
             singal = (self.signal.shift(1)).fillna(0)  # 收盘价
         self.baseret = ret
         self.basejz = (1 + self.baseret).cumprod()

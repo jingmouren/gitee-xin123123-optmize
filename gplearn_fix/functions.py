@@ -1,7 +1,7 @@
 """The functions used to create programs.
 
-The :mod:`gplearn（暂时放弃不用）.functions` module contains all of the functions used by
-gplearn（暂时放弃不用） programs. It also contains helper methods for a user to define their
+The :mod:`gplearn_fix.functions` module contains all of the functions used by
+gplearn_fix programs. It also contains helper methods for a user to define their
 own custom functions.
 """
 
@@ -293,7 +293,7 @@ fixed_adx = _Function(function=ta.ADX, name='ADX', arity=0, is_ts=True,
                       params_need=['High', 'Low', 'Close'])
 
 fixed_mfi = _Function(function=ta.MFI, name='MFI', arity=0, is_ts=True,
-                      params_need=['High', 'Low', 'Close', 'volume'])
+                      params_need=['High', 'Low', 'Close', 'Volume'])
 
 fixed_natr = _Function(function=ta.NATR, name='NATR', arity=0, is_ts=True,
                        params_need=['High', 'Low', 'Close'])

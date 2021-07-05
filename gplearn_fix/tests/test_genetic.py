@@ -1,6 +1,6 @@
 """Testing the Genetic Programming module's underlying datastructure
-(gplearn（暂时放弃不用）.genetic._Program) as well as the classes that use it,
-gplearn（暂时放弃不用）.genetic.SymbolicRegressor and gplearn（暂时放弃不用）.genetic.SymbolicTransformer."""
+(gplearn_fix.genetic._Program) as well as the classes that use it,
+gplearn_fix.genetic.SymbolicRegressor and gplearn_fix.genetic.SymbolicTransformer."""
 
 # Author: Trevor Stephens <trevorstephens.com>
 #
@@ -26,14 +26,14 @@ from sklearn.utils._testing import  assert_array_almost_equal
 from sklearn.utils._testing import assert_raises, assert_warns
 from sklearn.utils.validation import check_random_state
 
-from gplearn.genetic import SymbolicClassifier, SymbolicRegressor
-from gplearn.genetic import SymbolicTransformer
-from gplearn.fitness import weighted_pearson, weighted_spearman
-from gplearn._program import _Program
-from gplearn.fitness import _fitness_map
-from gplearn.functions import (add2, sub2, mul2, div2, sqrt1, log1, abs1, max2,
-                               min2)
-from gplearn.functions import _Function
+from gplearn_fix.genetic import SymbolicClassifier, SymbolicRegressor
+from gplearn_fix.genetic import SymbolicTransformer
+from gplearn_fix.fitness import weighted_pearson, weighted_spearman
+from gplearn_fix._program import _Program
+from gplearn_fix.fitness import _fitness_map
+from gplearn_fix.functions import (add2, sub2, mul2, div2, sqrt1, log1, abs1, max2,
+                                   min2)
+from gplearn_fix.functions import _Function
 
 # load the boston dataset and randomly permute it
 rng = check_random_state(0)

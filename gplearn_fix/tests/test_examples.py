@@ -15,9 +15,9 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.utils._testing import assert_equal, assert_almost_equal
 from sklearn.utils.validation import check_random_state
 
-from gplearn.genetic import SymbolicClassifier, SymbolicRegressor
-from gplearn.genetic import SymbolicTransformer
-from gplearn.functions import make_function
+from gplearn_fix.genetic import SymbolicClassifier, SymbolicRegressor
+from gplearn_fix.genetic import SymbolicTransformer
+from gplearn_fix.functions import make_function
 
 
 def test_symbolic_regressor():

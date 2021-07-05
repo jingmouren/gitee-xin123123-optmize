@@ -1,7 +1,6 @@
 from sklearn.model_selection import train_test_split
 import pandas as pd
 import numpy as np
-import xarray as xr
 from sklearn.impute import SimpleImputer
 from sklearn.base import TransformerMixin, BaseEstimator
 from sklearn.pipeline import Pipeline
@@ -108,8 +107,11 @@ def exampletree():
 
 
 if __name__ == '__main__':
-    rf = gp.getrankfunction(gp.buildhiddenset())
-    final = gp.evolve(2, 500, rf, mutationrate=0.2, breedingrate=0.1, pexp=0.7, pnew=0.1)
+    aa = exampletree()
+    print(aa.evaluate([2,3]))
+    aa.display()
+    # rf = gp.getrankfunction(gp.buildhiddenset())
+    # final = gp.evolve(2, 500, rf, mutationrate=0.2, breedingrate=0.1, pexp=0.7, pnew=0.1)
 
 
 
