@@ -67,6 +67,10 @@ class Multi_param_backtest:
 if __name__ == "__main__":
     start_date = '20100101'
     end_date = '20200601'
+
+    start_date = '20200601'
+    end_date = '20210620'
+
     file_dir = r"./data/RB_data.csv"
 
     sum1 = DataSim(start_date, end_date, file_dir)
@@ -76,7 +80,8 @@ if __name__ == "__main__":
     a = pd.DataFrame(sim_data['Close'])
 
     #### 样本外模拟测试 #########
-    file_dir = r"./data/sim_RB.csv"
+
+    file_dir = r"./data/RB_data.csv"
     ###### rsi ###########
     xx = Multi_param_backtest('./参数表/rsi.csv')
     jz1 = xx.portfolio_cal(start_date, end_date, file_dir, rsi_signal)
@@ -90,19 +95,33 @@ if __name__ == "__main__":
 
     ###### bolling ###########
     xx = Multi_param_backtest('./参数表/bolling.csv')
-    jz = xx.portfolio_cal(start_date, end_date, file_dir, boll_signal)
-    pd.DataFrame(jz).to_csv('./stragety_data/boll_signal.csv')
+    jz3 = xx.portfolio_cal(start_date, end_date, file_dir, boll_signal)
+    pd.DataFrame(jz3).to_csv('./stragety_data/boll_signal.csv')
 
     ###### macd ###########
     xx = Multi_param_backtest('./参数表/macd.csv')
-    jz3 = xx.portfolio_cal(start_date, end_date, file_dir, macd_signal)
-    pd.DataFrame(jz).to_csv('./stragety_data/macd_signal.csv')
+    jz4 = xx.portfolio_cal(start_date, end_date, file_dir, macd_signal)
+    pd.DataFrame(jz4).to_csv('./stragety_data/macd_signal.csv')
 
+    ###### Aberration ###########
+    xx = Multi_param_backtest('./参数表/Aberration.csv')
+    jz5 = xx.portfolio_cal(start_date, end_date, file_dir, Aberration_signal)
+    pd.DataFrame(jz5).to_csv('./stragety_data/Aberration_signal.csv')
+
+    ###### DMA ###########
+    xx = Multi_param_backtest('./参数表/dma.csv')
+    jz6 = xx.portfolio_cal(start_date, end_date, file_dir, DMA_signal)
+    pd.DataFrame(jz6).to_csv('./stragety_data/DMA_signal.csv')
+
+    ###### two_ma ###########
+    xx = Multi_param_backtest('./参数表/two_ma.csv')
+    jz7 = xx.portfolio_cal(start_date, end_date, file_dir, two_ma_signal)
+    pd.DataFrame(jz7).to_csv('./stragety_data/two_ma_signal.csv')
 
     # 作图
 
-    cmb = pd.concat([jz1, jz2, jz3, jz, a], axis=1).loc[start_date:end_date, :].ffill().bfill()
-    cmb.columns = ['rsi', 'cmo', 'boll', 'macd', 'init']
+    cmb = pd.concat([jz1, jz2, jz3, jz4, jz5, jz6, jz7, a], axis=1).loc[start_date:end_date, :].ffill().bfill()
+    cmb.columns = ['rsi', 'cmo', 'boll', 'macd', 'Aberration', 'dma', 'two_ma', 'init']
     cmb = cmb/cmb.iloc[0, :]
     cmb.plot()
     plt.show()

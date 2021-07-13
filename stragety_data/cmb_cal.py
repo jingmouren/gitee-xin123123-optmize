@@ -19,5 +19,6 @@ def multi_plot(file_name):
     plt.show()
 
 if __name__ == "__main__":
-    file_name = ['boll_signal.csv', 'rsi_signal.csv', 'CMO_signal.csv', 'macd_signal.csv']
+    file_name = ['boll_signal.csv', 'rsi_signal.csv', 'CMO_signal.csv',
+                 'macd_signal.csv', 'Aberration_signal.csv', 'DMA_signal.csv', 'two_ma_signal.csv']
     multi_plot(file_name)

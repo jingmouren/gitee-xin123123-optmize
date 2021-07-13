@@ -37,9 +37,7 @@ test1 = vector_backtest(start_date, end_date, file_dir, cal_way='open')
 #                 jz_list = pd.concat([jz_list, test1.jz], axis=1)
 #             name_list.append('timeperiod: '+str(timeperiod)+'; up: '+str(up)+'; down: '+str(down))
 # print(result_list)
-# result_list.to_csv('rsi.csv')
-# jz_list.columns = name_list
-# jz_list.to_csv('rsi_jz.csv')
+# result_list.to_csv('./参数表/rsi.csv')
 
 
 ###### 最优参数 ###########

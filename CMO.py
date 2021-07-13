@@ -35,8 +35,6 @@ test1 = vector_backtest(start_date, end_date, file_dir, cal_way='open')
 #         name_list.append('cmo_length: '+str(cmo_length)+'; m_length: '+str(m_length))
 # print(result_list)
 # result_list.to_csv('./stragety_data/cmo.csv')
-# jz_list.columns = name_list
-# jz_list.to_csv('cmo_jz.csv')
 
 
 

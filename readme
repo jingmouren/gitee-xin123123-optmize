@@ -1,0 +1,23 @@
+项目目的：开发cta策略
+1、目录：
+    （1）data目录：放置策略所需数据，RB_data.csv螺纹钢日线数据（去除跳空后）
+                    RB_min.csv分钟数据
+                    sim_RB.csv通过螺纹钢日线数据在运行data_simulate.py后重新生成的模拟数据，可以用来检测策略在模拟环境下的稳健性
+     （2）gplearn_fix目录：对遗传规划包gplearn进行修改（修改文件包括_program.py,fitness.py,functions.py,genetic.py），test1.py以及Untitled.ipynb为使用修改的gplearn进行数据挖掘的示例（未完成）
+     （3）notebook目录：对gplearn及集成学习算法的学习资料
+     （4）sklearn_tes目录（暂时无用）：一种仿照sklearn的向量化回测框架
+     （5）stragety_data目录：其中的csv文件为运行各种策略生成的信号（运行multi_param_pick.py后生成）cmb_cal.py是将多个策略信号合成为一个整体
+     （6）参数表目录：其中的csv文件是通过运行各个策略生成的各参数的绩效数据（如运行bolling.py会生成bolling.csv)
+2、项目运行顺序：
+    （1）formula_package.py中编写策略的信号生成逻辑
+    （2）Base.py中编写了向量化回测代码，包括分钟回测
+    （2）构建策略如bolling.py，运行其中注释的参数优化，结果存放在参数表文件夹中，也可以运行最优参数查看回测图表
+    （3）运行multi_param_pick.py可以选择各个策略最优的五组参数并合成出各个策略五组参数的组合净值，结果存放在stragety_data文件夹中
+    （4）运行stragety_data文件夹中的cmb_cal.py可以将各个策略组合生成多策略多参数组合净值
+    （5）data_simulate.py为模拟行情生成
+3、未完成：
+    （1）未完成多周期回测合成
+    （2）如何避免参数拟合，未找到更优的方案，容易出现在样本内较好的参数，用模拟行情测试结果较差
+    （3）准备研究迁移学习方法，看能否有改善
+    （4）分钟回测未加入滑点和手续费，导致频率越高，绩效越好，但实盘中必然会出问题
+

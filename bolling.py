@@ -10,8 +10,13 @@ from tqdm import tqdm
 from gplearn_fix.genetic import SymbolicTransformer, SymbolicRegressor
 start_date = '20100101'
 end_date = '20200601'
+
+start_date = '20200601'
+end_date = '20210629'
+
 file_dir = r"./data/RB_data.csv"
-test1 = vector_backtest(start_date, end_date, file_dir, cal_way='open')
+file_dir = r"./data/RB_min.csv"
+test1 = vector_backtest(start_date, end_date, file_dir, freq='15min',cal_way='open')
 
 ###### 参数优化 ##########
 # result_list = pd.DataFrame()
@@ -36,17 +41,16 @@ test1 = vector_backtest(start_date, end_date, file_dir, cal_way='open')
 #             jz_list = pd.concat([jz_list, test1.jz], axis=1)
 #         name_list.append('timeperiod: ' + str(timeperiod) + '; std: ' + str(std))
 # print(result_list)
-# # result_list.to_csv('bolling.csv')
-# jz_list.columns = name_list
-# jz_list.to_csv('bolling_jz.csv')
+# # result_list.to_csv('./参数表/bolling.csv')
+
 
 
 ###### 最优参数 ###########
-timeperiod = 20
+timeperiod = 160
 std = 0.5
 
 print('timeperiod: '+str(timeperiod)+'; std: '+str(std))
-signal = boll_signal(test1.data['Close'], timeperiod, std)
+signal = -boll_signal(test1.data['Close'], timeperiod, std)
 test1.add_stragety(signal=signal)
 test1.run()
 test1.jz_plot()

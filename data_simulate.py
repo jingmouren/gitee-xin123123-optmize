@@ -42,77 +42,25 @@ if __name__ == "__main__":
     start_date = '20100101'
     end_date = '20200601'
     file_dir = r"./data/RB_data.csv"
-    # r_list = pd.DataFrame()
-    # for i in range(10):
-    #     sum1 = DataSim(start_date, end_date, file_dir)
-    #     sum1.relative_cal()
-    #     sim_data = sum1.random_cal()
-    #     sim_data.to_csv('./data/sim_RB.csv')
-    #     # a = pd.DataFrame(sim_data['收盘价'])
-    #     # a.columns = ['a']
-    #     # a.plot()
-    #     # plt.show()
-    #
-    #
-    #     test1 = vector_backtest(start_date, end_date, './data/sim_RB.csv', cal_way='open')
-    #     # ###### 最优参数 ###########
-    #     # timeperiod = 25
-    #     # std = 1
-    #     # print('timeperiod: '+str(timeperiod)+'; std: '+str(std))
-    #     # signal = boll_signal(test1.data['收盘价'], timeperiod, std)
-    #     # test1.add_stragety(signal=signal)
-    #     # test1.run()
-    #     # test1.jz_plot()
-    #     # result = test1.analysis()
-    #     # if len(r_list) == 0:
-    #     #     r_list = result
-    #     # else:
-    #     #     r_list = pd.concat([r_list, result], axis=0)
-    #     # print(r_list)
-    #
-    #     result_list = pd.DataFrame()
-    #     jz_list = pd.DataFrame()
-    #     name_list = []
-    #     for timeperiod in range(5, 120, 5):
-    #         for std in [0.5, 1, 1.5, 2, 2.5, 3]:
-    #             print('timeperiod: '+str(timeperiod)+'; std: '+str(std))
-    #             signal = boll_signal(test1.data['收盘价'], timeperiod, std)
-    #             test1.add_stragety(signal=signal)
-    #             test1.run()
-    #             # test1.jz_plot()
-    #             result = test1.analysis()
-    #             result['timeperiod'] = timeperiod
-    #             result['std'] = std
-    #             if len(result_list) == 0:
-    #                 result_list = result
-    #                 jz_list = test1.jz
-    #             else:
-    #                 result_list = pd.concat([result_list, result], axis=0)
-    #                 jz_list = pd.concat([jz_list, test1.jz], axis=1)
-    #             name_list.append('timeperiod: ' + str(timeperiod) + '; std: ' + str(std))
-    #     print(result_list)
-    #     result_list.to_csv(str(i)+'_result_all.csv')
-    #
-    # r_list.to_csv(str(i)+'_result_all.csv')
 
 
     sum1 = DataSim(start_date, end_date, file_dir)
     sum1.relative_cal()
     sim_data = sum1.random_cal()
     sim_data.to_csv('./data/sim_RB.csv')
-    a = pd.DataFrame(sim_data['收盘价'])
+    a = pd.DataFrame(sim_data['Close'])
     a.columns = ['a']
     a.plot()
     plt.show()
 
 
-    test1 = vector_backtest(start_date, end_date, './data/sim_RB.csv', cal_way='open')
-    # ###### 最优参数 ###########
-    timeperiod = 110
-    std = 0.5
-    print('timeperiod: '+str(timeperiod)+'; std: '+str(std))
-    signal = boll_signal(test1.data['收盘价'], timeperiod, std)
-    test1.add_stragety(signal=signal)
-    test1.run()
-    test1.jz_plot()
-    result = test1.analysis()
+    # test1 = vector_backtest(start_date, end_date, './data/sim_RB.csv', cal_way='open')
+    # # ###### 最优参数 ###########
+    # timeperiod = 110
+    # std = 0.5
+    # print('timeperiod: '+str(timeperiod)+'; std: '+str(std))
+    # signal = boll_signal(test1.data['收盘价'], timeperiod, std)
+    # test1.add_stragety(signal=signal)
+    # test1.run()
+    # test1.jz_plot()
+    # result = test1.analysis()
