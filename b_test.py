@@ -86,7 +86,7 @@ if __name__ == "__main__":
     y[y < 0] = -1
     df = pd.concat([y, X], axis=1).dropna()
     df = df.astype(np.float)
-    score_list = pd.Series([0]*300, index=df.index[0:300])
+    score_list = pd.Series()
     score_listx = []
     for d in range(300, len(df.index)-100, 100):
         t_y = df.iloc[d-300:d, 0]

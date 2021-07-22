@@ -33,11 +33,12 @@ class vector_backtest:
         self.baseret = ret
         self.basejz = (1 + self.baseret).cumprod()
         self.ret = ret * singal - np.abs(ret * singal)*0.003  # 千3手续费
-        self.jz = (1 + self.ret).cumprod()
+        self.jz = (1 + self.ret).dropna().cumprod()
         self.singal = singal
 
     def jz_plot(self):
-        df = pd.concat([self.basejz, self.jz], axis=1)
+        df = pd.concat([self.basejz, self.jz], axis=1).dropna()
+        df = df / df.iloc[0, :]
         df.columns = ['base', 'stragety']
         df.plot()
         # self.jz.plot()
