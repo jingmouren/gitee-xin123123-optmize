@@ -79,7 +79,7 @@ class SimpleBacktest:
                 self.his_data['yes'] = open_array[num - 1]
                 self.his_data['time'] = time
             self.signal_cal()  # 计算信号
-
+        self.jz = pd.Series(self.capital_list, index=self.data.index)
         pass
     def signal_cal(self):
         signal = 1
@@ -98,7 +98,7 @@ class SimpleBacktest:
         self.capital_list[self.num] = self.capital
 
     def jz_plot(self, fig_name, filedir):
-        df = pd.concat([self.data['Close'], pd.Series(self.capital_list, index=self.data.index)], axis=1).dropna()
+        df = pd.concat([self.data['Close'], self.jz], axis=1).dropna()
         df = df / df.iloc[0, :]
         df.columns = ['base', 'stragety']
         ax = df.plot()
@@ -112,9 +112,10 @@ class SimpleBacktest:
 
     def analysis(self):
         ana = Analysis()
-        self.result = ana.analysis(pd.Series(self.capital_list, index=self.data.index))
+        self.result = ana.analysis(self.jz)
         print(self.result)
         return self.result
+    # def ana_self(self):
 
 class ROC(SimpleBacktest):
     def __init__(self, start_date, end_date, comission_rate, init_cash, main_file, symbol, multip, freq='1d', cal_way='open'):
@@ -135,35 +136,6 @@ class ROC(SimpleBacktest):
 
 
 
-n_list = [3,5,9,10,12,14,20,60]  # 参数
-stragety_name = 'ROC_1d'  # 策略名
-filedir = './result/螺纹/'  # 图片保存地址
-pic_name = 'rb_' + stragety_name + "_参数："
-result_df = pd.DataFrame()  # 图片名称
-for n in n_list:
-    roc = ROC(start_date='2013-01-01',
-              end_date='2018-01-01',
-              comission_rate=0.001,
-              init_cash=10000000,
-              main_file='./行情数据库/螺纹/',
-              symbol='RB',
-              multip=10,  # 交易乘数
-              freq='1d',
-              cal_way='open')
-
-    fig_name = pic_name + str(n)
-    roc.param_add(n)
-    roc.run()
-    roc.jz_plot(fig_name, filedir+stragety_name+'/')
-    result = roc.analysis()
-    result['参数'] = n
-    if len(result_df) == 0:
-        result_df = result
-    else:
-        result_df = pd.concat([result_df, result], axis=0, sort=True)
-result_df = result_df.reindex(columns=['参数', '年化收益率', '夏普比率', '卡玛比率', '季度胜率'])
-result_df.to_excel(filedir+stragety_name+'/绩效.xlsx')
-print(result_df)
 
 
 
