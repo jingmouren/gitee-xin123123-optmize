@@ -45,7 +45,8 @@ class ROC(SimpleBacktest):
                     result_df = pd.concat([result_df, result], axis=0)
 
 
-            self.best_param = int(result_df.sort_values(by='diff_sharep').iloc[-1, :]['参数'])
+            best_param = result_df.sort_values(by='diff_sharep')
+            self.best_param = int(best_param[best_param>0].iloc[0, :]['参数'])
             # self.best_param = int(result_df.sort_values(by='夏普比率').iloc[-1, :]['参数'])
             self.best_sharpe = result_df[(result_df.参数).astype(int)==self.best_param]['夏普比率'][0]
             self.diff_sharep = result_df[(result_df.参数).astype(int)==self.best_param]['diff_sharep'][0]
@@ -53,11 +54,11 @@ class ROC(SimpleBacktest):
 
 
         n = self.best_param
-        print('n: '+str(n))
-        print('self.best_sharpe: '+str(self.best_sharpe))
-        print('self.diff_sharep: '+str(self.diff_sharep))
+        # print('n: '+str(n))
+        # print('self.best_sharpe: '+str(self.best_sharpe))
+        # print('self.diff_sharep: '+str(self.diff_sharep))
 
-        if self.num < n or self.best_sharpe < 1:
+        if self.num < n or self.best_sharpe < 0:
             self.target_position(0, self.his_data['last'])
             return
         signal = np.sign(self.his_data['close'][-1] / self.his_data['close'][-n] - 1)
@@ -69,7 +70,7 @@ class ROC(SimpleBacktest):
 
 
 pre_date = 360  # 参数寻优长度
-trade_date = 60  # 回测长度
+trade_date = 10  # 回测长度
 
 stragety_name = 'ROC_1d'  # 策略名
 filedir = './result/螺纹/'  # 图片保存地址
