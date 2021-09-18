@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="135e26bf-cb8f-4b01-9cfd-6604a1ca521b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/cta策略/roc_backtest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cta策略/walk_forward_opt.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/backtest.py" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/backtest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/ROC_1d/绩效.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/ROC_1d/绩效.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/ROC_1d/rb_ROC_1dwfo.png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/ROC_1d/rb_ROC_1dwfo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/ROC_1d/wfo净值.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/ROC_1d/wfo净值.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/ROC_1d/wfo绩效.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/ROC_1d/wfo绩效.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cta策略/walk_forward_opt.py" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/walk_forward_opt.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,7 +27,7 @@
     <SUITE FILE_PATH="coverage/$cmb_cal.coverage" NAME="cmb_cal Coverage Results" MODIFIED="1625536775835" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/stragety_data" />
     <SUITE FILE_PATH="coverage/$two_ma.coverage" NAME="two_ma Coverage Results" MODIFIED="1625542158649" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/$macd.coverage" NAME="macd Coverage Results" MODIFIED="1625480495516" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/$walk_forward_opt.coverage" NAME="walk_forward_opt Coverage Results" MODIFIED="1631960593579" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cta策略" />
+    <SUITE FILE_PATH="coverage/$walk_forward_opt.coverage" NAME="walk_forward_opt Coverage Results" MODIFIED="1631961389329" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cta策略" />
     <SUITE FILE_PATH="coverage/$b_test.coverage" NAME="b_test Coverage Results" MODIFIED="1627364749911" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/$data_simulate.coverage" NAME="data_simulate Coverage Results" MODIFIED="1625538511085" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/$ml_test.coverage" NAME="ml_test Coverage Results" MODIFIED="1625477454431" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/集成学习" />
@@ -114,8 +114,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cta策略/walk_forward_opt.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="359">
-              <caret line="60" column="42" lean-forward="true" selection-start-line="60" selection-start-column="42" selection-end-line="60" selection-end-column="42" />
+            <state relative-caret-position="382">
+              <caret line="53" column="67" selection-start-line="53" selection-start-column="67" selection-end-line="53" selection-end-column="67" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -431,7 +431,7 @@
       <workItem from="1628148206464" duration="9000" />
       <workItem from="1631930950161" duration="1494000" />
       <workItem from="1631932826095" duration="17295000" />
-      <workItem from="1631955364954" duration="5240000" />
+      <workItem from="1631955364954" duration="5975000" />
     </task>
     <task id="LOCAL-00001" summary="sklearn + gplearn">
       <created>1625138635348</created>
@@ -510,11 +510,25 @@
       <option name="project" value="LOCAL" />
       <updated>1631952108218</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="前进分析法">
+      <created>1631960673876</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1631960673876</updated>
+    </task>
+    <task id="LOCAL-00013" summary="前进分析法,参数选择优化">
+      <created>1631960916693</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1631960916693</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="200960000" />
+    <option name="totallyTimeSpent" value="201695000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1913" y="0" width="1934" height="1047" extended-state="0" />
@@ -525,15 +539,15 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49573106" weight="0.32968238" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4615795" visible="true" weight="0.2924425" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.46584845" weight="0.28477547" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.45997867" visible="true" weight="0.2924425" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.46424758" weight="0.28477547" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49893278" weight="0.329718" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5384205" side_tool="true" visible="true" weight="0.2924425" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.54002136" side_tool="true" visible="true" weight="0.2924425" />
       <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49839914" weight="0.3264642" />
       <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.4994664" weight="0.329718" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -591,7 +605,9 @@
     <MESSAGE value="添加随机森林择时" />
     <MESSAGE value="修改readme" />
     <MESSAGE value="cta测试" />
-    <option name="LAST_COMMIT_MESSAGE" value="cta测试" />
+    <MESSAGE value="前进分析法" />
+    <MESSAGE value="前进分析法,参数选择优化" />
+    <option name="LAST_COMMIT_MESSAGE" value="前进分析法,参数选择优化" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -708,8 +724,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/cta策略/walk_forward_opt.py</url>
-          <line>59</line>
+          <line>64</line>
           <option name="timeStamp" value="216" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cta策略/walk_forward_opt.py</url>
+          <line>54</line>
+          <option name="timeStamp" value="218" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -723,6 +744,36 @@
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateCodeFragment">
+      <expression>
+        <expression-string>best_param.sort_values(by='diff_sharep')</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>result_df[result_df.diff_sharep &gt; 0]</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>best_param[best_param&gt;0]</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>self.best_param</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>int(best_param[best_param&gt;0].iloc[0, :]['参数'])</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>best_param</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>result_df.sort_values(by='diff_sharep')</expression-string>
         <language-id>Python</language-id>
@@ -740,36 +791,6 @@
       </expression>
       <expression>
         <expression-string>int(result_df.参数)==self.best_param</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>[result_df.参数==self.best_param</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>result_df.参数</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>self.best_param</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>result2['夏普比率'][0]</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>result2['夏普比率']【0</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>result2['夏普比率']</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
@@ -1187,8 +1208,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cta策略/walk_forward_opt.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="60" column="42" lean-forward="true" selection-start-line="60" selection-start-column="42" selection-end-line="60" selection-end-column="42" />
+        <state relative-caret-position="382">
+          <caret line="53" column="67" selection-start-line="53" selection-start-column="67" selection-end-line="53" selection-end-column="67" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
