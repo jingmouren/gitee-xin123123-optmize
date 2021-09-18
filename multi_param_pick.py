@@ -71,7 +71,7 @@ if __name__ == "__main__":
     start_date = '20200601'
     end_date = '20210620'
 
-    file_dir = r"./data/RB_data.csv"
+    file_dir = r"./data/RB_1d.csv"
 
     sum1 = DataSim(start_date, end_date, file_dir)
     sum1.relative_cal()
@@ -81,7 +81,7 @@ if __name__ == "__main__":
 
     #### 样本外模拟测试 #########
 
-    file_dir = r"./data/RB_data.csv"
+    file_dir = r"./data/RB_1d.csv"
     ###### rsi ###########
     xx = Multi_param_backtest('./参数表/rsi.csv')
     jz1 = xx.portfolio_cal(start_date, end_date, file_dir, rsi_signal)

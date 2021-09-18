@@ -24,11 +24,12 @@ class vector_backtest:
 
     def run(self):
         data = self.data
+        dd = -2
         if self.cal_way == 'open':
-            ret = (data['Open'].diff() / data['Open'].shift()).fillna(0)
+            ret = ((data['Open'].diff() - 2*dd) / (data['Open'].shift() + dd)).fillna(0)
             singal = (self.signal.shift(2)).fillna(0)  # 收盘价
         elif self.cal_way == 'close':
-            ret = (data['Close'].diff() / data['Close'].shift()).fillna(0)
+            ret = ((data['Close'].diff() - 2*dd) / (data['Close'].shift() + dd)).fillna(0)
             singal = (self.signal.shift(1)).fillna(0)  # 收盘价
         self.baseret = ret
         self.basejz = (1 + self.baseret).cumprod()

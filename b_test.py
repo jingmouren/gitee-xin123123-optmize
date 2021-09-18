@@ -20,7 +20,7 @@ if __name__ == "__main__":
     start_date = '20100101'
     end_date = '20200601'
 
-    file_dir = r"./data/RB_data.csv"
+    file_dir = r"./data/RB_1d.csv"
     sum1 = DataSim(start_date, end_date, file_dir)
     sum1.relative_cal()
     sim_data = sum1.random_cal()
@@ -78,10 +78,25 @@ if __name__ == "__main__":
     #
     # print('timeperiod: '+str(timeperiod)+'; std: '+str(std))
     # signal7 = Aberration_signal(test1.data['Close'], timeperiod, std)
+    timeperiod = 20
+    signal7 = moment(test1.data['Close'], timeperiod)
 
-    X = pd.concat([signal1, signal2, signal3, signal5, signal6], axis=1).shift(2)
+    timeperiod = 60
+    signal8 = moment(test1.data['Close'], timeperiod)
+    timeperiod = 120
+    signal9 = moment(test1.data['Close'], timeperiod)
 
-    y = (sim_data['Open'].diff() / sim_data['Open'].shift()).fillna(0)
+    timeperiod = 20
+    signal10 = vol(test1.data['Close'], timeperiod)
+    timeperiod = 60
+    signal11 = vol(test1.data['Close'], timeperiod)
+    timeperiod = 120
+    signal12 = vol(test1.data['Close'], timeperiod)
+
+    X = pd.concat([signal1, signal2, signal3, signal5, signal6, signal7,signal8,signal9,signal10,signal1,signal12], axis=1)
+    X = pd.concat([signal1, signal2, signal3, signal5, signal6],
+                  axis=1)
+    y = (sim_data['Open'].diff() / sim_data['Open'].shift()).fillna(0).shift(-2)
     y[y > 0] = 1
     y[y < 0] = -1
     df = pd.concat([y, X], axis=1).dropna()
@@ -93,17 +108,6 @@ if __name__ == "__main__":
         t_X = df.iloc[d-300:d, 1:]
         test_y = df.iloc[d:d+100, 0]
         test_X = df.iloc[d:d+100, 1:]
-        # y_train, y_test, X_train, X_test = train_test_split(t_y, t_X, test_size=0.7, random_state=0)
-        # clf = RandomForestClassifier(bootstrap=True, class_weight=None, criterion='gini',
-        #                    max_depth=2, max_features='auto', max_leaf_nodes=None,
-        #                    min_impurity_decrease=0.0, min_impurity_split=None,
-        #                    min_samples_leaf=1, min_samples_split=2,
-        #                    min_weight_fraction_leaf=0.0, n_estimators=10, n_jobs=1,
-        #                    oob_score=False, random_state=0, verbose=0, warm_start=False)
-        # clf.fit(X_train, y_train)
-        # y_pred = clf.predict(X_test)
-        # sc = clf.score(X_test, y_test)
-        # print('sc: ',sc)
 
         n_estimators = np.arange(100, 2000, step=100)
         max_features = ["auto", "sqrt", "log2"]
@@ -116,13 +120,24 @@ if __name__ == "__main__":
                       "min_samples_leaf": min_samples_leaf, "bootstrap": bootstrap,}
 
         forest = RandomForestClassifier()
-        random_cv = RandomizedSearchCV(forest, param_grid, n_iter=100, cv=3, n_jobs=-1)
+        random_cv = RandomizedSearchCV(forest, param_grid, n_iter=100, cv=5, n_jobs=-1)
 
         random_cv.fit(t_X, t_y)
         print("Best params:\n")
         print(random_cv.best_params_)
         print('score: ', random_cv.score(t_X, t_y))
         print('test_score: ', random_cv.score(test_X, test_y))
+
+        # score_listx.append(random_cv.score(test_X, test_y))
+        # print(score_listx)
+        # y_pred = random_cv.predict(test_X)
+        # y_pred = pd.Series(y_pred, index=test_X.index)
+        # score_list = pd.concat([score_list, y_pred], axis=0)
+        # # score_list.extend(y_pred)
+        #
+        # test1.add_stragety(signal=score_list)
+        # test1.run()
+        # test1.jz_plot()
 
         result = pd.DataFrame(random_cv.cv_results_).sort_values(by='mean_test_score').iloc[-5:, :]
 

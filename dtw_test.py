@@ -28,7 +28,7 @@ def get_stats(s, n=252):
 
 
 
-spy = pd.read_csv(r"./data/RB_data.csv")
+spy = pd.read_csv(r"./data/RB_1d.csv")
 spy = spy.set_index(spy.columns[0])
 spy.index = pd.to_datetime(spy.index, format="%Y-%m-%d")
 # spy = spy.sort_values(['Date'])

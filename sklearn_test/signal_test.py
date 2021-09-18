@@ -83,7 +83,7 @@ class Strategy(BaseEstimator):
         return total_return
 
 
-file_dir = r"./RB_data.csv"
+file_dir = r"./RB_1d.csv"
 # 数据清洗分割
 X_train, X_test, y_train, y_test = PreTransformer().transform(file_dir, cal_way='open')
 X_train = X_train.iloc[:, 0]

@@ -14,8 +14,8 @@ end_date = '20200601'
 start_date = '20200601'
 end_date = '20210629'
 
-file_dir = r"./data/RB_data.csv"
-file_dir = r"./data/RB_min.csv"
+file_dir = r"./data/RB_1d.csv"
+file_dir = r"./data/RB_1min.csv"
 test1 = vector_backtest(start_date, end_date, file_dir, freq='15min',cal_way='open')
 
 ###### 参数优化 ##########

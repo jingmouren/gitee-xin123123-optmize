@@ -61,5 +61,16 @@ def two_ma_signal(close, short_p, long_p):
     return ma_short, ma_long
 
 
+def moment(close, range):
+    moment = close/close.shift(range) - 1
+    return moment
+
+def vol(close, range):
+    ret = close.diff()/close.shift()
+    vol = ret.rolling(range).std()
+    return vol
+
+
+
 
 

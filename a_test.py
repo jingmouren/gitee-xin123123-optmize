@@ -11,7 +11,7 @@ if __name__ == "__main__":
     start_date = '20100101'
     end_date = '20200601'
 
-    file_dir = r"./data/RB_data.csv"
+    file_dir = r"./data/RB_1d.csv"
     sum1 = DataSim(start_date, end_date, file_dir)
     sum1.relative_cal()
     sim_data = sum1.random_cal()

@@ -10,7 +10,7 @@ from tqdm import tqdm
 from gplearn_fix.genetic import SymbolicTransformer, SymbolicRegressor
 start_date = '20100101'
 end_date = '20200601'
-file_dir = r"./data/RB_data.csv"
+file_dir = r"./data/RB_1d.csv"
 test1 = vector_backtest(start_date, end_date, file_dir, cal_way='open')
 
 ###### 参数优化 ##########

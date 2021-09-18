@@ -2,13 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="135e26bf-cb8f-4b01-9cfd-6604a1ca521b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/a_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/b_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/formula_package2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/强化学习/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/强化学习/test1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/c_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cta策略/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cta策略/backtest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cta策略/datapre.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cta策略/行情数据库/螺纹/分钟/RB_1min.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cta策略/行情数据库/螺纹/日频/RB_1d.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/moment.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Aberration.py" beforeDir="false" afterPath="$PROJECT_DIR$/Aberration.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Base.py" beforeDir="false" afterPath="$PROJECT_DIR$/Base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMO.py" beforeDir="false" afterPath="$PROJECT_DIR$/CMO.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DMA.py" beforeDir="false" afterPath="$PROJECT_DIR$/DMA.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/a_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/b_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/b_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bolling.py" beforeDir="false" afterPath="$PROJECT_DIR$/bolling.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/sim_RB.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/sim_RB.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_simulate.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_simulate.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dtw_stragety.py" beforeDir="false" afterPath="$PROJECT_DIR$/dtw_stragety.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dtw_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/dtw_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formula_package.py" beforeDir="false" afterPath="$PROJECT_DIR$/formula_package.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formula_package2.py" beforeDir="false" afterPath="$PROJECT_DIR$/formula_package2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gplearn_fix/test1.py" beforeDir="false" afterPath="$PROJECT_DIR$/gplearn_fix/test1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/macd.py" beforeDir="false" afterPath="$PROJECT_DIR$/macd.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/multi_param_pick.py" beforeDir="false" afterPath="$PROJECT_DIR$/multi_param_pick.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rsi.py" beforeDir="false" afterPath="$PROJECT_DIR$/rsi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sklearn_test/factor_search.py" beforeDir="false" afterPath="$PROJECT_DIR$/sklearn_test/factor_search.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sklearn_test/signal_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/sklearn_test/signal_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/two_ma.py" beforeDir="false" afterPath="$PROJECT_DIR$/two_ma.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/集成学习/ml_stragety.py" beforeDir="false" afterPath="$PROJECT_DIR$/集成学习/ml_stragety.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,26 +41,30 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/$dtw_test.coverage" NAME="dtw_test Coverage Results" MODIFIED="1624873785691" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/$a_test.coverage" NAME="a_test Coverage Results" MODIFIED="1626770779483" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/$b_test.coverage" NAME="b_test Coverage Results" MODIFIED="1626945156021" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/$data_simulate.coverage" NAME="data_simulate Coverage Results" MODIFIED="1625538511085" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/$ml_test.coverage" NAME="ml_test Coverage Results" MODIFIED="1625477454431" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/集成学习" />
-    <SUITE FILE_PATH="coverage/$CMO.coverage" NAME="CMO Coverage Results" MODIFIED="1625479134404" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/$DMA.coverage" NAME="DMA Coverage Results" MODIFIED="1625535297167" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/$testx1.coverage" NAME="testx1 Coverage Results" MODIFIED="1625714053175" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/$gp.coverage" NAME="gp Coverage Results" MODIFIED="1625212650240" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sklearn_test" />
     <SUITE FILE_PATH="coverage/$opt_ana.coverage" NAME="opt_ana Coverage Results" MODIFIED="1624521549765" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/$Aberration.coverage" NAME="Aberration Coverage Results" MODIFIED="1625534351172" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/$signal_test.coverage" NAME="signal_test Coverage Results" MODIFIED="1625208238135" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sklearn_test" />
     <SUITE FILE_PATH="coverage/$multi_param_pick.coverage" NAME="multi_param_pick Coverage Results" MODIFIED="1625536757383" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/$rsi.coverage" NAME="rsi Coverage Results" MODIFIED="1625468324873" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/$test1.coverage" NAME="test1 Coverage Results" MODIFIED="1625131096643" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gplearn" />
+    <SUITE FILE_PATH="coverage/$c_test.coverage" NAME="c_test Coverage Results" MODIFIED="1627380162507" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/$backtest.coverage" NAME="backtest Coverage Results" MODIFIED="1631951911698" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cta策略" />
+    <SUITE FILE_PATH="coverage/$cmb_cal.coverage" NAME="cmb_cal Coverage Results" MODIFIED="1625536775835" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/stragety_data" />
+    <SUITE FILE_PATH="coverage/$two_ma.coverage" NAME="two_ma Coverage Results" MODIFIED="1625542158649" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/$macd.coverage" NAME="macd Coverage Results" MODIFIED="1625480495516" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/$b_test.coverage" NAME="b_test Coverage Results" MODIFIED="1627364749911" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/$data_simulate.coverage" NAME="data_simulate Coverage Results" MODIFIED="1625538511085" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/$ml_test.coverage" NAME="ml_test Coverage Results" MODIFIED="1625477454431" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/集成学习" />
+    <SUITE FILE_PATH="coverage/$datapre.coverage" NAME="datapre Coverage Results" MODIFIED="1631933758412" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cta策略" />
+    <SUITE FILE_PATH="coverage/$CMO.coverage" NAME="CMO Coverage Results" MODIFIED="1625479134404" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/$moment.coverage" NAME="moment Coverage Results" MODIFIED="1627037191128" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/$DMA.coverage" NAME="DMA Coverage Results" MODIFIED="1625535297167" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/$testx1.coverage" NAME="testx1 Coverage Results" MODIFIED="1625714053175" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/$gp.coverage" NAME="gp Coverage Results" MODIFIED="1625212650240" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sklearn_test" />
+    <SUITE FILE_PATH="coverage/$rsi.coverage" NAME="rsi Coverage Results" MODIFIED="1625468324873" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/$factor_search.coverage" NAME="factor_search Coverage Results" MODIFIED="1625220774686" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sklearn_test" />
     <SUITE FILE_PATH="coverage/$bolling.coverage" NAME="bolling Coverage Results" MODIFIED="1625736651938" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/$dtw_stragety.coverage" NAME="dtw_stragety Coverage Results" MODIFIED="1624950557605" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/$cmb_cal.coverage" NAME="cmb_cal Coverage Results" MODIFIED="1625536775835" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/stragety_data" />
-    <SUITE FILE_PATH="coverage/$two_ma.coverage" NAME="two_ma Coverage Results" MODIFIED="1625542158649" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/$MyWrapper.coverage" NAME="MyWrapper Coverage Results" MODIFIED="1624353191124" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/$macd.coverage" NAME="macd Coverage Results" MODIFIED="1625480495516" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -56,38 +82,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/b_test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="153" column="23" lean-forward="true" selection-start-line="153" selection-start-column="23" selection-end-line="153" selection-end-column="23" />
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/强化学习/test1.py">
+        <entry file="file://$PROJECT_DIR$/c_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/formula_package.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="394">
-              <caret line="125" column="17" lean-forward="true" selection-start-line="3" selection-end-line="125" selection-end-column="17" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="1767">
+              <caret line="105" column="49" selection-start-line="105" selection-start-column="49" selection-end-line="105" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -95,8 +94,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/formula_package2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="53" column="20" selection-start-line="53" selection-start-column="20" selection-end-line="53" selection-end-column="20" />
+            <state relative-caret-position="558">
+              <caret line="72" selection-start-line="72" selection-end-line="72" />
             </state>
           </provider>
         </entry>
@@ -104,31 +103,22 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Base.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="32" column="26" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="26" />
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="44">
+              <caret line="2" selection-start-line="2" selection-end-line="3" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://D:/anaconda/Lib/site-packages/pandas/core/reshape/concat.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/cta策略/backtest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="331" selection-start-line="331" selection-end-line="331" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bolling.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="56" column="13" lean-forward="true" selection-start-line="53" selection-end-line="56" selection-end-column="13" />
+            <state relative-caret-position="565">
+              <caret line="138" column="23" selection-start-line="138" selection-start-column="23" selection-end-line="138" selection-end-column="23" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
+                <element signature="e#842#4495#0" />
+                <element signature="e#1814#2208#0" />
+                <element signature="e#3575#3982#0" />
               </folding>
             </state>
           </provider>
@@ -164,6 +154,7 @@
       <find>PreTransformer</find>
       <find>210</find>
       <find>210.0</find>
+      <find>sim_data</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -195,15 +186,19 @@
         <option value="$PROJECT_DIR$/multi_param_pick.py" />
         <option value="$PROJECT_DIR$/data_simulate.py" />
         <option value="$PROJECT_DIR$/two_ma.py" />
-        <option value="$PROJECT_DIR$/formula_package.py" />
         <option value="$PROJECT_DIR$/testx1.py" />
-        <option value="$PROJECT_DIR$/Base.py" />
         <option value="$PROJECT_DIR$/bolling.py" />
-        <option value="$PROJECT_DIR$/readme" />
         <option value="$PROJECT_DIR$/a_test.py" />
-        <option value="$PROJECT_DIR$/formula_package2.py" />
         <option value="$PROJECT_DIR$/强化学习/test1.py" />
+        <option value="$PROJECT_DIR$/readme" />
+        <option value="$PROJECT_DIR$/formula_package.py" />
+        <option value="$PROJECT_DIR$/moment.py" />
+        <option value="$PROJECT_DIR$/Base.py" />
+        <option value="$PROJECT_DIR$/formula_package2.py" />
         <option value="$PROJECT_DIR$/b_test.py" />
+        <option value="$PROJECT_DIR$/c_test.py" />
+        <option value="$PROJECT_DIR$/cta策略/datapre.py" />
+        <option value="$PROJECT_DIR$/cta策略/backtest.py" />
       </list>
     </option>
   </component>
@@ -219,7 +214,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -227,10 +221,37 @@
               <item name="参数优化代码" type="b2602c69:ProjectViewProjectNode" />
               <item name="参数优化代码" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="参数优化代码" type="b2602c69:ProjectViewProjectNode" />
+              <item name="参数优化代码" type="462c0819:PsiDirectoryNode" />
+              <item name="cta策略" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="参数优化代码" type="b2602c69:ProjectViewProjectNode" />
+              <item name="参数优化代码" type="462c0819:PsiDirectoryNode" />
+              <item name="cta策略" type="462c0819:PsiDirectoryNode" />
+              <item name="result" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="参数优化代码" type="b2602c69:ProjectViewProjectNode" />
+              <item name="参数优化代码" type="462c0819:PsiDirectoryNode" />
+              <item name="cta策略" type="462c0819:PsiDirectoryNode" />
+              <item name="result" type="462c0819:PsiDirectoryNode" />
+              <item name="螺纹" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="参数优化代码" type="b2602c69:ProjectViewProjectNode" />
+              <item name="参数优化代码" type="462c0819:PsiDirectoryNode" />
+              <item name="cta策略" type="462c0819:PsiDirectoryNode" />
+              <item name="result" type="462c0819:PsiDirectoryNode" />
+              <item name="螺纹" type="462c0819:PsiDirectoryNode" />
+              <item name="ROC_1d" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="ProjectViewState">
@@ -243,14 +264,17 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Administrator\Desktop\时间序列策略\参数优化代码\参数表" />
-      <recent name="$PROJECT_DIR$/notebook" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\Desktop\时间序列策略\参数优化代码\cta策略\原始数据库\螺纹\分钟" />
+      <recent name="C:\Users\Administrator\Desktop\时间序列策略\参数优化代码\cta策略\原始数据库" />
       <recent name="C:\Users\Administrator\Desktop\时间序列策略\参数优化代码" />
       <recent name="C:\Users\Administrator\Desktop\时间序列策略\参数优化代码\sklearn_test" />
       <recent name="C:\Users\Administrator\Desktop\时间序列策略\参数优化代码\notebook" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\Desktop\时间序列策略\参数优化代码\cta策略\原始数据库\螺纹\日频" />
+      <recent name="C:\Users\Administrator\Desktop\时间序列策略\参数优化代码\参数表" />
+      <recent name="$PROJECT_DIR$/notebook" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -265,29 +289,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.b_test">
-    <configuration name="a_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="参数优化代码" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/a_test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.backtest">
     <configuration name="b_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="参数优化代码" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -310,7 +312,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="bolling" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="backtest" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="参数优化代码" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -318,12 +320,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/cta策略" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/bolling.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cta策略/backtest.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -332,7 +334,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="testx1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="c_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="参数优化代码" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -345,7 +347,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/testx1.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/c_test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -354,7 +356,29 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="two_ma" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="datapre" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="参数优化代码" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/cta策略" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cta策略/datapre.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="moment" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="参数优化代码" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -367,7 +391,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/two_ma.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/moment.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -378,11 +402,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.backtest" />
+        <item itemvalue="Python.datapre" />
+        <item itemvalue="Python.c_test" />
         <item itemvalue="Python.b_test" />
-        <item itemvalue="Python.a_test" />
-        <item itemvalue="Python.bolling" />
-        <item itemvalue="Python.testx1" />
-        <item itemvalue="Python.two_ma" />
+        <item itemvalue="Python.moment" />
       </list>
     </recent_temporary>
   </component>
@@ -400,7 +424,12 @@
       <workItem from="1625187937966" duration="26429000" />
       <workItem from="1625446538823" duration="66925000" />
       <workItem from="1626137468685" duration="3082000" />
-      <workItem from="1626682953113" duration="39962000" />
+      <workItem from="1626682953113" duration="54257000" />
+      <workItem from="1627032505878" duration="2744000" />
+      <workItem from="1627346144902" duration="8196000" />
+      <workItem from="1628148206464" duration="9000" />
+      <workItem from="1631930950161" duration="1494000" />
+      <workItem from="1631932826095" duration="14445000" />
     </task>
     <task id="LOCAL-00001" summary="sklearn + gplearn">
       <created>1625138635348</created>
@@ -451,29 +480,51 @@
       <option name="project" value="LOCAL" />
       <updated>1626155962057</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="添加随机森林择时">
+      <created>1626945769718</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1626945769733</updated>
+    </task>
+    <task id="LOCAL-00009" summary="添加随机森林择时">
+      <created>1626950471026</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1626950471026</updated>
+    </task>
+    <task id="LOCAL-00010" summary="修改readme">
+      <created>1626950668012</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1626950668012</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="151687000" />
+    <option name="totallyTimeSpent" value="192870000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1913" y="0" width="1934" height="1047" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1307364" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13607258" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49893278" weight="0.329718" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.47438633" visible="true" weight="0.2924425" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4765208" weight="0.28477547" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4967983" weight="0.32968238" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.46798292" visible="true" weight="0.2924425" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.47118464" weight="0.28477547" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49893278" weight="0.329718" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.52561367" side_tool="true" visible="true" weight="0.2924425" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.53201705" side_tool="true" visible="true" weight="0.2924425" />
       <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49839914" weight="0.3264642" />
       <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.4994664" weight="0.329718" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -528,7 +579,9 @@
     <MESSAGE value="add" />
     <MESSAGE value="添加多参数选择模块，组合净值计算，cmo指标、macd指标" />
     <MESSAGE value="添加readme" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加readme" />
+    <MESSAGE value="添加随机森林择时" />
+    <MESSAGE value="修改readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改readme" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -625,8 +678,28 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/b_test.py</url>
-          <line>155</line>
+          <line>170</line>
           <option name="timeStamp" value="179" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cta策略/datapre.py</url>
+          <line>20</line>
+          <option name="timeStamp" value="180" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cta策略/backtest.py</url>
+          <line>66</line>
+          <option name="timeStamp" value="188" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cta策略/backtest.py</url>
+          <line>157</line>
+          <option name="timeStamp" value="195" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cta策略/backtest.py</url>
+          <line>100</line>
+          <option name="timeStamp" value="196" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -641,91 +714,53 @@
   <component name="debuggerHistoryManager">
     <expressions id="evaluateCodeFragment">
       <expression>
-        <expression-string>test1.jz_plot()</expression-string>
+        <expression-string>df</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>test1.run()</expression-string>
+        <expression-string>self.capital_list</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>test1.add_stragety(signal=score_list)</expression-string>
+        <expression-string>roc.capital_list</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>score_list</expression-string>
+        <expression-string>self.his_data['close']</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>score_list = pd.concat([score_list, y_pred], axis=0)</expression-string>
+        <expression-string>df = pd.concat([self.data['Close'], pd.Series(self.capital_list, index=self.data.index)], axis=1).dropna()</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>pd.concat([score_list, y_pred], axis=0)</expression-string>
+        <expression-string>pd.concat([self.data['Close'], pd.Series(self.capital_list, index=self.data.index)], axis=1)</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>y_pred = pd.Series(y_pred, index=test_X.index)</expression-string>
+        <expression-string>pd.concat([self.data['Close'], pd.Series(self.capital_list, index=self.data)], axis=1)</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>score_list = pd.Series([0]*300, index=df.index[0:300])</expression-string>
+        <expression-string>self.data['Close']</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>pd.Series([0]*300, index=df.index[0:300])</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>pd.Series(y_pred,index=test_X.index)</expression-string>
+        <expression-string>len(self.data['Close'].drop_duplicates())</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://D:/anaconda/Lib/site-packages/sklearn/model_selection/_validation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="553" selection-start-line="553" selection-end-line="553" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sklearn_test/BackTest2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1725">
-          <caret line="21" selection-start-line="21" selection-end-line="23" />
-          <folding>
-            <element signature="e#0#52#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sklearn_test/BackTest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5928">
-          <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/anaconda/Lib/site-packages/sklearn/metrics/scorer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="239" selection-start-line="239" selection-end-line="239" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gplearn（暂时放弃不用）/_program.py" />
-    <entry file="file://$PROJECT_DIR$/gplearn（暂时放弃不用）/functions.py" />
     <entry file="file://$PROJECT_DIR$/sklearn_test/signal_test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="307">
@@ -809,10 +844,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/stragety_data/CMO_signal.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
-      <provider selected="true" editor-type-id="csv-text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/test1.py">
       <provider selected="true" editor-type-id="text-editor" />
@@ -827,15 +862,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/analysis_model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data_simulate.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="494">
@@ -843,13 +869,6 @@
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/readme">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" column="43" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
         </state>
       </provider>
     </entry>
@@ -902,26 +921,6 @@
     <entry file="file://$PROJECT_DIR$/dtw_test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-771">
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/a_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1653">
-          <caret line="132" column="14" selection-start-line="131" selection-start-column="10" selection-end-line="132" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMO.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="42" selection-start-line="42" selection-end-line="45" selection-end-column="62" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
@@ -992,23 +991,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/formula_package.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="125" column="17" lean-forward="true" selection-start-line="3" selection-end-line="125" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/formula_package2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="53" column="20" selection-start-line="53" selection-start-column="20" selection-end-line="53" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/下载软件/chrome下载文件/RLTrader-master/test/test_rl_trader.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1060,36 +1042,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/强化学习/test1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bolling.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="56" column="13" lean-forward="true" selection-start-line="53" selection-end-line="56" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="32" column="26" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/anaconda/Lib/site-packages/pandas/core/reshape/concat.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="206">
@@ -1099,10 +1051,137 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/b_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="153" column="23" lean-forward="true" selection-start-line="153" selection-start-column="23" selection-end-line="153" selection-end-column="23" />
+        <state relative-caret-position="1596">
+          <caret line="96" column="62" selection-start-line="96" selection-start-column="62" selection-end-line="96" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/a_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2375">
+          <caret line="132" column="14" selection-start-line="131" selection-start-column="10" selection-end-line="132" selection-end-column="14" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/moment.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="817">
+          <caret line="52" column="40" selection-start-line="52" selection-start-column="40" selection-end-line="52" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/强化学习/test1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cta策略/行情数据库/螺纹/分钟/RB_1min.csv">
+      <provider selected="true" editor-type-id="LargeFileEditor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cta策略/行情数据库/螺纹/日频/RB_1d.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/c_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1767">
+          <caret line="105" column="49" selection-start-line="105" selection-start-column="49" selection-end-line="105" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMO.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/formula_package.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2394">
+          <caret line="128" column="17" selection-start-line="128" selection-start-column="4" selection-end-line="128" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bolling.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readme">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/formula_package2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="72" selection-start-line="72" selection-end-line="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cta策略/datapre.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="24" column="32" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" selection-start-line="2" selection-end-line="3" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/analysis_model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cta策略/backtest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="565">
+          <caret line="138" column="23" selection-start-line="138" selection-start-column="23" selection-end-line="138" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+            <element signature="e#842#4495#0" />
+            <element signature="e#1814#2208#0" />
+            <element signature="e#3575#3982#0" />
           </folding>
         </state>
       </provider>

@@ -5,7 +5,7 @@ from sklearn.model_selection import train_test_split, KFold, cross_val_score, Gr
 from gplearn_fix.genetic import SymbolicTransformer, BaseSymbolic
 start_date = '20100101'
 end_date = '20200601'
-file_dir = r"../data/RB_data.csv"
+file_dir = r"../data/RB_1d.csv"
 
 data = pd.read_csv(file_dir)
 data = data.set_index(data.columns[0])

@@ -126,5 +126,22 @@ def two_ma_signal(close, short_p, long_p):
     return signal
 
 
+def moment_signal(close, range_d):
+    signal = pd.Series([0] * len(close), index=close.index)
+    moment = close / close.shift(range_d) - 1
+    signal[moment > 0] = 1
+    signal[moment < 0] = -1
+    # vol = close.diff()/close.shift()
+    # vol = vol.rolling(60).std()
+    # aa = []
+    # for i in range(len(vol)):
+    #     if i < 120:
+    #         aa.append(1)
+    #         continue
+    #     tt = vol.iloc[:i].rank(pct=True)
+    #     aa.append(tt.iloc[-1])
+    # aa = pd.Series(aa, index=close.index)
+    # signal[aa < 0.5] = 0
 
+    return signal
 
