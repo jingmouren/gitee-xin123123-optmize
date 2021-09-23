@@ -2,10 +2,49 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="135e26bf-cb8f-4b01-9cfd-6604a1ca521b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/cta策略/aberration_backtest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cta策略/bbi_backtest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cta策略/bias_backtest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cta策略/boll_backtest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cta策略/cci_backtest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cta策略/cmo_backtest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cta策略/dma_backtest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cta策略/kdj_backtest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cta策略/ma_backtest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cta策略/macd_backtest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cta策略/rsi_backtest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cta策略/sma_backtest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cta策略/trix_backtest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cta策略/walk_forward_opt(Aberration).py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cta策略/walk_forward_opt(BBI).py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cta策略/walk_forward_opt(BOLL).py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cta策略/walk_forward_opt(Bias).py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cta策略/walk_forward_opt(CCI).py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cta策略/walk_forward_opt(CMO).py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cta策略/walk_forward_opt(DMA).py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cta策略/walk_forward_opt(KDJ).py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cta策略/walk_forward_opt(MA).py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cta策略/walk_forward_opt(MACD).py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cta策略/walk_forward_opt(ROC).py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cta策略/walk_forward_opt(RSI).py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cta策略/walk_forward_opt(SMA).py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cta策略/walk_forward_opt(TRIX).py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cta策略/backtest.py" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/backtest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/ROC_1d/rb_ROC_1d_参数：10.png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/ROC_1d/rb_ROC_1d_参数：10.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/ROC_1d/rb_ROC_1d_参数：12.png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/ROC_1d/rb_ROC_1d_参数：12.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/ROC_1d/rb_ROC_1d_参数：14.png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/ROC_1d/rb_ROC_1d_参数：14.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/ROC_1d/rb_ROC_1d_参数：20.png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/ROC_1d/rb_ROC_1d_参数：20.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/ROC_1d/rb_ROC_1d_参数：3.png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/ROC_1d/rb_ROC_1d_参数：3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/ROC_1d/rb_ROC_1d_参数：5.png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/ROC_1d/rb_ROC_1d_参数：5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/ROC_1d/rb_ROC_1d_参数：60.png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/ROC_1d/rb_ROC_1d_参数：60.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/ROC_1d/rb_ROC_1d_参数：9.png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/ROC_1d/rb_ROC_1d_参数：9.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/ROC_1d/rb_ROC_1dwfo.png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/ROC_1d/rb_ROC_1dwfo.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/ROC_1d/wfo净值.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/ROC_1d/wfo净值.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/ROC_1d/wfo绩效.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/ROC_1d/wfo绩效.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/ROC_1d/净值.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/ROC_1d/净值.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/ROC_1d/绩效.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/ROC_1d/绩效.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cta策略/roc_backtest.py" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/roc_backtest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cta策略/walk_forward_opt.py" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/walk_forward_opt.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,33 +55,61 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/$dtw_test.coverage" NAME="dtw_test Coverage Results" MODIFIED="1624873785691" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/$walk_forward_opt_Aberration_.coverage" NAME="walk_forward_opt(Aberration) Coverage Results" MODIFIED="1632367777342" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cta策略" />
     <SUITE FILE_PATH="coverage/$a_test.coverage" NAME="a_test Coverage Results" MODIFIED="1626770779483" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/$kdj_backtest.coverage" NAME="kdj_backtest Coverage Results" MODIFIED="1632377095110" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cta策略" />
+    <SUITE FILE_PATH="coverage/$walk_forward_opt_CCI_.coverage" NAME="walk_forward_opt(CCI) Coverage Results" MODIFIED="1632375968746" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cta策略" />
     <SUITE FILE_PATH="coverage/$opt_ana.coverage" NAME="opt_ana Coverage Results" MODIFIED="1624521549765" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/$Aberration.coverage" NAME="Aberration Coverage Results" MODIFIED="1625534351172" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/$signal_test.coverage" NAME="signal_test Coverage Results" MODIFIED="1625208238135" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sklearn_test" />
-    <SUITE FILE_PATH="coverage/$multi_param_pick.coverage" NAME="multi_param_pick Coverage Results" MODIFIED="1625536757383" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/$test1.coverage" NAME="test1 Coverage Results" MODIFIED="1625131096643" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gplearn" />
-    <SUITE FILE_PATH="coverage/$c_test.coverage" NAME="c_test Coverage Results" MODIFIED="1627380162507" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/$backtest.coverage" NAME="backtest Coverage Results" MODIFIED="1631955382558" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cta策略" />
+    <SUITE FILE_PATH="coverage/$trix_backtest.coverage" NAME="trix_backtest Coverage Results" MODIFIED="1632304788136" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cta策略" />
     <SUITE FILE_PATH="coverage/$cmb_cal.coverage" NAME="cmb_cal Coverage Results" MODIFIED="1625536775835" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/stragety_data" />
     <SUITE FILE_PATH="coverage/$two_ma.coverage" NAME="two_ma Coverage Results" MODIFIED="1625542158649" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/$macd.coverage" NAME="macd Coverage Results" MODIFIED="1625480495516" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/$walk_forward_opt.coverage" NAME="walk_forward_opt Coverage Results" MODIFIED="1631961389329" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cta策略" />
+    <SUITE FILE_PATH="coverage/$walk_forward_opt.coverage" NAME="walk_forward_opt Coverage Results" MODIFIED="1632291179237" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cta策略" />
+    <SUITE FILE_PATH="coverage/$aberration_backtest.coverage" NAME="aberration_backtest Coverage Results" MODIFIED="1632365054757" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cta策略" />
+    <SUITE FILE_PATH="coverage/$sma_backtest.coverage" NAME="sma_backtest Coverage Results" MODIFIED="1632295491402" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cta策略" />
+    <SUITE FILE_PATH="coverage/$walk_forward_opt_Bias_.coverage" NAME="walk_forward_opt(Bias) Coverage Results" MODIFIED="1632374841951" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cta策略" />
+    <SUITE FILE_PATH="coverage/$walk_forward_opt_TRIX_.coverage" NAME="walk_forward_opt(TRIX) Coverage Results" MODIFIED="1632305637622" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cta策略" />
     <SUITE FILE_PATH="coverage/$b_test.coverage" NAME="b_test Coverage Results" MODIFIED="1627364749911" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/$data_simulate.coverage" NAME="data_simulate Coverage Results" MODIFIED="1625538511085" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/$ml_test.coverage" NAME="ml_test Coverage Results" MODIFIED="1625477454431" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/集成学习" />
     <SUITE FILE_PATH="coverage/$datapre.coverage" NAME="datapre Coverage Results" MODIFIED="1631933758412" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cta策略" />
     <SUITE FILE_PATH="coverage/$CMO.coverage" NAME="CMO Coverage Results" MODIFIED="1625479134404" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/$mtm_backtest.coverage" NAME="mtm_backtest Coverage Results" MODIFIED="1632293520356" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cta策略" />
+    <SUITE FILE_PATH="coverage/$walk_forward_opt_KDJ_.coverage" NAME="walk_forward_opt(KDJ) Coverage Results" MODIFIED="1632377205285" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cta策略" />
+    <SUITE FILE_PATH="coverage/$walk_forward_opt_RSI_.coverage" NAME="walk_forward_opt(RSI) Coverage Results" MODIFIED="1632377616306" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cta策略" />
+    <SUITE FILE_PATH="coverage/$factor_search.coverage" NAME="factor_search Coverage Results" MODIFIED="1625220774686" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sklearn_test" />
+    <SUITE FILE_PATH="coverage/$dma_backtest.coverage" NAME="dma_backtest Coverage Results" MODIFIED="1632298659098" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cta策略" />
+    <SUITE FILE_PATH="coverage/$boll_backtest.coverage" NAME="boll_backtest Coverage Results" MODIFIED="1632362116952" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cta策略" />
+    <SUITE FILE_PATH="coverage/$walk_forward_opt_SMA_.coverage" NAME="walk_forward_opt(SMA) Coverage Results" MODIFIED="1632300563238" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cta策略" />
+    <SUITE FILE_PATH="coverage/$walk_forward_opt_MACD_.coverage" NAME="walk_forward_opt(MACD) Coverage Results" MODIFIED="1632301743119" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cta策略" />
+    <SUITE FILE_PATH="coverage/$bias_backtest.coverage" NAME="bias_backtest Coverage Results" MODIFIED="1632374887704" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cta策略" />
+    <SUITE FILE_PATH="coverage/$walk_forward_opt_MA_.coverage" NAME="walk_forward_opt(MA) Coverage Results" MODIFIED="1632300539207" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cta策略" />
+    <SUITE FILE_PATH="coverage/$walk_forward_opt_BOLL_.coverage" NAME="walk_forward_opt(BOLL) Coverage Results" MODIFIED="1632362799417" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cta策略" />
+    <SUITE FILE_PATH="coverage/$walk_forward_opt_BBI_.coverage" NAME="walk_forward_opt(BBI) Coverage Results" MODIFIED="1632307229912" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cta策略" />
+    <SUITE FILE_PATH="coverage/$Aberration.coverage" NAME="Aberration Coverage Results" MODIFIED="1625534351172" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/$signal_test.coverage" NAME="signal_test Coverage Results" MODIFIED="1625208238135" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sklearn_test" />
+    <SUITE FILE_PATH="coverage/$bbi_backtest.coverage" NAME="bbi_backtest Coverage Results" MODIFIED="1632307210710" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cta策略" />
+    <SUITE FILE_PATH="coverage/$multi_param_pick.coverage" NAME="multi_param_pick Coverage Results" MODIFIED="1625536757383" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/$walk_forward_opt_ROC_.coverage" NAME="walk_forward_opt(ROC) Coverage Results" MODIFIED="1632300552359" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cta策略" />
+    <SUITE FILE_PATH="coverage/$test1.coverage" NAME="test1 Coverage Results" MODIFIED="1625131096643" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gplearn" />
+    <SUITE FILE_PATH="coverage/$c_test.coverage" NAME="c_test Coverage Results" MODIFIED="1627380162507" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/$backtest.coverage" NAME="backtest Coverage Results" MODIFIED="1632288677175" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cta策略" />
+    <SUITE FILE_PATH="coverage/$cmo_backtest.coverage" NAME="cmo_backtest Coverage Results" MODIFIED="1632377800948" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cta策略" />
+    <SUITE FILE_PATH="coverage/$rsi_backtest.coverage" NAME="rsi_backtest Coverage Results" MODIFIED="1632377457637" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cta策略" />
+    <SUITE FILE_PATH="coverage/$data_simulate.coverage" NAME="data_simulate Coverage Results" MODIFIED="1625538511085" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/$ml_test.coverage" NAME="ml_test Coverage Results" MODIFIED="1625477454431" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/集成学习" />
     <SUITE FILE_PATH="coverage/$moment.coverage" NAME="moment Coverage Results" MODIFIED="1627037191128" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/$DMA.coverage" NAME="DMA Coverage Results" MODIFIED="1625535297167" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/$testx1.coverage" NAME="testx1 Coverage Results" MODIFIED="1625714053175" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/$gp.coverage" NAME="gp Coverage Results" MODIFIED="1625212650240" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sklearn_test" />
+    <SUITE FILE_PATH="coverage/$walk_forward_opt_DMA_.coverage" NAME="walk_forward_opt(DMA) Coverage Results" MODIFIED="1632300511810" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cta策略" />
     <SUITE FILE_PATH="coverage/$rsi.coverage" NAME="rsi Coverage Results" MODIFIED="1625468324873" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/$factor_search.coverage" NAME="factor_search Coverage Results" MODIFIED="1625220774686" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sklearn_test" />
+    <SUITE FILE_PATH="coverage/$cci_backtest.coverage" NAME="cci_backtest Coverage Results" MODIFIED="1632375961724" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cta策略" />
     <SUITE FILE_PATH="coverage/$bolling.coverage" NAME="bolling Coverage Results" MODIFIED="1625736651938" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/$ma_backtest.coverage" NAME="ma_backtest Coverage Results" MODIFIED="1632294904654" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cta策略" />
+    <SUITE FILE_PATH="coverage/$macd_backtest.coverage" NAME="macd_backtest Coverage Results" MODIFIED="1632301430424" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cta策略" />
+    <SUITE FILE_PATH="coverage/$walk_forward_opt_CMO_.coverage" NAME="walk_forward_opt(CMO) Coverage Results" MODIFIED="1632377896080" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cta策略" />
     <SUITE FILE_PATH="coverage/$dtw_stragety.coverage" NAME="dtw_stragety Coverage Results" MODIFIED="1624950557605" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/$MyWrapper.coverage" NAME="MyWrapper Coverage Results" MODIFIED="1624353191124" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/$roc_backtest.coverage" NAME="roc_backtest Coverage Results" MODIFIED="1631956550470" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cta策略" />
+    <SUITE FILE_PATH="coverage/$roc_backtest.coverage" NAME="roc_backtest Coverage Results" MODIFIED="1632290650622" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cta策略" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -61,37 +128,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/c_test.py">
+        <entry file="file://$PROJECT_DIR$/cta策略/walk_forward_opt(CCI).py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1767">
-              <caret line="105" column="49" selection-start-line="105" selection-start-column="49" selection-end-line="105" selection-end-column="49" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/formula_package2.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1330">
-              <caret line="72" selection-start-line="72" selection-end-line="72" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Base.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="2" selection-start-line="2" selection-end-line="3" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cta策略/backtest.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="412">
-              <caret line="118" lean-forward="true" selection-start-line="118" selection-end-line="118" />
+            <state relative-caret-position="425">
+              <caret line="71" selection-start-line="71" selection-end-line="71" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -100,25 +140,67 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cta策略/roc_backtest.py">
+        <entry file="file://$PROJECT_DIR$/cta策略/cci_backtest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
-              <caret line="59" column="44" selection-start-line="29" selection-end-line="65" />
+            <state relative-caret-position="-262">
+              <caret line="25" column="26" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cta策略/kdj_backtest.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="506">
+              <caret line="40" column="23" selection-start-line="25" selection-start-column="8" selection-end-line="40" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cta策略/walk_forward_opt(KDJ).py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="322">
+              <caret line="72" column="59" selection-start-line="72" selection-start-column="59" selection-end-line="72" selection-end-column="59" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cta策略/rsi_backtest.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="27" column="20" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cta策略/walk_forward_opt(RSI).py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="400">
+              <caret line="68" column="20" selection-start-line="68" selection-start-column="20" selection-end-line="68" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cta策略/cmo_backtest.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="414">
+              <caret line="30" column="23" lean-forward="true" selection-start-line="25" selection-start-column="8" selection-end-line="30" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/cta策略/walk_forward_opt.py">
+        <entry file="file://$PROJECT_DIR$/cta策略/walk_forward_opt(CMO).py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="382">
-              <caret line="53" column="67" selection-start-line="53" selection-start-column="67" selection-end-line="53" selection-end-column="67" />
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="375">
+              <caret line="70" column="58" lean-forward="true" selection-start-line="70" selection-start-column="58" selection-end-line="70" selection-end-column="58" />
             </state>
           </provider>
         </entry>
@@ -154,6 +236,7 @@
       <find>210</find>
       <find>210.0</find>
       <find>sim_data</find>
+      <find>self.best_param</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -162,21 +245,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="E:/项目/向量化回测/gplearn_test/gplearn_test.py" />
-        <option value="$USER_HOME$/gplearn-master/gplearn/functions.py" />
-        <option value="$PROJECT_DIR$/gplearn/func.py" />
-        <option value="$PROJECT_DIR$/gplearn/functions.py" />
-        <option value="$PROJECT_DIR$/gplearn/test.py" />
-        <option value="$PROJECT_DIR$/gplearn/fitness.py" />
-        <option value="$PROJECT_DIR$/gplearn/test1.py" />
-        <option value="$PROJECT_DIR$/gplearn/_program.py" />
-        <option value="$PROJECT_DIR$/gplearn/genetic.py" />
-        <option value="$PROJECT_DIR$/gplearn（暂时放弃不用）/functions.py" />
-        <option value="$PROJECT_DIR$/sklearn_test/BackTest.py" />
-        <option value="$PROJECT_DIR$/sklearn_test/signal_test.py" />
-        <option value="$PROJECT_DIR$/sklearn_test/factor_search.py" />
-        <option value="$PROJECT_DIR$/sklearn_test/gp.py" />
-        <option value="$PROJECT_DIR$/macd.py" />
         <option value="$PROJECT_DIR$/rsi.py" />
         <option value="$PROJECT_DIR$/CMO.py" />
         <option value="$PROJECT_DIR$/Aberration.py" />
@@ -197,9 +265,37 @@
         <option value="$PROJECT_DIR$/b_test.py" />
         <option value="$PROJECT_DIR$/c_test.py" />
         <option value="$PROJECT_DIR$/cta策略/datapre.py" />
-        <option value="$PROJECT_DIR$/cta策略/roc_backtest.py" />
-        <option value="$PROJECT_DIR$/cta策略/backtest.py" />
         <option value="$PROJECT_DIR$/cta策略/walk_forward_opt.py" />
+        <option value="$PROJECT_DIR$/cta策略/roc_backtest.py" />
+        <option value="$PROJECT_DIR$/cta策略/mtm_backtest.py" />
+        <option value="$PROJECT_DIR$/cta策略/ma_backtest.py" />
+        <option value="$PROJECT_DIR$/cta策略/sma_backtest.py" />
+        <option value="$PROJECT_DIR$/cta策略/dma_backtest.py" />
+        <option value="$PROJECT_DIR$/cta策略/walk_forward_opt(DMA).py" />
+        <option value="$PROJECT_DIR$/cta策略/walk_forward_opt(MA).py" />
+        <option value="$PROJECT_DIR$/cta策略/walk_forward_opt(ROC).py" />
+        <option value="$PROJECT_DIR$/cta策略/walk_forward_opt(SMA).py" />
+        <option value="$PROJECT_DIR$/cta策略/macd_backtest.py" />
+        <option value="$PROJECT_DIR$/cta策略/walk_forward_opt(MACD).py" />
+        <option value="$PROJECT_DIR$/cta策略/trix_backtest.py" />
+        <option value="$PROJECT_DIR$/cta策略/walk_forward_opt(TRIX).py" />
+        <option value="$PROJECT_DIR$/cta策略/bbi_backtest.py" />
+        <option value="$PROJECT_DIR$/cta策略/walk_forward_opt(BBI).py" />
+        <option value="$PROJECT_DIR$/cta策略/boll_backtest.py" />
+        <option value="$PROJECT_DIR$/cta策略/walk_forward_opt(BOLL).py" />
+        <option value="$PROJECT_DIR$/cta策略/aberration_backtest.py" />
+        <option value="$PROJECT_DIR$/cta策略/walk_forward_opt(Aberration).py" />
+        <option value="$PROJECT_DIR$/cta策略/bias_backtest.py" />
+        <option value="$PROJECT_DIR$/cta策略/backtest.py" />
+        <option value="$PROJECT_DIR$/cta策略/walk_forward_opt(Bias).py" />
+        <option value="$PROJECT_DIR$/cta策略/walk_forward_opt(CCI).py" />
+        <option value="$PROJECT_DIR$/cta策略/cci_backtest.py" />
+        <option value="$PROJECT_DIR$/cta策略/kdj_backtest.py" />
+        <option value="$PROJECT_DIR$/cta策略/walk_forward_opt(KDJ).py" />
+        <option value="$PROJECT_DIR$/cta策略/rsi_backtest.py" />
+        <option value="$PROJECT_DIR$/cta策略/walk_forward_opt(RSI).py" />
+        <option value="$PROJECT_DIR$/cta策略/cmo_backtest.py" />
+        <option value="$PROJECT_DIR$/cta策略/walk_forward_opt(CMO).py" />
       </list>
     </option>
   </component>
@@ -240,14 +336,6 @@
               <item name="cta策略" type="462c0819:PsiDirectoryNode" />
               <item name="result" type="462c0819:PsiDirectoryNode" />
               <item name="螺纹" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="参数优化代码" type="b2602c69:ProjectViewProjectNode" />
-              <item name="参数优化代码" type="462c0819:PsiDirectoryNode" />
-              <item name="cta策略" type="462c0819:PsiDirectoryNode" />
-              <item name="result" type="462c0819:PsiDirectoryNode" />
-              <item name="螺纹" type="462c0819:PsiDirectoryNode" />
-              <item name="ROC_1d" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -290,8 +378,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.walk_forward_opt">
-    <configuration name="backtest" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.walk_forward_opt(CMO)">
+    <configuration name="cmo_backtest" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="参数优化代码" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -304,7 +392,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cta策略/backtest.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cta策略/cmo_backtest.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -313,29 +401,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="c_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="参数优化代码" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/c_test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="datapre" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="rsi_backtest" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="参数优化代码" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -348,7 +414,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cta策略/datapre.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cta策略/rsi_backtest.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -357,7 +423,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="roc_backtest" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="walk_forward_opt(CMO)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="参数优化代码" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -370,7 +436,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cta策略/roc_backtest.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cta策略/walk_forward_opt(CMO).py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -379,7 +445,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="walk_forward_opt" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="walk_forward_opt(KDJ)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="参数优化代码" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -392,7 +458,29 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cta策略/walk_forward_opt.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cta策略/walk_forward_opt(KDJ).py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="walk_forward_opt(RSI)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="参数优化代码" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/cta策略" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cta策略/walk_forward_opt(RSI).py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -403,11 +491,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.walk_forward_opt" />
-        <item itemvalue="Python.roc_backtest" />
-        <item itemvalue="Python.backtest" />
-        <item itemvalue="Python.datapre" />
-        <item itemvalue="Python.c_test" />
+        <item itemvalue="Python.walk_forward_opt(CMO)" />
+        <item itemvalue="Python.cmo_backtest" />
+        <item itemvalue="Python.walk_forward_opt(RSI)" />
+        <item itemvalue="Python.rsi_backtest" />
+        <item itemvalue="Python.walk_forward_opt(KDJ)" />
       </list>
     </recent_temporary>
   </component>
@@ -431,7 +519,11 @@
       <workItem from="1628148206464" duration="9000" />
       <workItem from="1631930950161" duration="1494000" />
       <workItem from="1631932826095" duration="17295000" />
-      <workItem from="1631955364954" duration="5975000" />
+      <workItem from="1631955364954" duration="6005000" />
+      <workItem from="1632272109247" duration="12263000" />
+      <workItem from="1632294849688" duration="12197000" />
+      <workItem from="1632360784699" duration="8019000" />
+      <workItem from="1632374204423" duration="3665000" />
     </task>
     <task id="LOCAL-00001" summary="sklearn + gplearn">
       <created>1625138635348</created>
@@ -524,30 +616,37 @@
       <option name="project" value="LOCAL" />
       <updated>1631960916693</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="前进分析法,参数选择优化">
+      <created>1631961406674</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1631961406674</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="201695000" />
+    <option name="totallyTimeSpent" value="237869000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1913" y="0" width="1934" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13713981" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17395945" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49573106" weight="0.32968238" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.45997867" visible="true" weight="0.2924425" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.46424758" weight="0.28477547" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.44076842" visible="true" weight="0.2924425" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.44770545" weight="0.28477547" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49893278" weight="0.329718" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.54002136" side_tool="true" visible="true" weight="0.2924425" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5592316" side_tool="true" visible="true" weight="0.2924425" />
       <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49839914" weight="0.3264642" />
       <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.4994664" weight="0.329718" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -714,23 +813,103 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/cta策略/backtest.py</url>
-          <line>66</line>
+          <line>68</line>
           <option name="timeStamp" value="188" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/cta策略/backtest.py</url>
-          <line>31</line>
-          <option name="timeStamp" value="201" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/cta策略/walk_forward_opt.py</url>
-          <line>64</line>
+          <line>97</line>
           <option name="timeStamp" value="216" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/cta策略/walk_forward_opt.py</url>
-          <line>54</line>
+          <line>90</line>
           <option name="timeStamp" value="218" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cta策略/walk_forward_opt.py</url>
+          <line>70</line>
+          <option name="timeStamp" value="221" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cta策略/walk_forward_opt.py</url>
+          <line>62</line>
+          <option name="timeStamp" value="227" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cta策略/walk_forward_opt.py</url>
+          <line>33</line>
+          <option name="timeStamp" value="229" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cta策略/walk_forward_opt.py</url>
+          <line>21</line>
+          <option name="timeStamp" value="231" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cta策略/ma_backtest.py</url>
+          <line>23</line>
+          <option name="timeStamp" value="232" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cta策略/sma_backtest.py</url>
+          <line>29</line>
+          <option name="timeStamp" value="233" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cta策略/walk_forward_opt(SMA).py</url>
+          <line>61</line>
+          <option name="timeStamp" value="236" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cta策略/dma_backtest.py</url>
+          <line>40</line>
+          <option name="timeStamp" value="240" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cta策略/macd_backtest.py</url>
+          <line>27</line>
+          <option name="timeStamp" value="246" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cta策略/walk_forward_opt(MACD).py</url>
+          <line>83</line>
+          <option name="timeStamp" value="248" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cta策略/trix_backtest.py</url>
+          <line>28</line>
+          <option name="timeStamp" value="249" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cta策略/walk_forward_opt(TRIX).py</url>
+          <line>70</line>
+          <option name="timeStamp" value="251" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cta策略/walk_forward_opt(BOLL).py</url>
+          <line>64</line>
+          <option name="timeStamp" value="252" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cta策略/walk_forward_opt(Aberration).py</url>
+          <line>52</line>
+          <option name="timeStamp" value="254" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cta策略/walk_forward_opt(Aberration).py</url>
+          <line>79</line>
+          <option name="timeStamp" value="263" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cta策略/bias_backtest.py</url>
+          <line>29</line>
+          <option name="timeStamp" value="264" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cta策略/cci_backtest.py</url>
+          <line>27</line>
+          <option name="timeStamp" value="265" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -745,309 +924,58 @@
   <component name="debuggerHistoryManager">
     <expressions id="evaluateCodeFragment">
       <expression>
-        <expression-string>best_param.sort_values(by='diff_sharep')</expression-string>
+        <expression-string>signal</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>result_df[result_df.diff_sharep &gt; 0]</expression-string>
+        <expression-string>if signal &gt; 1:
+    signal = 1
+if signal &lt; -1:
+    signal = -1
+else:
+    signal = 0</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>best_param[best_param&gt;0]</expression-string>
+        <expression-string>signal &gt; 1</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>self.best_param</expression-string>
+        <expression-string>signal = np.sum(signal_list)</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>int(best_param[best_param&gt;0].iloc[0, :]['参数'])</expression-string>
+        <expression-string>np.sum(signal_list)</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>best_param</expression-string>
+        <expression-string>upper[-1]</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>result_df.sort_values(by='diff_sharep')</expression-string>
+        <expression-string>result</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>result_df[(result_df.参数).astype(int)==self.best_param]['夏普比率']</expression-string>
+        <expression-string>freq_ret</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>(result_df.参数).astype(int)==self.best_param</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>int(result_df.参数)==self.best_param</expression-string>
+        <expression-string>temp_df.loc[:, n]</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://D:/anaconda/Lib/site-packages/pandas/core/indexes/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="2891" selection-start-line="2891" selection-end-line="2891" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/anaconda/Lib/site-packages/pandas/core/generic.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="7880" selection-start-line="7880" selection-end-line="7880" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/anaconda/Lib/site-packages/pandas/core/groupby/ops.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="941" selection-start-line="941" selection-end-line="941" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/anaconda/Lib/site-packages/pandas/core/groupby/groupby.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="712" selection-start-line="712" selection-end-line="712" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/集成学习/ml_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3222">
-          <caret line="73" selection-start-line="73" selection-end-line="73" />
-          <folding>
-            <element signature="e#10#29#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/集成学习/ml_stragety.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-408">
-          <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/opt_ana.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="79" selection-start-line="79" selection-end-line="79" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stragety_data/CMO_signal.csv">
-      <provider selected="true" editor-type-id="csv-text-editor" />
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test1.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testx1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="31" column="42" selection-start-line="31" selection-start-column="42" selection-end-line="31" selection-end-column="42" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_simulate.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="31" column="41" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/multi_param_pick.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="75" column="50" selection-start-line="75" selection-start-column="4" selection-end-line="75" selection-end-column="50" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/anaconda/Lib/site-packages/sklearn/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1095">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
-          <folding>
-            <element signature="e#502#512#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/anaconda/Lib/site-packages/sklearn/tree/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="11" column="34" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stragety_data/cmb_cal.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dtw_stragety.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dtw_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-771">
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DMA.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="46" selection-start-line="46" selection-end-line="51" selection-end-column="53" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/macd.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="46" selection-start-line="46" selection-end-line="50" selection-end-column="60" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rsi.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="43" selection-start-line="43" selection-end-line="47" selection-end-column="62" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/two_ma.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="45" selection-start-line="45" selection-end-line="49" selection-end-column="60" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Aberration.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="44" selection-start-line="44" selection-end-line="48" selection-end-column="66" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/anaconda/Lib/codecs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="309" selection-start-line="309" selection-end-line="309" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydevd_bundle/pydevd_comm.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="392" selection-start-line="392" selection-end-line="392" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/下载软件/chrome下载文件/RLTrader-master/test/test_rl_trader.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://D:/下载软件/chrome下载文件/RLTrader-master/lib/env/trade/BaseTradeStrategy.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/下载软件/chrome下载文件/RLTrader-master/lib/env/trade/SimulatedTradeStrategy.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-354">
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/下载软件/chrome下载文件/RLTrader-master/lib/RLTrader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/下载软件/chrome下载文件/RLTrader-master/optimize.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#22#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/下载软件/chrome下载文件/RLTrader-master/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://D:/下载软件/chrome下载文件/RLTrader-master/lib/env/trade/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#61#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/anaconda/Lib/site-packages/pandas/core/reshape/concat.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="206">
@@ -1096,10 +1024,10 @@
       <provider selected="true" editor-type-id="LargeFileEditor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/cta策略/行情数据库/螺纹/日频/RB_1d.csv">
-      <provider selected="true" editor-type-id="csv-text-editor" />
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/CMO.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -1172,6 +1100,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/cta策略/result/螺纹/MA_1d/rb_MA_1d_参数：10.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cta策略/result/螺纹/MA_1d/rb_MA_1d_参数：120.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cta策略/result/螺纹/MA_1d/rb_MA_1d_参数：60.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cta策略/result/螺纹/MA_1d/rb_MA_1d_参数：20.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cta策略/walk_forward_opt.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-350">
+          <caret line="46" column="55" selection-start-line="46" selection-start-column="55" selection-end-line="46" selection-end-column="55" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/formula_package2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1330">
@@ -1186,33 +1136,224 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cta策略/backtest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="118" lean-forward="true" selection-start-line="118" selection-end-line="118" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cta策略/roc_backtest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="59" column="44" selection-start-line="29" selection-end-line="65" />
+        <state relative-caret-position="100">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cta策略/walk_forward_opt.py">
+    <entry file="file://$PROJECT_DIR$/cta策略/sma_backtest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="53" column="67" selection-start-line="53" selection-start-column="67" selection-end-line="53" selection-end-column="67" />
+        <state relative-caret-position="276">
+          <caret line="20" column="20" lean-forward="true" selection-start-line="19" selection-start-column="8" selection-end-line="20" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cta策略/ma_backtest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="23" column="91" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cta策略/dma_backtest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-50">
+          <caret line="48" column="58" lean-forward="true" selection-start-line="23" selection-start-column="8" selection-end-line="48" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cta策略/walk_forward_opt(DMA).py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="100" column="31" lean-forward="true" selection-start-line="100" selection-start-column="31" selection-end-line="100" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cta策略/walk_forward_opt(MA).py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="119" column="31" lean-forward="true" selection-start-line="119" selection-start-column="31" selection-end-line="119" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cta策略/walk_forward_opt(ROC).py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="119" column="32" lean-forward="true" selection-start-line="119" selection-start-column="32" selection-end-line="119" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cta策略/walk_forward_opt(SMA).py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="125" column="32" lean-forward="true" selection-start-line="125" selection-start-column="32" selection-end-line="125" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cta策略/walk_forward_opt(BBI).py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="46" column="28" lean-forward="true" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cta策略/bbi_backtest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="31" column="42" selection-start-line="26" selection-start-column="8" selection-end-line="37" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cta策略/walk_forward_opt(TRIX).py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="69" column="26" selection-start-line="69" selection-start-column="26" selection-end-line="69" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cta策略/trix_backtest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="31" column="23" selection-start-line="28" selection-start-column="8" selection-end-line="31" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cta策略/walk_forward_opt(MACD).py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="89" selection-start-line="89" selection-end-line="89" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cta策略/macd_backtest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="18" selection-start-line="25" selection-start-column="8" selection-end-line="26" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cta策略/boll_backtest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="589">
+          <caret line="40" column="18" selection-start-line="24" selection-start-column="8" selection-end-line="40" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cta策略/walk_forward_opt(BOLL).py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1596">
+          <caret line="94" selection-start-line="94" selection-end-line="94" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cta策略/walk_forward_opt(Aberration).py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1026">
+          <caret line="64" column="33" selection-start-line="64" selection-start-column="33" selection-end-line="64" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cta策略/aberration_backtest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="703">
+          <caret line="46" column="54" selection-start-line="33" selection-start-column="8" selection-end-line="47" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cta策略/backtest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="109" column="14" selection-start-line="109" selection-start-column="14" selection-end-line="109" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cta策略/bias_backtest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cta策略/walk_forward_opt(Bias).py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-75">
+          <caret line="82" column="20" selection-start-line="82" selection-start-column="20" selection-end-line="85" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cta策略/walk_forward_opt(CCI).py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="71" selection-start-line="71" selection-end-line="71" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cta策略/cci_backtest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-262">
+          <caret line="25" column="26" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cta策略/kdj_backtest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="40" column="23" selection-start-line="25" selection-start-column="8" selection-end-line="40" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cta策略/walk_forward_opt(KDJ).py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="72" column="59" selection-start-line="72" selection-start-column="59" selection-end-line="72" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cta策略/rsi_backtest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="27" column="20" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cta策略/cmo_backtest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="30" column="23" lean-forward="true" selection-start-line="25" selection-start-column="8" selection-end-line="30" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cta策略/walk_forward_opt(RSI).py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="68" column="20" selection-start-line="68" selection-start-column="20" selection-end-line="68" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cta策略/walk_forward_opt(CMO).py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="70" column="58" lean-forward="true" selection-start-line="70" selection-start-column="58" selection-end-line="70" selection-end-column="58" />
         </state>
       </provider>
     </entry>

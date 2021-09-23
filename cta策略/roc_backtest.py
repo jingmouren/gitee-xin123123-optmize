@@ -37,6 +37,7 @@ jz_df = pd.DataFrame()
 for n in n_list:
     roc = ROC(start_date='2013-01-01',
               end_date='2018-01-01',
+              # end_date='2021-09-01',
               comission_rate=0.001,
               init_cash=10000000,
               main_file='./行情数据库/螺纹/',

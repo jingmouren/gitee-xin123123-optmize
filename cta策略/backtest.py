@@ -33,6 +33,8 @@ class SimpleBacktest:
         data = pd.read_csv(file_dir)
         data = data.set_index(data.columns[0])
         data.index = pd.to_datetime(data.index, format="%Y-%m-%d %H:%M:%S")
+        self.start_date = start_date
+        self.end_date = end_date
         self.data = data.loc[start_date:end_date, :]
         self.cal_way = cal_way
         self.his_data = {}  # 历史数据
@@ -95,6 +97,7 @@ class SimpleBacktest:
         self.capital = self.capital + pnl - commission
         self.last_hands = hands
         self.last_price = price
+
         self.capital_list[self.num] = self.capital
 
     def jz_plot(self, fig_name, filedir):
@@ -102,7 +105,7 @@ class SimpleBacktest:
         df = df / df.iloc[0, :]
         df.columns = ['base', 'stragety']
         ax = df.plot()
-        df.plot()
+        # df.plot()
         plt.show()
         fig = ax.get_figure()
         name = filedir + fig_name + '.png'
