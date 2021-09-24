@@ -52,6 +52,8 @@ class Analysis:
         yearly_ret = self.yearlyRet(df)
         # 年化波动率
         yearly_vol = self.yearlyVol(df)
+        if yearly_vol == 0:
+            return 0
         sharpe_ratio = (yearly_ret - riskFreeRate) / yearly_vol
         return sharpe_ratio
 
@@ -78,6 +80,8 @@ class Analysis:
         '''
         yearly_ret = self.yearlyRet(df)
         max_traceback = self.MaxTraceBack(df)
+        if max_traceback == 0:
+            return 0
         calma_ratio = yearly_ret / max_traceback
         return calma_ratio
 
