@@ -27,30 +27,30 @@ class Aberration(SimpleBacktest):
         signal = 0
         if close > upper[-1]:
             signal = 1
-        if close < lower[-1]:
+        elif close < lower[-1]:
             signal = -1
-        if close < middle[-1] and close > lower[-1] and self.last_hands > 0:
-            self.target_position(0, self.his_data['last'])
-            return
-        if close > middle[-1] and close < upper[-1] and self.last_hands < 0:
-            self.target_position(0, self.his_data['last'])
-            return
+        elif close < middle[-1] and close > lower[-1] and self.last_hands > 0:
+            signal = 0
+        elif close > middle[-1] and close < upper[-1] and self.last_hands < 0:
+            signal = 0
+        elif self.last_hands > 0:
+            signal = 1
+        elif self.last_hands < 0:
+            signal = -1
 
-        if signal == 0:
-            self.target_position(self.last_hands, self.his_data['last'])
-            return
+        self.last_signal.append([signal, self.his_data['time']])
         hands = self.capital / self.multip / self.his_data['last'] * signal
         self.target_position(hands, self.his_data['last'])
         pass
 
 
 
-n_list = [[10,20,60,120],[0.5,1,1.5,2]]  # 参数
+n_list = [[5,10,20,40,60,80,100,120,140,160,180],[0.5,1,1.5,2,3]]  # 参数
 Base_name = 'Aberration'
 symbol_name = '螺纹'
 symbol = 'rb'
-slip_point = 0  # 滑点
-comission_rate = 0.0001
+slip_point = 1  # 滑点
+comission_rate = 0.0005
 min_point = 1  # 最小变动价格
 multip = 10  # 交易乘数
 
@@ -58,7 +58,7 @@ start_date = '2013-01-01'
 end_date = '2018-01-01'
 # end_date='2021-09-01'
 # for freq in ['1min', '5min', '15min', '30min', '60min', '1d']:
-for freq in ['5min']:
+for freq in ['1d']:
     stragety_name = Base_name + '_' + freq  # 策略名
     filedir = './result/' + symbol_name + '/'  # 图片保存地址
     pic_name = symbol + '_' + stragety_name + "_参数："  # 图片名称
@@ -91,14 +91,18 @@ for freq in ['5min']:
             if len(result_df) == 0:
                 result_df = result
                 jz_df = roc.jz
+                signal = roc.signal
             else:
                 result_df = pd.concat([result_df, result], axis=0, sort=True)
                 jz_df = pd.concat([jz_df, roc.jz], axis=1, sort=True)
-    result_df = result_df.reindex(columns=['参数', '年化收益率', '夏普比率', '卡玛比率', '季度胜率'])
-    result_df.to_excel(filedir+stragety_name+'/绩效.xlsx')
-    jz_df.columns = name_list
-    jz_df.to_excel(filedir+stragety_name+'/净值.xlsx')
-    print(result_df)
+                signal = pd.concat([signal, roc.signal], axis=1, sort=True)
+        result_df = result_df.reindex(columns=['参数', '年化收益率', '夏普比率', '卡玛比率', '季度胜率'])
+        result_df.to_excel(filedir + stragety_name + '/绩效.xlsx')
+        jz_df.columns = name_list
+        jz_df.to_excel(filedir + stragety_name + '/净值.xlsx')
+        signal.columns = name_list
+        signal.to_excel(filedir + stragety_name + '/各参数signal.xlsx')
+        print(result_df)
 
 
 

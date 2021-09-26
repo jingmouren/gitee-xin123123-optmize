@@ -2,26 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="135e26bf-cb8f-4b01-9cfd-6604a1ca521b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/cta策略/Base/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cta策略/his_walkforward/walk_forward_opt(Aberration).py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cta策略/his_walkforward/walk_forward_opt(BOLL).py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cta策略/his_walkforward/walk_forward_opt(CCI).py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cta策略/his_walkforward/walk_forward_opt(CMO).py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cta策略/his_walkforward/walk_forward_opt(DMA).py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cta策略/his_walkforward/walk_forward_opt(KDJ).py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cta策略/his_walkforward/walk_forward_opt(MA).py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cta策略/his_walkforward/walk_forward_opt(MACD).py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cta策略/his_walkforward/walk_forward_opt(ROC).py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cta策略/his_walkforward/walk_forward_opt(RSI).py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cta策略/his_walkforward/walk_forward_opt(SMA).py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cta策略/his_walkforward/walk_forward_opt(TRIX).py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cta策略/stragety_cmb_portfolio.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cta策略/walk_forward_opt(BIAS).py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cta策略/walk_forward_opt(bbi).py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cta策略/Stragety_factory.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cta策略/base_back.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cta策略/walk_forward_opt(合并).py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/analysis_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/analysis_model.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cta策略/aberration_backtest.py" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/aberration_backtest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/backtest.py" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/Base/backtest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cta策略/bbi_backtest.py" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/bbi_backtest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cta策略/bias_backtest.py" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/bias_backtest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cta策略/boll_backtest.py" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/boll_backtest.py" afterDir="false" />
@@ -31,6 +16,13 @@
       <change beforePath="$PROJECT_DIR$/cta策略/kdj_backtest.py" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/kdj_backtest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cta策略/ma_backtest.py" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/ma_backtest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cta策略/macd_backtest.py" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/macd_backtest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/Aberration_15min/rb_Aberration_15min_参数：[10, 0.5].png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/Aberration_15min/rb_Aberration_15min_参数：[10, 0.5].png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/Aberration_15min/rb_Aberration_15min_参数：[10, 1.5].png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/Aberration_15min/rb_Aberration_15min_参数：[10, 1.5].png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/Aberration_15min/rb_Aberration_15min_参数：[10, 1].png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/Aberration_15min/rb_Aberration_15min_参数：[10, 1].png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/Aberration_15min/rb_Aberration_15min_参数：[10, 2].png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/Aberration_15min/rb_Aberration_15min_参数：[10, 2].png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/Aberration_15min/rb_Aberration_15min_参数：[20, 0.5].png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/Aberration_15min/rb_Aberration_15min_参数：[20, 0.5].png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/Aberration_15min/rb_Aberration_15min_参数：[20, 1.5].png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/Aberration_15min/rb_Aberration_15min_参数：[20, 1.5].png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/Aberration_15min/rb_Aberration_15min_参数：[20, 1].png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/Aberration_15min/rb_Aberration_15min_参数：[20, 1].png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/Aberration_1d/rb_Aberration_1d_参数：[10, 0.5].png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/Aberration_1d/rb_Aberration_1d_参数：[10, 0.5].png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/Aberration_1d/rb_Aberration_1d_参数：[10, 1.5].png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/Aberration_1d/rb_Aberration_1d_参数：[10, 1.5].png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/Aberration_1d/rb_Aberration_1d_参数：[10, 1].png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/Aberration_1d/rb_Aberration_1d_参数：[10, 1].png" afterDir="false" />
@@ -47,52 +39,17 @@
       <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/Aberration_1d/rb_Aberration_1d_参数：[60, 1.5].png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/Aberration_1d/rb_Aberration_1d_参数：[60, 1.5].png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/Aberration_1d/rb_Aberration_1d_参数：[60, 1].png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/Aberration_1d/rb_Aberration_1d_参数：[60, 1].png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/Aberration_1d/rb_Aberration_1d_参数：[60, 2].png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/Aberration_1d/rb_Aberration_1d_参数：[60, 2].png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/Aberration_1d/rb_Aberration_1dwfo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/Aberration_1d/wfo净值.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/Aberration_1d/wfo绩效.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/Aberration_1d/rb_Aberration_1dwfo_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/Aberration_1d/rb_Aberration_1dwfo_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/Aberration_1d/rb_Aberration_1dwfo_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/Aberration_1d/rb_Aberration_1dwfo_2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/Aberration_1d/rb_Aberration_1dwfo_final.png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/Aberration_1d/rb_Aberration_1dwfo_final.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/Aberration_1d/wfo_最优两组参数signal.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/Aberration_1d/wfo_最优两组参数signal.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/Aberration_1d/wfo_最优两组参数的净值.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/Aberration_1d/wfo_最优两组参数的净值.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/Aberration_1d/wfo_最优两组参数的绩效.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/Aberration_1d/wfo_最优两组参数的绩效.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/Aberration_1d/wfo_组合signal.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/Aberration_1d/wfo_组合signal.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/Aberration_1d/wfo_组合净值.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/Aberration_1d/wfo_组合净值.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/Aberration_1d/wfo_组合绩效.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/Aberration_1d/wfo_组合绩效.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/Aberration_1d/净值.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/Aberration_1d/净值.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/Aberration_1d/绩效.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/Aberration_1d/绩效.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/BBI_1d/rb_BBI_1d_参数：[2, 4, 8, 16].png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/BBI_1d/rb_BBI_1d_参数：[2, 4, 8, 16].png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/BBI_1d/rb_BBI_1d_参数：[3, 6, 12, 24].png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/BBI_1d/rb_BBI_1d_参数：[3, 6, 12, 24].png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/BBI_1d/rb_BBI_1d_参数：[4, 8, 16, 32].png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/BBI_1d/rb_BBI_1d_参数：[4, 8, 16, 32].png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/BBI_1d/rb_BBI_1d_参数：[5, 10, 20, 40].png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/BBI_1d/rb_BBI_1d_参数：[5, 10, 20, 40].png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/BBI_1d/rb_BBI_1d_参数：[6, 12, 24, 48].png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/BBI_1d/rb_BBI_1d_参数：[6, 12, 24, 48].png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/BBI_1d/wfo净值.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/BBI_1d/wfo净值.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/BBI_1d/wfo绩效.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/BBI_1d/wfo绩效.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/BBI_1d/净值.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/BBI_1d/净值.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/BBI_1d/绩效.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/BBI_1d/绩效.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/BIAS_1d/rb_BIAS_1d_参数：[10, 10].png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/BIAS_1d/rb_BIAS_1d_参数：[10, 10].png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/BIAS_1d/rb_BIAS_1d_参数：[10, 1].png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/BIAS_1d/rb_BIAS_1d_参数：[10, 1].png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/BIAS_1d/rb_BIAS_1d_参数：[10, 2].png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/BIAS_1d/rb_BIAS_1d_参数：[10, 2].png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/BIAS_1d/rb_BIAS_1d_参数：[10, 3].png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/BIAS_1d/rb_BIAS_1d_参数：[10, 3].png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/BIAS_1d/rb_BIAS_1d_参数：[10, 4].png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/BIAS_1d/rb_BIAS_1d_参数：[10, 4].png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/BIAS_1d/rb_BIAS_1d_参数：[10, 5].png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/BIAS_1d/rb_BIAS_1d_参数：[10, 5].png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/BIAS_1d/rb_BIAS_1d_参数：[10, 6].png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/BIAS_1d/rb_BIAS_1d_参数：[10, 6].png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/BIAS_1d/rb_BIAS_1d_参数：[10, 7].png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/BIAS_1d/rb_BIAS_1d_参数：[10, 7].png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/BIAS_1d/rb_BIAS_1d_参数：[10, 8].png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/BIAS_1d/rb_BIAS_1d_参数：[10, 8].png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/BIAS_1d/rb_BIAS_1d_参数：[10, 9].png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/BIAS_1d/rb_BIAS_1d_参数：[10, 9].png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/BIAS_1d/rb_BIAS_1d_参数：[20, 10].png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/BIAS_1d/rb_BIAS_1d_参数：[20, 10].png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/BIAS_1d/rb_BIAS_1d_参数：[20, 1].png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/BIAS_1d/rb_BIAS_1d_参数：[20, 1].png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/BIAS_1d/rb_BIAS_1d_参数：[20, 2].png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/BIAS_1d/rb_BIAS_1d_参数：[20, 2].png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/BIAS_1d/rb_BIAS_1d_参数：[20, 3].png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/BIAS_1d/rb_BIAS_1d_参数：[20, 3].png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/BIAS_1d/rb_BIAS_1d_参数：[20, 4].png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/BIAS_1d/rb_BIAS_1d_参数：[20, 4].png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/BIAS_1d/rb_BIAS_1d_参数：[20, 5].png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/BIAS_1d/rb_BIAS_1d_参数：[20, 5].png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/BIAS_1d/rb_BIAS_1d_参数：[20, 6].png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/BIAS_1d/rb_BIAS_1d_参数：[20, 6].png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/BIAS_1d/rb_BIAS_1d_参数：[20, 7].png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/BIAS_1d/rb_BIAS_1d_参数：[20, 7].png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/BIAS_1d/rb_BIAS_1d_参数：[20, 8].png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/BIAS_1d/rb_BIAS_1d_参数：[20, 8].png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/BIAS_1d/rb_BIAS_1d_参数：[20, 9].png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/BIAS_1d/rb_BIAS_1d_参数：[20, 9].png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/BIAS_1d/rb_BIAS_1d_参数：[5, 10].png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/BIAS_1d/rb_BIAS_1d_参数：[5, 10].png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/BIAS_1d/rb_BIAS_1d_参数：[5, 1].png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/BIAS_1d/rb_BIAS_1d_参数：[5, 1].png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/BIAS_1d/rb_BIAS_1d_参数：[5, 2].png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/BIAS_1d/rb_BIAS_1d_参数：[5, 2].png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/BIAS_1d/rb_BIAS_1d_参数：[5, 3].png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/BIAS_1d/rb_BIAS_1d_参数：[5, 3].png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/BIAS_1d/rb_BIAS_1d_参数：[5, 4].png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/BIAS_1d/rb_BIAS_1d_参数：[5, 4].png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/BIAS_1d/rb_BIAS_1d_参数：[5, 5].png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/BIAS_1d/rb_BIAS_1d_参数：[5, 5].png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/BIAS_1d/rb_BIAS_1d_参数：[5, 6].png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/BIAS_1d/rb_BIAS_1d_参数：[5, 6].png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/BIAS_1d/rb_BIAS_1d_参数：[5, 7].png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/BIAS_1d/rb_BIAS_1d_参数：[5, 7].png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/BIAS_1d/rb_BIAS_1d_参数：[5, 8].png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/BIAS_1d/rb_BIAS_1d_参数：[5, 8].png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/BIAS_1d/rb_BIAS_1d_参数：[5, 9].png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/BIAS_1d/rb_BIAS_1d_参数：[5, 9].png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/BIAS_1d/净值.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/BIAS_1d/净值.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/BIAS_1d/绩效.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/BIAS_1d/绩效.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/BOLL_1d/rb_BOLL_1d_参数：[10, 0.5].png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/BOLL_1d/rb_BOLL_1d_参数：[10, 0.5].png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/BOLL_1d/rb_BOLL_1d_参数：[10, 1.5].png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/BOLL_1d/rb_BOLL_1d_参数：[10, 1.5].png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/BOLL_1d/rb_BOLL_1d_参数：[10, 1].png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/BOLL_1d/rb_BOLL_1d_参数：[10, 1].png" afterDir="false" />
@@ -109,108 +66,80 @@
       <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/BOLL_1d/rb_BOLL_1d_参数：[60, 1.5].png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/BOLL_1d/rb_BOLL_1d_参数：[60, 1.5].png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/BOLL_1d/rb_BOLL_1d_参数：[60, 1].png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/BOLL_1d/rb_BOLL_1d_参数：[60, 1].png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/BOLL_1d/rb_BOLL_1d_参数：[60, 2].png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/BOLL_1d/rb_BOLL_1d_参数：[60, 2].png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/BOLL_1d/wfo净值.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/BOLL_1d/wfo净值.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/BOLL_1d/wfo绩效.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/BOLL_1d/wfo绩效.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/BOLL_1d/rb_BOLL_1dwfo_final.png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/BOLL_1d/rb_BOLL_1dwfo_final.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/BOLL_1d/wfo_组合signal.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/BOLL_1d/wfo_组合signal.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/BOLL_1d/wfo_组合净值.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/BOLL_1d/wfo_组合净值.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/BOLL_1d/wfo_组合绩效.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/BOLL_1d/wfo_组合绩效.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/BOLL_1d/净值.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/BOLL_1d/净值.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/BOLL_1d/绩效.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/BOLL_1d/绩效.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/CCI_1d/rb_CCI_1d_参数：10.png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/CCI_1d/rb_CCI_1d_参数：10.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/CCI_1d/rb_CCI_1d_参数：12.png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/CCI_1d/rb_CCI_1d_参数：12.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/CCI_1d/rb_CCI_1d_参数：14.png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/CCI_1d/rb_CCI_1d_参数：14.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/CCI_1d/rb_CCI_1d_参数：20.png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/CCI_1d/rb_CCI_1d_参数：20.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/CCI_1d/rb_CCI_1d_参数：3.png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/CCI_1d/rb_CCI_1d_参数：3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/CCI_1d/rb_CCI_1d_参数：5.png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/CCI_1d/rb_CCI_1d_参数：5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/CCI_1d/rb_CCI_1d_参数：60.png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/CCI_1d/rb_CCI_1d_参数：60.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/CCI_1d/rb_CCI_1d_参数：9.png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/CCI_1d/rb_CCI_1d_参数：9.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/CCI_1d/wfo净值.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/CCI_1d/wfo净值.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/CCI_1d/wfo绩效.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/CCI_1d/wfo绩效.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/CCI_1d/净值.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/CCI_1d/净值.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/CCI_1d/绩效.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/CCI_1d/绩效.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/CMO_1d/rb_CMO_1d_参数：10.png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/CMO_1d/rb_CMO_1d_参数：10.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/CMO_1d/rb_CMO_1d_参数：12.png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/CMO_1d/rb_CMO_1d_参数：12.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/CMO_1d/rb_CMO_1d_参数：14.png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/CMO_1d/rb_CMO_1d_参数：14.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/CMO_1d/rb_CMO_1d_参数：20.png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/CMO_1d/rb_CMO_1d_参数：20.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/CMO_1d/rb_CMO_1d_参数：3.png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/CMO_1d/rb_CMO_1d_参数：3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/CMO_1d/rb_CMO_1d_参数：5.png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/CMO_1d/rb_CMO_1d_参数：5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/CMO_1d/rb_CMO_1d_参数：60.png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/CMO_1d/rb_CMO_1d_参数：60.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/CMO_1d/rb_CMO_1d_参数：9.png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/CMO_1d/rb_CMO_1d_参数：9.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/CMO_1d/wfo净值.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/CMO_1d/wfo净值.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/CMO_1d/wfo绩效.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/CMO_1d/wfo绩效.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/CMO_1d/净值.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/CMO_1d/净值.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/CMO_1d/绩效.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/CMO_1d/绩效.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/DMA_1d/rb_DMA_1d_参数：[10, 50].png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/DMA_1d/rb_DMA_1d_参数：[10, 50].png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/DMA_1d/rb_DMA_1d_参数：[12, 60].png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/DMA_1d/rb_DMA_1d_参数：[12, 60].png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/DMA_1d/rb_DMA_1d_参数：[14, 70].png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/DMA_1d/rb_DMA_1d_参数：[14, 70].png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/DMA_1d/rb_DMA_1d_参数：[20, 100].png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/DMA_1d/rb_DMA_1d_参数：[20, 100].png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/DMA_1d/rb_DMA_1d_参数：[5, 25].png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/DMA_1d/rb_DMA_1d_参数：[5, 25].png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/DMA_1d/wfo净值.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/DMA_1d/wfo净值.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/DMA_1d/wfo绩效.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/DMA_1d/wfo绩效.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/DMA_1d/净值.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/DMA_1d/净值.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/DMA_1d/绩效.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/DMA_1d/绩效.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/KDJ_1d/rb_KDJ_1d_参数：[16, 4, 4].png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/KDJ_1d/rb_KDJ_1d_参数：[16, 4, 4].png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/KDJ_1d/rb_KDJ_1d_参数：[25, 5, 5].png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/KDJ_1d/rb_KDJ_1d_参数：[25, 5, 5].png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/KDJ_1d/rb_KDJ_1d_参数：[36, 6, 6].png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/KDJ_1d/rb_KDJ_1d_参数：[36, 6, 6].png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/KDJ_1d/rb_KDJ_1d_参数：[4, 2, 2].png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/KDJ_1d/rb_KDJ_1d_参数：[4, 2, 2].png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/KDJ_1d/rb_KDJ_1d_参数：[9, 3, 3].png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/KDJ_1d/rb_KDJ_1d_参数：[9, 3, 3].png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/KDJ_1d/wfo净值.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/KDJ_1d/wfo净值.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/KDJ_1d/wfo绩效.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/KDJ_1d/wfo绩效.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/KDJ_1d/rb_KDJ_1dwfo_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/KDJ_1d/rb_KDJ_1dwfo_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/KDJ_1d/rb_KDJ_1dwfo_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/KDJ_1d/rb_KDJ_1dwfo_2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/KDJ_1d/rb_KDJ_1dwfo_final.png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/KDJ_1d/rb_KDJ_1dwfo_final.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/KDJ_1d/wfo_最优两组参数signal.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/KDJ_1d/wfo_最优两组参数signal.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/KDJ_1d/wfo_最优两组参数的净值.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/KDJ_1d/wfo_最优两组参数的净值.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/KDJ_1d/wfo_最优两组参数的绩效.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/KDJ_1d/wfo_最优两组参数的绩效.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/KDJ_1d/wfo_组合signal.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/KDJ_1d/wfo_组合signal.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/KDJ_1d/wfo_组合净值.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/KDJ_1d/wfo_组合净值.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/KDJ_1d/wfo_组合绩效.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/KDJ_1d/wfo_组合绩效.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/KDJ_1d/净值.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/KDJ_1d/净值.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/KDJ_1d/绩效.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/KDJ_1d/绩效.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/KDJ_30min/wfo_最优两组参数signal.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/KDJ_30min/wfo_最优两组参数signal.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/KDJ_30min/wfo_最优两组参数的净值.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/KDJ_30min/wfo_最优两组参数的净值.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/KDJ_30min/wfo_最优两组参数的绩效.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/KDJ_30min/wfo_最优两组参数的绩效.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/KDJ_30min/wfo_组合signal.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/KDJ_30min/wfo_组合signal.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/KDJ_30min/wfo_组合净值.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/KDJ_30min/wfo_组合净值.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/KDJ_30min/wfo_组合绩效.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/KDJ_30min/wfo_组合绩效.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/KDJ_30min/净值.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/KDJ_30min/净值.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/KDJ_30min/绩效.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/KDJ_30min/绩效.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/KDJ_60min/rb_KDJ_60minwfo_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/KDJ_60min/rb_KDJ_60minwfo_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/KDJ_60min/rb_KDJ_60minwfo_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/KDJ_60min/rb_KDJ_60minwfo_2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/KDJ_60min/rb_KDJ_60minwfo_final.png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/KDJ_60min/rb_KDJ_60minwfo_final.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/KDJ_60min/wfo_最优两组参数signal.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/KDJ_60min/wfo_最优两组参数signal.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/KDJ_60min/wfo_最优两组参数的净值.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/KDJ_60min/wfo_最优两组参数的净值.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/KDJ_60min/wfo_最优两组参数的绩效.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/KDJ_60min/wfo_最优两组参数的绩效.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/KDJ_60min/wfo_组合signal.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/KDJ_60min/wfo_组合signal.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/KDJ_60min/wfo_组合净值.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/KDJ_60min/wfo_组合净值.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/KDJ_60min/wfo_组合绩效.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/KDJ_60min/wfo_组合绩效.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/KDJ_60min/净值.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/KDJ_60min/净值.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/KDJ_60min/绩效.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/KDJ_60min/绩效.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/MACD_1d/rb_MACD_1d_参数：[10, 20, 8].png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/MACD_1d/rb_MACD_1d_参数：[10, 20, 8].png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/MACD_1d/rb_MACD_1d_参数：[12, 26, 9].png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/MACD_1d/rb_MACD_1d_参数：[12, 26, 9].png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/MACD_1d/rb_MACD_1d_参数：[13, 26, 10].png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/MACD_1d/rb_MACD_1d_参数：[13, 26, 10].png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/MACD_1d/rb_MACD_1d_参数：[7, 14, 5].png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/MACD_1d/rb_MACD_1d_参数：[7, 14, 5].png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/MACD_1d/rb_MACD_1d_参数：[8, 16, 6].png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/MACD_1d/rb_MACD_1d_参数：[8, 16, 6].png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/MACD_1d/rb_MACD_1d_参数：[9, 18, 7].png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/MACD_1d/rb_MACD_1d_参数：[9, 18, 7].png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/MACD_1d/wfo净值.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/MACD_1d/wfo净值.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/MACD_1d/wfo绩效.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/MACD_1d/wfo绩效.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/MACD_1d/rb_MACD_1dwfo_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/MACD_1d/rb_MACD_1dwfo_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/MACD_1d/rb_MACD_1dwfo_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/MACD_1d/rb_MACD_1dwfo_2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/MACD_1d/rb_MACD_1dwfo_final.png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/MACD_1d/rb_MACD_1dwfo_final.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/MACD_1d/wfo_最优两组参数signal.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/MACD_1d/wfo_最优两组参数signal.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/MACD_1d/wfo_最优两组参数的净值.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/MACD_1d/wfo_最优两组参数的净值.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/MACD_1d/wfo_最优两组参数的绩效.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/MACD_1d/wfo_最优两组参数的绩效.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/MACD_1d/wfo_组合signal.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/MACD_1d/wfo_组合signal.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/MACD_1d/wfo_组合净值.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/MACD_1d/wfo_组合净值.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/MACD_1d/wfo_组合绩效.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/MACD_1d/wfo_组合绩效.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/MACD_1d/净值.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/MACD_1d/净值.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/MACD_1d/绩效.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/MACD_1d/绩效.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/MA_1d/rb_MA_1d_参数：10.png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/MA_1d/rb_MA_1d_参数：10.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/MA_1d/rb_MA_1d_参数：100.png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/MA_1d/rb_MA_1d_参数：100.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/MA_1d/rb_MA_1d_参数：120.png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/MA_1d/rb_MA_1d_参数：120.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/MA_1d/rb_MA_1d_参数：20.png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/MA_1d/rb_MA_1d_参数：20.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/MA_1d/rb_MA_1d_参数：30.png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/MA_1d/rb_MA_1d_参数：30.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/MA_1d/rb_MA_1d_参数：40.png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/MA_1d/rb_MA_1d_参数：40.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/MA_1d/rb_MA_1d_参数：60.png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/MA_1d/rb_MA_1d_参数：60.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/MA_1d/rb_MA_1d_参数：80.png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/MA_1d/rb_MA_1d_参数：80.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/MA_1d/wfo净值.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/MA_1d/wfo净值.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/MA_1d/wfo绩效.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/MA_1d/wfo绩效.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/MA_1d/净值.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/MA_1d/净值.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/MA_1d/绩效.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/MA_1d/绩效.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/ROC_1d/rb_ROC_1d_参数：10.png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/ROC_1d/rb_ROC_1d_参数：10.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/ROC_1d/rb_ROC_1d_参数：12.png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/ROC_1d/rb_ROC_1d_参数：12.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/ROC_1d/rb_ROC_1d_参数：14.png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/ROC_1d/rb_ROC_1d_参数：14.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/ROC_1d/rb_ROC_1d_参数：20.png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/ROC_1d/rb_ROC_1d_参数：20.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/ROC_1d/rb_ROC_1d_参数：3.png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/ROC_1d/rb_ROC_1d_参数：3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/ROC_1d/rb_ROC_1d_参数：5.png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/ROC_1d/rb_ROC_1d_参数：5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/ROC_1d/rb_ROC_1d_参数：60.png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/ROC_1d/rb_ROC_1d_参数：60.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/ROC_1d/rb_ROC_1d_参数：9.png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/ROC_1d/rb_ROC_1d_参数：9.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/ROC_1d/wfo净值.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/ROC_1d/wfo净值.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/ROC_1d/wfo绩效.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/ROC_1d/wfo绩效.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/ROC_1d/净值.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/ROC_1d/净值.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/ROC_1d/绩效.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/ROC_1d/绩效.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/RSI_1d/rb_RSI_1d_参数：10.png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/RSI_1d/rb_RSI_1d_参数：10.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/RSI_1d/rb_RSI_1d_参数：12.png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/RSI_1d/rb_RSI_1d_参数：12.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/RSI_1d/rb_RSI_1d_参数：14.png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/RSI_1d/rb_RSI_1d_参数：14.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/RSI_1d/rb_RSI_1d_参数：20.png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/RSI_1d/rb_RSI_1d_参数：20.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/RSI_1d/rb_RSI_1d_参数：3.png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/RSI_1d/rb_RSI_1d_参数：3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/RSI_1d/rb_RSI_1d_参数：5.png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/RSI_1d/rb_RSI_1d_参数：5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/RSI_1d/rb_RSI_1d_参数：60.png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/RSI_1d/rb_RSI_1d_参数：60.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/RSI_1d/rb_RSI_1d_参数：9.png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/RSI_1d/rb_RSI_1d_参数：9.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/RSI_1d/rb_RSI_1dwfo.png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/RSI_1d/rb_RSI_1dwfo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/RSI_1d/wfo净值.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/RSI_1d/wfo净值.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/RSI_1d/wfo绩效.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/RSI_1d/wfo绩效.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/RSI_1d/净值.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/RSI_1d/净值.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/RSI_1d/绩效.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/RSI_1d/绩效.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/SMA_1d/rb_SMA_1d_参数：[10, 20].png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/SMA_1d/rb_SMA_1d_参数：[10, 20].png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/SMA_1d/rb_SMA_1d_参数：[20, 60].png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/SMA_1d/rb_SMA_1d_参数：[20, 60].png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/SMA_1d/rb_SMA_1d_参数：[5, 10].png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/SMA_1d/rb_SMA_1d_参数：[5, 10].png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/SMA_1d/rb_SMA_1d_参数：[5, 20].png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/SMA_1d/rb_SMA_1d_参数：[5, 20].png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/SMA_1d/rb_SMA_1d_参数：[60, 120].png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/SMA_1d/rb_SMA_1d_参数：[60, 120].png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/SMA_1d/wfo净值.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/SMA_1d/wfo净值.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/SMA_1d/wfo绩效.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/SMA_1d/wfo绩效.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/SMA_1d/净值.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/SMA_1d/净值.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/SMA_1d/绩效.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/SMA_1d/绩效.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/MACD_30min/rb_MACD_30minwfo_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/MACD_30min/rb_MACD_30minwfo_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/MACD_30min/rb_MACD_30minwfo_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/MACD_30min/rb_MACD_30minwfo_2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/MACD_30min/rb_MACD_30minwfo_final.png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/MACD_30min/rb_MACD_30minwfo_final.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/MACD_30min/wfo_最优两组参数signal.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/MACD_30min/wfo_最优两组参数signal.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/MACD_30min/wfo_最优两组参数的净值.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/MACD_30min/wfo_最优两组参数的净值.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/MACD_30min/wfo_最优两组参数的绩效.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/MACD_30min/wfo_最优两组参数的绩效.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/MACD_30min/wfo_组合signal.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/MACD_30min/wfo_组合signal.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/MACD_30min/wfo_组合净值.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/MACD_30min/wfo_组合净值.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/MACD_30min/wfo_组合绩效.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/MACD_30min/wfo_组合绩效.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/MACD_30min/净值.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/MACD_30min/净值.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/MACD_30min/绩效.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/MACD_30min/绩效.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/MACD_60min/rb_MACD_60minwfo_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/MACD_60min/rb_MACD_60minwfo_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/MACD_60min/rb_MACD_60minwfo_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/MACD_60min/rb_MACD_60minwfo_2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/MACD_60min/rb_MACD_60minwfo_final.png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/MACD_60min/rb_MACD_60minwfo_final.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/MACD_60min/wfo_最优两组参数signal.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/MACD_60min/wfo_最优两组参数signal.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/MACD_60min/wfo_最优两组参数的净值.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/MACD_60min/wfo_最优两组参数的净值.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/MACD_60min/wfo_最优两组参数的绩效.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/MACD_60min/wfo_最优两组参数的绩效.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/MACD_60min/wfo_组合signal.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/MACD_60min/wfo_组合signal.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/MACD_60min/wfo_组合净值.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/MACD_60min/wfo_组合净值.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/MACD_60min/wfo_组合绩效.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/MACD_60min/wfo_组合绩效.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/MACD_60min/净值.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/MACD_60min/净值.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/MACD_60min/绩效.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/MACD_60min/绩效.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/TRIX_1d/rb_TRIX_1d_参数：[10, 7].png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/TRIX_1d/rb_TRIX_1d_参数：[10, 7].png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/TRIX_1d/rb_TRIX_1d_参数：[11, 8].png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/TRIX_1d/rb_TRIX_1d_参数：[11, 8].png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/TRIX_1d/rb_TRIX_1d_参数：[12, 9].png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/TRIX_1d/rb_TRIX_1d_参数：[12, 9].png" afterDir="false" />
@@ -218,8 +147,10 @@
       <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/TRIX_1d/rb_TRIX_1d_参数：[15, 11].png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/TRIX_1d/rb_TRIX_1d_参数：[15, 11].png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/TRIX_1d/rb_TRIX_1d_参数：[16, 12].png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/TRIX_1d/rb_TRIX_1d_参数：[16, 12].png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/TRIX_1d/rb_TRIX_1d_参数：[8, 6].png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/TRIX_1d/rb_TRIX_1d_参数：[8, 6].png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/TRIX_1d/wfo净值.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/TRIX_1d/wfo净值.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/TRIX_1d/wfo绩效.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/TRIX_1d/wfo绩效.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/TRIX_1d/rb_TRIX_1dwfo_final.png" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/TRIX_1d/rb_TRIX_1dwfo_final.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/TRIX_1d/wfo_组合signal.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/TRIX_1d/wfo_组合signal.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/TRIX_1d/wfo_组合净值.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/TRIX_1d/wfo_组合净值.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/TRIX_1d/wfo_组合绩效.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/TRIX_1d/wfo_组合绩效.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/TRIX_1d/净值.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/TRIX_1d/净值.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cta策略/result/螺纹/TRIX_1d/绩效.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/result/螺纹/TRIX_1d/绩效.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cta策略/roc_backtest.py" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/roc_backtest.py" afterDir="false" />
@@ -227,20 +158,8 @@
       <change beforePath="$PROJECT_DIR$/cta策略/sma_backtest.py" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/sma_backtest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cta策略/trix_backtest.py" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/trix_backtest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cta策略/walk_forward_opt(Aberration).py" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/walk_forward_opt(Aberration).py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/walk_forward_opt(BBI).py" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/his_walkforward/walk_forward_opt(BBI).py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/walk_forward_opt(BOLL).py" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/walk_forward_opt(BOLL).py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/walk_forward_opt(Bias).py" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/his_walkforward/walk_forward_opt(Bias).py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/walk_forward_opt(CCI).py" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/walk_forward_opt(CCI).py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/walk_forward_opt(CMO).py" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/walk_forward_opt(CMO).py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/walk_forward_opt(DMA).py" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/walk_forward_opt(DMA).py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cta策略/walk_forward_opt(KDJ).py" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/walk_forward_opt(KDJ).py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/walk_forward_opt(MA).py" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/walk_forward_opt(MA).py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cta策略/walk_forward_opt(MACD).py" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/walk_forward_opt(MACD).py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/walk_forward_opt(ROC).py" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/walk_forward_opt(ROC).py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/walk_forward_opt(RSI).py" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/walk_forward_opt(RSI).py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/walk_forward_opt(SMA).py" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/walk_forward_opt(SMA).py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/walk_forward_opt(TRIX).py" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/walk_forward_opt(TRIX).py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cta策略/walk_forward_opt.py" beforeDir="false" afterPath="$PROJECT_DIR$/cta策略/his_walkforward/walk_forward_opt.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -250,18 +169,19 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/$dtw_test.coverage" NAME="dtw_test Coverage Results" MODIFIED="1624873785691" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/$walk_forward_opt_Aberration_.coverage" NAME="walk_forward_opt(Aberration) Coverage Results" MODIFIED="1632475691423" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cta策略" />
+    <SUITE FILE_PATH="coverage/$walk_forward_opt_Aberration_.coverage" NAME="walk_forward_opt(Aberration) Coverage Results" MODIFIED="1632637087042" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cta策略" />
     <SUITE FILE_PATH="coverage/$a_test.coverage" NAME="a_test Coverage Results" MODIFIED="1626770779483" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/$kdj_backtest.coverage" NAME="kdj_backtest Coverage Results" MODIFIED="1632475536787" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cta策略" />
+    <SUITE FILE_PATH="coverage/$kdj_backtest.coverage" NAME="kdj_backtest Coverage Results" MODIFIED="1632633600208" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cta策略" />
     <SUITE FILE_PATH="coverage/$walk_forward_opt_CCI_.coverage" NAME="walk_forward_opt(CCI) Coverage Results" MODIFIED="1632475821823" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cta策略" />
     <SUITE FILE_PATH="coverage/$opt_ana.coverage" NAME="opt_ana Coverage Results" MODIFIED="1624521549765" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/$stragety_cmb_portfolio.coverage" NAME="stragety_cmb_portfolio Coverage Results" MODIFIED="1632475662415" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cta策略" />
     <SUITE FILE_PATH="coverage/$trix_backtest.coverage" NAME="trix_backtest Coverage Results" MODIFIED="1632475677251" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cta策略" />
+    <SUITE FILE_PATH="coverage/$walk_forward_opt__.coverage" NAME="walk_forward_opt(合并) Coverage Results" MODIFIED="1632652946649" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cta策略" />
     <SUITE FILE_PATH="coverage/$cmb_cal.coverage" NAME="cmb_cal Coverage Results" MODIFIED="1625536775835" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/stragety_data" />
     <SUITE FILE_PATH="coverage/$two_ma.coverage" NAME="two_ma Coverage Results" MODIFIED="1625542158649" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/$macd.coverage" NAME="macd Coverage Results" MODIFIED="1625480495516" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/$walk_forward_opt.coverage" NAME="walk_forward_opt Coverage Results" MODIFIED="1632291179237" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cta策略" />
-    <SUITE FILE_PATH="coverage/$aberration_backtest.coverage" NAME="aberration_backtest Coverage Results" MODIFIED="1632474683518" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cta策略" />
+    <SUITE FILE_PATH="coverage/$aberration_backtest.coverage" NAME="aberration_backtest Coverage Results" MODIFIED="1632635149136" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cta策略" />
     <SUITE FILE_PATH="coverage/$walk_forward_opt_Bias_.coverage" NAME="walk_forward_opt(Bias) Coverage Results" MODIFIED="1632378039289" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cta策略" />
     <SUITE FILE_PATH="coverage/$sma_backtest.coverage" NAME="sma_backtest Coverage Results" MODIFIED="1632476087566" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cta策略" />
     <SUITE FILE_PATH="coverage/$walk_forward_opt_TRIX_.coverage" NAME="walk_forward_opt(TRIX) Coverage Results" MODIFIED="1632476239001" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cta策略" />
@@ -269,14 +189,14 @@
     <SUITE FILE_PATH="coverage/$datapre.coverage" NAME="datapre Coverage Results" MODIFIED="1631933758412" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cta策略" />
     <SUITE FILE_PATH="coverage/$CMO.coverage" NAME="CMO Coverage Results" MODIFIED="1625479134404" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/$mtm_backtest.coverage" NAME="mtm_backtest Coverage Results" MODIFIED="1632293520356" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cta策略" />
-    <SUITE FILE_PATH="coverage/$walk_forward_opt_KDJ_.coverage" NAME="walk_forward_opt(KDJ) Coverage Results" MODIFIED="1632475941782" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cta策略" />
     <SUITE FILE_PATH="coverage/$walk_forward_opt_RSI_.coverage" NAME="walk_forward_opt(RSI) Coverage Results" MODIFIED="1632476026424" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cta策略" />
+    <SUITE FILE_PATH="coverage/$walk_forward_opt_KDJ_.coverage" NAME="walk_forward_opt(KDJ) Coverage Results" MODIFIED="1632639958362" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cta策略" />
     <SUITE FILE_PATH="coverage/$factor_search.coverage" NAME="factor_search Coverage Results" MODIFIED="1625220774686" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sklearn_test" />
     <SUITE FILE_PATH="coverage/$dma_backtest.coverage" NAME="dma_backtest Coverage Results" MODIFIED="1632475525602" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cta策略" />
-    <SUITE FILE_PATH="coverage/$boll_backtest.coverage" NAME="boll_backtest Coverage Results" MODIFIED="1632475435361" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cta策略" />
+    <SUITE FILE_PATH="coverage/$boll_backtest.coverage" NAME="boll_backtest Coverage Results" MODIFIED="1632476947925" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cta策略" />
     <SUITE FILE_PATH="coverage/$walk_forward_opt_SMA_.coverage" NAME="walk_forward_opt(SMA) Coverage Results" MODIFIED="1632476215049" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cta策略" />
     <SUITE FILE_PATH="coverage/$walk_forward_opt_bbi_.coverage" NAME="walk_forward_opt(bbi) Coverage Results" MODIFIED="1632475725578" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cta策略" />
-    <SUITE FILE_PATH="coverage/$walk_forward_opt_MACD_.coverage" NAME="walk_forward_opt(MACD) Coverage Results" MODIFIED="1632475977741" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cta策略" />
+    <SUITE FILE_PATH="coverage/$walk_forward_opt_MACD_.coverage" NAME="walk_forward_opt(MACD) Coverage Results" MODIFIED="1632622811626" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cta策略" />
     <SUITE FILE_PATH="coverage/$bias_backtest.coverage" NAME="bias_backtest Coverage Results" MODIFIED="1632475410357" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cta策略" />
     <SUITE FILE_PATH="coverage/$walk_forward_opt_BOLL_.coverage" NAME="walk_forward_opt(BOLL) Coverage Results" MODIFIED="1632475784187" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cta策略" />
     <SUITE FILE_PATH="coverage/$walk_forward_opt_MA_.coverage" NAME="walk_forward_opt(MA) Coverage Results" MODIFIED="1632475955117" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cta策略" />
@@ -293,6 +213,7 @@
     <SUITE FILE_PATH="coverage/$rsi_backtest.coverage" NAME="rsi_backtest Coverage Results" MODIFIED="1632475593351" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cta策略" />
     <SUITE FILE_PATH="coverage/$data_simulate.coverage" NAME="data_simulate Coverage Results" MODIFIED="1625538511085" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/$ml_test.coverage" NAME="ml_test Coverage Results" MODIFIED="1625477454431" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/集成学习" />
+    <SUITE FILE_PATH="coverage/$base_back.coverage" NAME="base_back Coverage Results" MODIFIED="1632652907294" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cta策略" />
     <SUITE FILE_PATH="coverage/$walk_forward_opt_BIAS_.coverage" NAME="walk_forward_opt(BIAS) Coverage Results" MODIFIED="1632475748282" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cta策略" />
     <SUITE FILE_PATH="coverage/$moment.coverage" NAME="moment Coverage Results" MODIFIED="1627037191128" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/$DMA.coverage" NAME="DMA Coverage Results" MODIFIED="1625535297167" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -303,7 +224,7 @@
     <SUITE FILE_PATH="coverage/$cci_backtest.coverage" NAME="cci_backtest Coverage Results" MODIFIED="1632475473819" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cta策略" />
     <SUITE FILE_PATH="coverage/$bolling.coverage" NAME="bolling Coverage Results" MODIFIED="1625736651938" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/$ma_backtest.coverage" NAME="ma_backtest Coverage Results" MODIFIED="1632475552732" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cta策略" />
-    <SUITE FILE_PATH="coverage/$macd_backtest.coverage" NAME="macd_backtest Coverage Results" MODIFIED="1632475564808" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cta策略" />
+    <SUITE FILE_PATH="coverage/$macd_backtest.coverage" NAME="macd_backtest Coverage Results" MODIFIED="1632619379758" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cta策略" />
     <SUITE FILE_PATH="coverage/$walk_forward_opt_CMO_.coverage" NAME="walk_forward_opt(CMO) Coverage Results" MODIFIED="1632475837493" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cta策略" />
     <SUITE FILE_PATH="coverage/$dtw_stragety.coverage" NAME="dtw_stragety Coverage Results" MODIFIED="1624950557605" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/$MyWrapper.coverage" NAME="MyWrapper Coverage Results" MODIFIED="1624353191124" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -326,93 +247,58 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cta策略/walk_forward_opt(DMA).py">
+        <entry file="file://$PROJECT_DIR$/cta策略/boll_backtest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="157" column="36" selection-start-line="157" selection-start-column="36" selection-end-line="157" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cta策略/walk_forward_opt(KDJ).py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="156" column="33" selection-start-line="156" selection-start-column="33" selection-end-line="156" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cta策略/walk_forward_opt(MA).py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="131" selection-start-line="131" selection-end-line="131" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cta策略/walk_forward_opt(MACD).py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="341">
-              <caret line="149" column="24" selection-start-line="149" selection-start-column="24" selection-end-line="149" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cta策略/walk_forward_opt(ROC).py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="249">
-              <caret line="134" column="44" selection-start-line="134" selection-start-column="44" selection-end-line="134" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cta策略/walk_forward_opt(RSI).py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="335">
-              <caret line="153" column="13" selection-start-line="153" selection-start-column="13" selection-end-line="153" selection-end-column="13" />
+            <state relative-caret-position="44">
+              <caret line="4" selection-start-line="4" selection-end-line="40" selection-end-column="12" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/cta策略/walk_forward_opt(SMA).py">
+        <entry file="file://$PROJECT_DIR$/cta策略/walk_forward_opt(合并).py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="55" column="56" lean-forward="true" selection-start-line="55" selection-start-column="56" selection-end-line="55" selection-end-column="56" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cta策略/sma_backtest.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="23" column="14" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cta策略/rsi_backtest.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="383">
-              <caret line="32" column="58" lean-forward="true" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="58" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cta策略/roc_backtest.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25">
-              <caret line="19" column="14" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="14" />
+            <state relative-caret-position="225">
+              <caret line="81" lean-forward="true" selection-start-line="81" selection-end-line="81" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cta策略/base_back.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="212">
+              <caret line="72" column="9" lean-forward="true" selection-start-line="72" selection-start-column="9" selection-end-line="72" selection-end-column="9" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cta策略/Stragety_factory.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="393">
+              <caret line="123" selection-start-line="123" selection-end-line="123" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+                <element signature="e#125#1673#0" />
+                <element signature="e#1706#2994#0" />
+                <element signature="e#3029#4210#0" />
+                <element signature="e#5686#6792#0" />
+                <element signature="e#6825#7791#0" />
+                <element signature="e#7820#9560#0" />
+                <element signature="e#9593#11032#0" />
+                <element signature="e#11064#11925#0" />
+                <element signature="e#11959#13053#0" />
+                <element signature="e#13087#13942#0" />
+                <element signature="e#13975#15032#0" />
+                <element signature="e#15065#16009#0" />
+                <element signature="e#16043#17080#0" />
               </folding>
             </state>
           </provider>
@@ -451,6 +337,7 @@
       <find>sim_data</find>
       <find>self.best_param</find>
       <find>self.jz</find>
+      <find>Cmb</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -459,9 +346,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/multi_param_pick.py" />
-        <option value="$PROJECT_DIR$/data_simulate.py" />
-        <option value="$PROJECT_DIR$/two_ma.py" />
         <option value="$PROJECT_DIR$/testx1.py" />
         <option value="$PROJECT_DIR$/bolling.py" />
         <option value="$PROJECT_DIR$/a_test.py" />
@@ -480,36 +364,39 @@
         <option value="$PROJECT_DIR$/cta策略/walk_forward_opt(Bias).py" />
         <option value="$PROJECT_DIR$/cta策略/backtest.py" />
         <option value="$PROJECT_DIR$/analysis_model.py" />
-        <option value="$PROJECT_DIR$/cta策略/aberration_backtest.py" />
-        <option value="$PROJECT_DIR$/cta策略/bbi_backtest.py" />
-        <option value="$PROJECT_DIR$/cta策略/bias_backtest.py" />
-        <option value="$PROJECT_DIR$/cta策略/boll_backtest.py" />
-        <option value="$PROJECT_DIR$/cta策略/cci_backtest.py" />
-        <option value="$PROJECT_DIR$/cta策略/cmo_backtest.py" />
-        <option value="$PROJECT_DIR$/cta策略/dma_backtest.py" />
-        <option value="$PROJECT_DIR$/cta策略/kdj_backtest.py" />
-        <option value="$PROJECT_DIR$/cta策略/ma_backtest.py" />
-        <option value="$PROJECT_DIR$/cta策略/macd_backtest.py" />
-        <option value="$PROJECT_DIR$/cta策略/roc_backtest.py" />
-        <option value="$PROJECT_DIR$/cta策略/rsi_backtest.py" />
-        <option value="$PROJECT_DIR$/cta策略/sma_backtest.py" />
         <option value="$PROJECT_DIR$/cta策略/stragety_cmb_portfolio.py" />
-        <option value="$PROJECT_DIR$/cta策略/trix_backtest.py" />
         <option value="$PROJECT_DIR$/cta策略/walk_forward_opt(BIAS).py" />
-        <option value="$PROJECT_DIR$/cta策略/walk_forward_opt(Aberration).py" />
         <option value="$PROJECT_DIR$/cta策略/walk_forward_opt(bbi).py" />
         <option value="$PROJECT_DIR$/cta策略/walk_forward_opt(BOLL).py" />
         <option value="$PROJECT_DIR$/cta策略/walk_forward_opt(CCI).py" />
         <option value="$PROJECT_DIR$/cta策略/walk_forward_opt(CMO).py" />
         <option value="$PROJECT_DIR$/cta策略/walk_forward_opt(DMA).py" />
-        <option value="$PROJECT_DIR$/cta策略/walk_forward_opt(KDJ).py" />
         <option value="$PROJECT_DIR$/cta策略/walk_forward_opt(MA).py" />
-        <option value="$PROJECT_DIR$/cta策略/walk_forward_opt(MACD).py" />
         <option value="$PROJECT_DIR$/cta策略/walk_forward_opt(ROC).py" />
         <option value="$PROJECT_DIR$/cta策略/walk_forward_opt(RSI).py" />
         <option value="$PROJECT_DIR$/cta策略/walk_forward_opt(TRIX).py" />
         <option value="$PROJECT_DIR$/cta策略/Base/backtest.py" />
         <option value="$PROJECT_DIR$/cta策略/walk_forward_opt(SMA).py" />
+        <option value="$PROJECT_DIR$/cta策略/macd_backtest.py" />
+        <option value="$PROJECT_DIR$/cta策略/walk_forward_opt(MACD).py" />
+        <option value="$PROJECT_DIR$/cta策略/kdj_backtest.py" />
+        <option value="$PROJECT_DIR$/cta策略/aberration_backtest.py" />
+        <option value="$PROJECT_DIR$/cta策略/walk_forward_opt(Aberration).py" />
+        <option value="$PROJECT_DIR$/cta策略/walk_forward_opt(KDJ).py" />
+        <option value="$PROJECT_DIR$/cta策略/bbi_backtest.py" />
+        <option value="$PROJECT_DIR$/cta策略/bias_backtest.py" />
+        <option value="$PROJECT_DIR$/cta策略/cci_backtest.py" />
+        <option value="$PROJECT_DIR$/cta策略/cmo_backtest.py" />
+        <option value="$PROJECT_DIR$/cta策略/dma_backtest.py" />
+        <option value="$PROJECT_DIR$/cta策略/ma_backtest.py" />
+        <option value="$PROJECT_DIR$/cta策略/roc_backtest.py" />
+        <option value="$PROJECT_DIR$/cta策略/rsi_backtest.py" />
+        <option value="$PROJECT_DIR$/cta策略/sma_backtest.py" />
+        <option value="$PROJECT_DIR$/cta策略/trix_backtest.py" />
+        <option value="$PROJECT_DIR$/cta策略/boll_backtest.py" />
+        <option value="$PROJECT_DIR$/cta策略/Stragety_factory.py" />
+        <option value="$PROJECT_DIR$/cta策略/base_back.py" />
+        <option value="$PROJECT_DIR$/cta策略/walk_forward_opt(合并).py" />
       </list>
     </option>
   </component>
@@ -538,25 +425,6 @@
               <item name="参数优化代码" type="462c0819:PsiDirectoryNode" />
               <item name="cta策略" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="参数优化代码" type="b2602c69:ProjectViewProjectNode" />
-              <item name="参数优化代码" type="462c0819:PsiDirectoryNode" />
-              <item name="cta策略" type="462c0819:PsiDirectoryNode" />
-              <item name="Base" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="参数优化代码" type="b2602c69:ProjectViewProjectNode" />
-              <item name="参数优化代码" type="462c0819:PsiDirectoryNode" />
-              <item name="cta策略" type="462c0819:PsiDirectoryNode" />
-              <item name="result" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="参数优化代码" type="b2602c69:ProjectViewProjectNode" />
-              <item name="参数优化代码" type="462c0819:PsiDirectoryNode" />
-              <item name="cta策略" type="462c0819:PsiDirectoryNode" />
-              <item name="result" type="462c0819:PsiDirectoryNode" />
-              <item name="螺纹" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -573,19 +441,19 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Administrator\Desktop\时间序列策略\参数优化代码\cta策略" />
-      <recent name="C:\Users\Administrator\Desktop\时间序列策略\参数优化代码\cta策略\his_walkforward" />
-      <recent name="C:\Users\Administrator\Desktop\时间序列策略\参数优化代码\cta策略\原始数据库\螺纹\分钟" />
-      <recent name="C:\Users\Administrator\Desktop\时间序列策略\参数优化代码\cta策略\原始数据库" />
-      <recent name="C:\Users\Administrator\Desktop\时间序列策略\参数优化代码" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Administrator\Desktop\时间序列策略\参数优化代码\cta策略" />
       <recent name="C:\Users\Administrator\Desktop\时间序列策略\参数优化代码\cta策略\Base" />
       <recent name="C:\Users\Administrator\Desktop\时间序列策略\参数优化代码\cta策略\行情数据库" />
       <recent name="C:\Users\Administrator\Desktop\时间序列策略\参数优化代码\cta策略\原始数据库\螺纹\日频" />
       <recent name="C:\Users\Administrator\Desktop\时间序列策略\参数优化代码\参数表" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\Desktop\时间序列策略\参数优化代码\cta策略" />
+      <recent name="C:\Users\Administrator\Desktop\时间序列策略\参数优化代码\cta策略\his_walkforward" />
+      <recent name="C:\Users\Administrator\Desktop\时间序列策略\参数优化代码\cta策略\原始数据库\螺纹\分钟" />
+      <recent name="C:\Users\Administrator\Desktop\时间序列策略\参数优化代码\cta策略\原始数据库" />
+      <recent name="C:\Users\Administrator\Desktop\时间序列策略\参数优化代码" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -600,8 +468,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.walk_forward_opt(TRIX)">
-    <configuration name="sma_backtest" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.walk_forward_opt(合并)">
+    <configuration name="aberration_backtest" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="参数优化代码" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -614,7 +482,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cta策略/sma_backtest.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cta策略/aberration_backtest.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -623,7 +491,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="walk_forward_opt(ROC)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="base_back" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="参数优化代码" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -636,7 +504,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cta策略/walk_forward_opt(ROC).py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cta策略/base_back.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -645,7 +513,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="walk_forward_opt(RSI)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="walk_forward_opt(Aberration)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="参数优化代码" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -658,7 +526,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cta策略/walk_forward_opt(RSI).py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cta策略/walk_forward_opt(Aberration).py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -667,7 +535,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="walk_forward_opt(SMA)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="walk_forward_opt(KDJ)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="参数优化代码" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -680,7 +548,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cta策略/walk_forward_opt(SMA).py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cta策略/walk_forward_opt(KDJ).py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -689,7 +557,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="walk_forward_opt(TRIX)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="walk_forward_opt(合并)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="参数优化代码" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -702,7 +570,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cta策略/walk_forward_opt(TRIX).py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cta策略/walk_forward_opt(合并).py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -713,11 +581,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.walk_forward_opt(TRIX)" />
-        <item itemvalue="Python.walk_forward_opt(SMA)" />
-        <item itemvalue="Python.sma_backtest" />
-        <item itemvalue="Python.walk_forward_opt(RSI)" />
-        <item itemvalue="Python.walk_forward_opt(ROC)" />
+        <item itemvalue="Python.walk_forward_opt(合并)" />
+        <item itemvalue="Python.base_back" />
+        <item itemvalue="Python.walk_forward_opt(KDJ)" />
+        <item itemvalue="Python.walk_forward_opt(Aberration)" />
+        <item itemvalue="Python.aberration_backtest" />
       </list>
     </recent_temporary>
   </component>
@@ -745,7 +613,8 @@
       <workItem from="1632272109247" duration="12263000" />
       <workItem from="1632294849688" duration="12197000" />
       <workItem from="1632360784699" duration="8019000" />
-      <workItem from="1632374204423" duration="39554000" />
+      <workItem from="1632374204423" duration="41000000" />
+      <workItem from="1632617829950" duration="24387000" />
     </task>
     <task id="LOCAL-00001" summary="sklearn + gplearn">
       <created>1625138635348</created>
@@ -852,30 +721,37 @@
       <option name="project" value="LOCAL" />
       <updated>1632377955544</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="添加滑点测试及多周期测试">
+      <created>1632476338990</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1632476338990</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="273758000" />
+    <option name="totallyTimeSpent" value="299591000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1913" y="0" width="1934" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17395945" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1755603" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49573106" weight="0.32968238" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4279616" visible="true" weight="0.2924425" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.434365" weight="0.28477547" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.41302028" visible="true" weight="0.2924425" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.42049092" weight="0.28477547" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49893278" weight="0.329718" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5720384" side_tool="true" visible="true" weight="0.2924425" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.58697975" side_tool="true" visible="true" weight="0.2924425" />
       <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49839914" weight="0.3264642" />
       <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.4994664" weight="0.329718" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -936,7 +812,8 @@
     <MESSAGE value="前进分析法" />
     <MESSAGE value="前进分析法,参数选择优化" />
     <MESSAGE value="完成所有策略的初步测试" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成所有策略的初步测试" />
+    <MESSAGE value="添加滑点测试及多周期测试" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加滑点测试及多周期测试" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1048,13 +925,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/cta策略/sma_backtest.py</url>
-          <line>25</line>
+          <line>26</line>
           <option name="timeStamp" value="233" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/cta策略/macd_backtest.py</url>
-          <line>22</line>
-          <option name="timeStamp" value="246" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/cta策略/trix_backtest.py</url>
@@ -1073,7 +945,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/cta策略/walk_forward_opt(Aberration).py</url>
-          <line>146</line>
+          <line>148</line>
           <option name="timeStamp" value="272" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -1092,21 +964,6 @@
           <option name="timeStamp" value="281" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/cta策略/aberration_backtest.py</url>
-          <line>96</line>
-          <option name="timeStamp" value="287" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/cta策略/aberration_backtest.py</url>
-          <line>95</line>
-          <option name="timeStamp" value="288" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/cta策略/walk_forward_opt(Aberration).py</url>
-          <line>55</line>
-          <option name="timeStamp" value="292" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/cta策略/Base/backtest.py</url>
           <line>243</line>
           <option name="timeStamp" value="293" />
@@ -1117,9 +974,49 @@
           <option name="timeStamp" value="294" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/cta策略/Base/backtest.py</url>
-          <line>163</line>
-          <option name="timeStamp" value="295" />
+          <url>file://$PROJECT_DIR$/cta策略/walk_forward_opt(MACD).py</url>
+          <line>69</line>
+          <option name="timeStamp" value="296" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cta策略/macd_backtest.py</url>
+          <line>87</line>
+          <option name="timeStamp" value="297" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cta策略/macd_backtest.py</url>
+          <line>86</line>
+          <option name="timeStamp" value="299" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cta策略/walk_forward_opt(MACD).py</url>
+          <line>93</line>
+          <option name="timeStamp" value="303" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cta策略/walk_forward_opt(MACD).py</url>
+          <line>54</line>
+          <option name="timeStamp" value="304" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cta策略/walk_forward_opt(Aberration).py</url>
+          <line>68</line>
+          <option name="timeStamp" value="316" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cta策略/walk_forward_opt(KDJ).py</url>
+          <line>85</line>
+          <option name="timeStamp" value="320" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cta策略/base_back.py</url>
+          <line>71</line>
+          <option name="timeStamp" value="322" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cta策略/Stragety_factory.py</url>
+          <line>123</line>
+          <option name="timeStamp" value="324" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -1134,94 +1031,57 @@
   <component name="debuggerHistoryManager">
     <expressions id="evaluateCodeFragment">
       <expression>
-        <expression-string>pnl</expression-string>
+        <expression-string>list(itertools.product(*n_list))</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>np.sign(hands) == np.sign(self.last_hands)</expression-string>
+        <expression-string>itertools.product(*n_list)</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>np.sign(hands) != np.sign(self.last_hands)</expression-string>
+        <expression-string>Base_name</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>np.sign(self.last_hands)</expression-string>
+        <expression-string>for n in nn_list:
+    print(list(n)
+          )</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>np.sign(hands)</expression-string>
+        <expression-string>for n in nn_list:
+    print(n
+          )</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>temp_df</expression-string>
+        <expression-string>nn_list</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>result</expression-string>
+        <expression-string>nn_list = list(itertools.product(*n_list))</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>df</expression-string>
+        <expression-string>list(itertools.product(n_list[0],n_list[1], n_list[1]))</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>df = pd.concat([base, self.jz], axis=1).dropna()</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>base</expression-string>
+        <expression-string>list(itertools.product(n_list[0],n_list[1]))</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/cta策略/行情数据库/螺纹/日频/RB_1d.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMO.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/formula_package.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2394">
-          <caret line="128" column="17" selection-start-line="128" selection-start-column="4" selection-end-line="128" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bolling.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/readme">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="456">
@@ -1269,16 +1129,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cta策略/walk_forward_opt.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="703">
-          <caret line="46" column="55" selection-start-line="46" selection-start-column="55" selection-end-line="46" selection-end-column="55" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/cta策略/walk_forward_opt.py" />
     <entry file="file://$PROJECT_DIR$/cta策略/his_walkforward/walk_forward_opt(Aberration).py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1325,130 +1176,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cta策略/aberration_backtest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="80" column="37" lean-forward="true" selection-start-line="71" selection-start-column="22" selection-end-line="80" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cta策略/walk_forward_opt(TRIX).py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="151" column="29" selection-start-line="151" selection-start-column="29" selection-end-line="151" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cta策略/bbi_backtest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="45" column="20" selection-start-line="45" selection-start-column="20" selection-end-line="45" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cta策略/bias_backtest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="672">
-          <caret line="68" column="51" selection-start-line="68" selection-start-column="51" selection-end-line="68" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cta策略/boll_backtest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="62" column="18" selection-start-line="62" selection-start-column="18" selection-end-line="62" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cta策略/cci_backtest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="58" column="46" selection-start-line="58" selection-start-column="46" selection-end-line="58" selection-end-column="46" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cta策略/cmo_backtest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="52" column="20" selection-start-line="52" selection-start-column="20" selection-end-line="52" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cta策略/dma_backtest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="78" column="59" selection-start-line="78" selection-start-column="59" selection-end-line="78" selection-end-column="59" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cta策略/kdj_backtest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="65" column="22" selection-start-line="65" selection-start-column="22" selection-end-line="65" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cta策略/macd_backtest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="70" column="31" selection-start-line="70" selection-start-column="31" selection-end-line="70" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cta策略/ma_backtest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="9" column="47" selection-start-line="6" selection-start-column="4" selection-end-line="9" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cta策略/Base/backtest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="216" column="47" selection-start-line="216" selection-start-column="47" selection-end-line="216" selection-end-column="47" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cta策略/stragety_cmb_portfolio.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
           <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cta策略/trix_backtest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="54" column="20" selection-start-line="54" selection-start-column="20" selection-end-line="54" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cta策略/walk_forward_opt(Aberration).py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="156" column="48" selection-start-line="156" selection-start-column="48" selection-end-line="156" selection-end-column="48" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cta策略/walk_forward_opt(bbi).py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="145" column="36" selection-start-line="145" selection-start-column="36" selection-end-line="145" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -1487,13 +1218,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cta策略/walk_forward_opt(KDJ).py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="156" column="33" selection-start-line="156" selection-start-column="33" selection-end-line="156" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cta策略/walk_forward_opt(MA).py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
@@ -1501,55 +1225,257 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cta策略/walk_forward_opt(MACD).py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="149" column="24" selection-start-line="149" selection-start-column="24" selection-end-line="149" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cta策略/walk_forward_opt(ROC).py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="134" column="44" selection-start-line="134" selection-start-column="44" selection-end-line="134" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cta策略/walk_forward_opt(RSI).py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
+        <state relative-caret-position="2812">
           <caret line="153" column="13" selection-start-line="153" selection-start-column="13" selection-end-line="153" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cta策略/sma_backtest.py">
+    <entry file="file://$PROJECT_DIR$/cta策略/walk_forward_opt(SMA).py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="23" column="14" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="14" />
+        <state relative-caret-position="950">
+          <caret line="55" column="56" selection-start-line="55" selection-start-column="56" selection-end-line="55" selection-end-column="56" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cta策略/rsi_backtest.py">
+    <entry file="file://$PROJECT_DIR$/cta策略/walk_forward_opt(TRIX).py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="32" column="58" lean-forward="true" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="58" />
+        <state relative-caret-position="2679">
+          <caret line="146" column="33" selection-start-line="146" selection-start-column="33" selection-end-line="146" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cta策略/roc_backtest.py">
+    <entry file="file://$PROJECT_DIR$/cta策略/Base/backtest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="19" column="14" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="14" />
+        <state relative-caret-position="201">
+          <caret line="93" selection-start-line="93" selection-end-line="93" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cta策略/walk_forward_opt(SMA).py">
+    <entry file="file://$PROJECT_DIR$/cta策略/walk_forward_opt(ROC).py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="55" column="56" lean-forward="true" selection-start-line="55" selection-start-column="56" selection-end-line="55" selection-end-column="56" />
+        <state relative-caret-position="327">
+          <caret line="66" column="63" selection-start-line="66" selection-start-column="32" selection-end-line="66" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cta策略/walk_forward_opt(MACD).py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="62" column="18" selection-start-line="52" selection-start-column="12" selection-end-line="62" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/anaconda/Lib/site-packages/pandas/core/internals/managers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="182" selection-start-line="182" selection-end-line="182" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cta策略/walk_forward_opt(Aberration).py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="83" column="67" lean-forward="true" selection-start-line="82" selection-start-column="8" selection-end-line="83" selection-end-column="67" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cta策略/walk_forward_opt(KDJ).py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="148" column="42" selection-start-line="148" selection-start-column="22" selection-end-line="148" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cta策略/walk_forward_opt(bbi).py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1589">
+          <caret line="77" column="18" selection-start-line="77" selection-start-column="12" selection-end-line="77" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cta策略/aberration_backtest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="722">
+          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="48" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cta策略/bbi_backtest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="5" selection-start-line="5" selection-end-line="38" />
+          <folding>
+            <element signature="e#119#1407#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cta策略/bias_backtest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="5" selection-start-line="5" selection-end-line="37" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cta策略/boll_backtest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="4" selection-start-line="4" selection-end-line="40" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cta策略/cci_backtest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="65">
+          <caret line="5" selection-start-line="5" selection-end-line="34" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+            <element signature="e#119#1225#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cta策略/cmo_backtest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="5" selection-start-line="5" selection-end-line="31" />
+          <folding>
+            <element signature="e#119#1085#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cta策略/dma_backtest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" selection-start-line="5" selection-end-line="50" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+            <element signature="e#137#1877#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cta策略/kdj_backtest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="4" selection-start-line="4" selection-end-line="41" />
+          <folding>
+            <element signature="e#118#1557#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cta策略/ma_backtest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="5" selection-start-line="5" selection-end-line="24" />
+          <folding>
+            <element signature="e#118#979#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cta策略/macd_backtest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="4" selection-start-line="4" selection-end-line="30" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+            <element signature="e#119#1213#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cta策略/roc_backtest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="5" selection-start-line="5" selection-end-line="25" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+            <element signature="e#119#974#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cta策略/sma_backtest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" selection-start-line="5" selection-end-line="28" />
+          <folding>
+            <element signature="e#119#1063#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cta策略/rsi_backtest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="5" selection-start-line="5" selection-end-line="35" />
+          <folding>
+            <element signature="e#119#1176#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cta策略/trix_backtest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="5" selection-start-line="5" selection-end-line="33" />
+          <folding>
+            <element signature="e#138#1175#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cta策略/Stragety_factory.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="123" selection-start-line="123" selection-end-line="123" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+            <element signature="e#125#1673#0" />
+            <element signature="e#1706#2994#0" />
+            <element signature="e#3029#4210#0" />
+            <element signature="e#5686#6792#0" />
+            <element signature="e#6825#7791#0" />
+            <element signature="e#7820#9560#0" />
+            <element signature="e#9593#11032#0" />
+            <element signature="e#11064#11925#0" />
+            <element signature="e#11959#13053#0" />
+            <element signature="e#13087#13942#0" />
+            <element signature="e#13975#15032#0" />
+            <element signature="e#15065#16009#0" />
+            <element signature="e#16043#17080#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cta策略/base_back.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="72" column="9" lean-forward="true" selection-start-line="72" selection-start-column="9" selection-end-line="72" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cta策略/walk_forward_opt(合并).py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="81" lean-forward="true" selection-start-line="81" selection-end-line="81" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

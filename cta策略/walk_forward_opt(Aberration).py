@@ -17,6 +17,11 @@ class Aberration(SimpleBacktest):
         base_jz = pd.read_excel(jz_dir)
         base_jz = base_jz.set_index(base_jz.columns[0])
         self.base_jz = base_jz
+        # 信号表
+        signal_dir = '/'.join(jz_dir.split('/')[:-1] + ['各参数signal.xlsx'])
+        base_signal = pd.read_excel(signal_dir)
+        self.base_signal = base_signal.set_index('time')
+
         if self.start_date > max(self.base_jz.index):
             print('单策略数据长度不够！！！')
             print('last history time: ', max(self.base_jz.index))
@@ -40,59 +45,56 @@ class Aberration(SimpleBacktest):
             temp_df = temp_df_all
 
             ret = (temp_df.diff() / temp_df.shift()).dropna()
-            # ret_mean = ret.mean(axis=1)
-            # ret_mean[ret_mean<0] = 0
-            # ret = ret.sub(ret_mean, axis=0)
-            freq_ret = ret.apply(lambda x: x[x > 0].sum() / abs(x[x < 0].sum()) if x[x < 0].sum() != 0 else 0)
-            # ret[ret > 0] = 1
-            # ret[ret < 0] = 0
-            # freq_ret = ret.mean()
-            n = self.best_param_num
-            self.best_param = freq_ret.sort_values().index[-n]
-            self.best_freq = list(freq_ret.sort_values())[-n]
-            ana = Analysis()
-            self.best_sharpe = []
-            result = ana.analysis(temp_df.loc[:, self.best_param])
-            self.best_sharpe = result['夏普比率'][0]
 
-        nn = eval(self.best_param)
-        n = nn[0]
-        p = nn[1]
-        if len(self.his_data['close']) < n or self.best_freq < 1.2:
-            self.last_signal.append([0, self.his_data['time']])
-            self.target_position(0, self.his_data['last'])
-            return
-        upper, middle, lower = ta.BBANDS(
-            self.his_data['close'],
-            timeperiod=n,
-            # number of non-biased standard deviations from the mean
-            nbdevup=p,
-            nbdevdn=p,
-            # Moving average type: simple moving average here
-            matype=0)
-        close = self.his_data['close'][-1]
-        signal = 0
-        if close > upper[-1]:
-            signal = 1
-        if close < lower[-1]:
-            signal = -1
-        if close < middle[-1] and close > lower[-1] and self.last_hands >= 0:
-            signal = 0
-        if close > middle[-1] and close < upper[-1] and self.last_hands <= 0:
-            signal = 0
-        if close < upper[-1] and close > middle[-1] and self.last_hands > 0:
-            signal = 1
-        if close > lower[-1] and close < middle[-1] and self.last_hands < 0:
-            signal = -1
+            def f(x):
+                if len(x) == 0:
+                    return 0
+                x_win = x[x > 0].sum()
+                x_loss = abs(x[x < 0].sum())
+                if x_loss == 0:
+                    if x_win == 0:
+                        return 0
+                    return 2
+                return x_win / x_loss
+
+            factor = pd.Series(index=ret.columns).fillna(0)
+            num = int(len(factor) / 5)
+
+            freq_ret = ret.apply(f)
+            freq_ret = freq_ret[freq_ret != 0]
+            freq_ret = freq_ret.sort_values()
+            freq_ret = pd.Series(range(len(freq_ret)), index=freq_ret.index)
+
+
+            std = ret.std()
+            std = std[std != 0]
+            std = std.sort_values()
+            std = pd.Series(range(len(std)), index=std.index)
+            factor = freq_ret + std
+            freq_ret = factor.sort_values()
+
+            long_ = freq_ret.iloc[-num:].index
+            short_ = freq_ret.iloc[:num].index
+
+            self.long_ = long_
+            self.short_ = short_
+        time = self.his_data['time']
+        today_signal = self.base_signal.loc[time, :]
+        long_signal = np.sign(today_signal.loc[self.long_].sum())
+        short_signal = np.sign(today_signal.loc[self.short_].sum())
+        signal = np.sign(long_signal - short_signal)
+        signal = (long_signal - short_signal)/2
+
+
         self.last_signal.append([signal, self.his_data['time']])
         hands = self.capital / self.multip / self.his_data['last'] * signal
         self.target_position(hands, self.his_data['last'])
 
 
 
-pre_date = 180  # 参数寻优长度
-trade_date = 90  # 回测长度
-num_all = 2  # 最优组合数
+pre_date = 40  # 参数寻优长度
+trade_date = 20  # 回测长度
+num_all = 1  # 最优组合数
 Base_name = 'Aberration'
 symbol_name = '螺纹'
 symbol = 'rb'
@@ -105,7 +107,7 @@ end_date = '2018-01-01'
 # end_date='2021-09-01'
 start_date = pd.to_datetime(start_date) + datetime.timedelta(pre_date+200)
 # for freq in ['1min', '5min', '15min', '30min', '60min', '1d']:
-for freq in ['30min', '60min', '1d']:
+for freq in ['1d']:
     stragety_name = Base_name + '_' + freq  # 策略名
     filedir = './result/' + symbol_name + '/'  # 图片保存地址
     pic_name = symbol + '_' + stragety_name + "wfo"  # 图片名称

@@ -1,41 +1,59 @@
 import pandas as pd
 from cta策略.Base.backtest import SimpleBacktest
 import talib as ta
-
-class MACD(SimpleBacktest):
-    def __init__(self, start_date, end_date, comission_rate, slip_point, min_point, init_cash, main_file, symbol,
-                 multip, freq='1d', cal_way='open'):
-        super().__init__(start_date, end_date, comission_rate, slip_point, min_point, init_cash, main_file, symbol,
-                         multip, freq, cal_way)
-    def param_add(self, n):
-        # 参数设置
-        self.short, self.long, self.mmid = n
-    def signal_cal(self):
-        short = self.short
-        long = self.long
-        mmid = self.mmid
-
-        if len(self.his_data['close']) < long + mmid:
-            self.target_position(0, self.his_data['last'])
-            return
-        macd, signal, hist = ta.MACD(self.his_data['close'], fastperiod=short, slowperiod=long, signalperiod=mmid)
-        signal = 0
-        if macd[-1] > 0:
-            signal = 1
-        if macd[-1] < 0:
-            signal = -1
-        self.last_signal.append([signal, self.his_data['time']])
-        hands = self.capital / self.multip / self.his_data['last'] * signal
-        self.target_position(hands, self.his_data['last'])
-        pass
+import itertools
+from cta策略.Stragety_factory import *
 
 
+
+
+n_list = [[5,10,20,40,60,80,100,120,140,160,180],[0.5,1,1.5,2,3]]  # 参数
+Base_name = 'Aberration'
+
+n_list = [[2,4,6,16],[3,6,12,24],[4,8,16,32],[5,10,20,40],[6,12,24,48]]  # 参数
+Base_name = 'BBI'
+
+n_list = [[5,10,20],[1,2,3,4,5,6,7,8,9,10]]  # 参数
+Base_name = 'BIAS'
+
+n_list = [[10,20,30, 40,50,60,80,100,120],[0.5,1,1.5,2,2.5,3]]  # 参数
+Base_name = 'BOLL'
+
+n_list = [3,5,9,10,12,14,20,60]  # 参数
+Base_name = 'CCI'
+
+n_list = [3,5,9,10,12,14,20,60]  # 参数
+Base_name = 'CMO'
+
+n_list = [[5,25],[10,50],[12,60],[14,70],[20,100]]  # 参数
+Base_name = 'DMA'
+
+n_list = [[4,2,2],[9,3,3],[16,4,4],[25,5,5],[36,6,6], [49,7,7],[2,2,2],[64,8,8],[81,9,9],[3,3,3],[4,4,4]
+          ,[5,5,5],[6,6,6],[7,7,7],[8,8,8],[9,9,9]]  # 参数
+Base_name = 'KDJ'
+
+n_list = [10, 20, 30, 40, 60, 80, 100, 120]  # 参数
+Base_name = 'MA'
 
 n_list = [[7,14,5],[8,16,6],[9,18,7],[10,20,8],[12,26,9],[13,26,10]]  # 参数
 Base_name = 'MACD'
+
+n_list = [3,5,9,10,12,14,20,60]  # 参数
+Base_name = 'ROC'
+
+n_list = [3,5,9,10,12,14,20,60]  # 参数
+Base_name = 'RSI'
+
+n_list = [[5,10],[5,20],[10,20],[20,60],[60,120]]  # 参数
+Base_name = 'SMA'
+#
+n_list = [[8,6],[10,7],[11,8],[12,9],[13,10],[15,11],[16,12]]  # 参数
+Base_name = 'TRIX'
+
+
 symbol_name = '螺纹'
 symbol = 'rb'
-slip_point = 0  # 滑点
+slip_point = 1  # 滑点
 comission_rate = 0.0001
 min_point = 1  # 最小变动价格
 multip = 10  # 交易乘数
@@ -43,16 +61,20 @@ start_date = '2013-01-01'
 end_date = '2018-01-01'
 # end_date='2021-09-01'
 # for freq in ['1min', '5min', '15min', '30min', '60min', '1d']:
-for freq in ['30min', '60min', '1d']:
+for freq in ['1d']:
     stragety_name = Base_name + '_' + freq  # 策略名
     filedir = './result/' + symbol_name + '/'  # 图片保存地址
     pic_name = symbol + '_' + stragety_name + "_参数："  # 图片名称
     result_df = pd.DataFrame()
     jz_df = pd.DataFrame()
     name_list = []
-    signal = pd.DataFrame()
-    for n in n_list:
-        roc = MACD(start_date=start_date,
+    if len(n_list) <=2:
+        nn_list = list(itertools.product(*n_list))
+    else:
+        nn_list = n_list
+    for n in nn_list:
+        n = list(n)
+        roc = TRIX(start_date=start_date,
                    end_date=end_date,
                    comission_rate=comission_rate,
                    slip_point=slip_point,
@@ -84,7 +106,6 @@ for freq in ['30min', '60min', '1d']:
     result_df.to_excel(filedir+stragety_name+'/绩效.xlsx')
     jz_df.columns = name_list
     jz_df.to_excel(filedir+stragety_name+'/净值.xlsx')
-    signal.columns = [str(x) for x in n_list]
+    signal.columns = name_list
     signal.to_excel(filedir + stragety_name + '/各参数signal.xlsx')
     print(result_df)
-

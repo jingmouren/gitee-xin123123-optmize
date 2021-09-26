@@ -17,6 +17,10 @@ class MACD(SimpleBacktest):
         base_jz = pd.read_excel(jz_dir)
         base_jz = base_jz.set_index(base_jz.columns[0])
         self.base_jz = base_jz
+        # 信号表
+        signal_dir = '/'.join(jz_dir.split('/')[:-1] + ['各参数signal.xlsx'])
+        base_signal = pd.read_excel(signal_dir)
+        self.base_signal = base_signal.set_index('time')
         if self.start_date > max(self.base_jz.index):
             print('单策略数据长度不够！！！')
             print('last history time: ', max(self.base_jz.index))
@@ -30,7 +34,8 @@ class MACD(SimpleBacktest):
         return np.lib.stride_tricks.as_strided(a, shape=shape, strides=strides)
 
     def signal_cal(self):
-        if (self.num - 1) % self.trade_date == 0:  # 每隔n个周期计算最优参数
+        if 1:
+        # if (self.num - 1) % self.trade_date == 0:  # 每隔n个周期计算最优参数
             pass
             time = self.his_data['time']
             temp_df_all = self.base_jz.loc[:time, :].iloc[-self.pre_date:-1, :]
@@ -40,38 +45,52 @@ class MACD(SimpleBacktest):
             temp_df = temp_df_all
 
             ret = (temp_df.diff() / temp_df.shift()).dropna()
+            # ret = ret.iloc[-20:, :]
             # ret_mean = ret.mean(axis=1)
             # ret_mean[ret_mean<0] = 0
             # ret = ret.sub(ret_mean, axis=0)
             freq_ret = ret.apply(lambda x: x[x > 0].sum() / abs(x[x < 0].sum()) if x[x < 0].sum() != 0 else 0)
+            # test
+            today_signal = self.base_signal.loc[time, :]
+            df = pd.concat([freq_ret, today_signal], axis=1)
+            df.columns = ['ratio', 'signal']
+            best_select = df.groupby('signal').mean().sort_values(by='ratio').iloc[-1]
+            signal = 0
+            if best_select.ratio > 1.2:
+                signal = best_select.name
+
+
+            # test
+
 
             # ret[ret > 0] = 1
             # ret[ret < 0] = 0
             # freq_ret = ret.mean()
-            n = self.best_param_num
-            self.best_param = freq_ret.sort_values().index[-n]
-            self.best_freq = list(freq_ret.sort_values())[-n]
-            ana = Analysis()
-            self.best_sharpe = []
-            result = ana.analysis(temp_df.loc[:, self.best_param])
-            self.best_sharpe = result['夏普比率'][0]
 
-        nn = eval(self.best_param)
-        short = nn[0]
-        long = nn[1]
-        mmid = nn[2]
-
-        if len(self.his_data['close']) < long + mmid or self.best_freq < 1.2:
-            self.last_signal.append([0, self.his_data['time']])
-            self.target_position(0, self.his_data['last'])
-            return
-
-        macd, signal, hist = ta.MACD(self.his_data['close'], fastperiod=short, slowperiod=long, signalperiod=mmid)
-        signal = 0
-        if macd[-1] > 0:
-            signal = 1
-        if macd[-1] < 0:
-            signal = -1
+        #     n = self.best_param_num
+        #     self.best_param = freq_ret.sort_values().index[-n]
+        #     self.best_freq = list(freq_ret.sort_values())[-n]
+        #     ana = Analysis()
+        #     self.best_sharpe = []
+        #     result = ana.analysis(temp_df.loc[:, self.best_param])
+        #     self.best_sharpe = result['夏普比率'][0]
+        #
+        # nn = eval(self.best_param)
+        # short = nn[0]
+        # long = nn[1]
+        # mmid = nn[2]
+        #
+        # if len(self.his_data['close']) < long + mmid or self.best_freq < 1.2:
+        #     self.last_signal.append([0, self.his_data['time']])
+        #     self.target_position(0, self.his_data['last'])
+        #     return
+        #
+        # macd, signal, hist = ta.MACD(self.his_data['close'], fastperiod=short, slowperiod=long, signalperiod=mmid)
+        # signal = 0
+        # if macd[-1] > 0:
+        #     signal = 1
+        # if macd[-1] < 0:
+        #     signal = -1
         self.last_signal.append([signal, self.his_data['time']])
         hands = self.capital / self.multip / self.his_data['last'] * signal
         self.target_position(hands, self.his_data['last'])
@@ -95,7 +114,7 @@ end_date = '2018-01-01'
 # end_date='2021-09-01'
 start_date = pd.to_datetime(start_date) + datetime.timedelta(pre_date+200)
 # for freq in ['1min', '5min', '15min', '30min', '60min', '1d']:
-for freq in ['30min', '60min', '1d']:
+for freq in ['1d']:
     stragety_name = Base_name + '_' + freq  # 策略名
     filedir = './result/' + symbol_name + '/'  # 图片保存地址
     pic_name = symbol + '_' + stragety_name + "wfo"  # 图片名称

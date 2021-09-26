@@ -27,6 +27,7 @@ class TRIX(SimpleBacktest):
         if trix[-1] < matrix:
             signal = -1
 
+        self.last_signal.append([signal, self.his_data['time']])
         hands = self.capital / self.multip / self.his_data['last'] * signal
         self.target_position(hands, self.his_data['last'])
         pass

@@ -32,6 +32,7 @@ class BIAS(SimpleBacktest):
             signal = 1
         elif self.last_hands < 0:
             signal = -1
+        self.last_signal.append([signal, self.his_data['time']])
         hands = self.capital / self.multip / self.his_data['last'] * signal
         self.target_position(hands, self.his_data['last'])
         pass

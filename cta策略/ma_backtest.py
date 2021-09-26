@@ -18,6 +18,7 @@ class MA(SimpleBacktest):
             self.target_position(0, self.his_data['last'])
             return
         signal = np.sign(self.his_data['close'][-1] - np.mean(self.his_data['close'][-n:]))
+        self.last_signal.append([signal, self.his_data['time']])
         hands = self.capital / self.multip / self.his_data['last'] * signal
         self.target_position(hands, self.his_data['last'])
         pass

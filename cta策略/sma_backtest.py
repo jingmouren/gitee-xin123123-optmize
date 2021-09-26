@@ -22,6 +22,7 @@ class SMA(SimpleBacktest):
         sma = np.mean(self.his_data['close'][-n1:])
         lma = np.mean(self.his_data['close'][-n2:])
         signal = np.sign(sma - lma)
+        self.last_signal.append([signal, self.his_data['time']])
         hands = self.capital / self.multip / self.his_data['last'] * signal
         self.target_position(hands, self.his_data['last'])
         pass
