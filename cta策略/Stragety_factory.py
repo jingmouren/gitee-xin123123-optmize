@@ -105,10 +105,10 @@ class BIAS(SimpleBacktest):
             signal = 1
         elif close < -thred:
             signal = -1
-        elif self.last_hands > 0:
-            signal = 1
-        elif self.last_hands < 0:
-            signal = -1
+        # elif self.last_hands > 0:
+        #     signal = 1
+        # elif self.last_hands < 0:
+        #     signal = -1
         self.last_signal.append([signal, self.his_data['time']])
         hands = self.capital / self.multip / self.his_data['last'] * signal
         self.target_position(hands, self.his_data['last'])
@@ -377,13 +377,13 @@ class RSI(SimpleBacktest):
 
         cci = ta.RSI(self.his_data['close'], timeperiod=n)[-1]
         signal = 0
-        if cci > 80:
-            signal = 1
-        if cci < 20:
+        if cci > 90:
             signal = -1
-        elif self.last_hands > 0:
+        if cci < 10:
             signal = 1
-        elif self.last_hands < 0:
+        elif self.last_hands > 0 and cci < 30:
+            signal = 1
+        elif self.last_hands < 0 and cci > 70:
             signal = -1
 
         self.last_signal.append([signal, self.his_data['time']])

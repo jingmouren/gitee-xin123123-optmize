@@ -36,6 +36,9 @@ class SimpleBacktest:
         self.start_date = start_date
         self.end_date = end_date
         self.data = data.loc[start_date:end_date, :]
+        if len(self.data) == 0:
+            print('数据长度不够')
+            exit()
         self.cal_way = cal_way
         self.his_data = {}  # 历史数据
         self.last_signal = []  # 上期信号
@@ -153,7 +156,7 @@ class SimpleBacktest:
                 pass
             if self.last_hands == 0:  # 上期不持仓
                 pnl = 0
-                if hands > 0 :
+                if hands > 0:
                     price += slip_price
                 if hands < 0:
                     price -= slip_price
@@ -170,16 +173,19 @@ class SimpleBacktest:
 
         self.capital_list[self.num] = self.capital
 
-    def jz_plot(self, fig_name, filedir):
+    def jz_plot(self, fig_name, filedir, is_show=True):
         base = self.data['Close'].resample('D', kind='period').last().ffill().dropna()
         df = pd.concat([base, self.daily_jz], axis=1).dropna()
         df = df / df.iloc[0, :]
         df.columns = ['base', 'stragety']
+
         ax = df.plot()
-        # df.plot()
-        plt.show()
+        if is_show:
+            plt.show()
         fig = ax.get_figure()
         name = filedir + fig_name + '.png'
+        if not os.path.exists('/'.join(filedir.split('/')[:-2])):
+            os.mkdir('/'.join(filedir.split('/')[:-2]))
         if not os.path.exists(filedir):
             os.mkdir(filedir)
         fig.savefig(name)
