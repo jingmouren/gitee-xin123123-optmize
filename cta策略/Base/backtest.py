@@ -68,8 +68,8 @@ class SimpleBacktest:
             if num == 0:
                 continue
             a = 0
-            if num > 202:
-                a = num - 200
+            # if num > 202:
+            #     a = num - 200
             if self.cal_way == 'close':
                 self.his_data['open'] = open_array[a:num+1]
                 self.his_data['high'] = High_array[a:num+1]

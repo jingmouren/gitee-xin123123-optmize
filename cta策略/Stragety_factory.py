@@ -2,7 +2,15 @@ import pandas as pd
 from cta策略.Base.backtest import SimpleBacktest
 import talib as ta
 import numpy as np
+from fastdtw import fastdtw
+from scipy.spatial.distance import euclidean, pdist
+from dtaidistance import dtw
 
+
+def rolling_window(a, window):
+    shape = a.shape[:-1] + (a.shape[-1] - window + 1, window)
+    strides = a.strides + (a.strides[-1],)
+    return np.lib.stride_tricks.as_strided(a, shape=shape, strides=strides)
 
 class Aberration(SimpleBacktest):
     def __init__(self, start_date, end_date, comission_rate, slip_point, min_point, init_cash, main_file, symbol, multip, freq='1d', cal_way='open'):
@@ -439,6 +447,103 @@ class TRIX(SimpleBacktest):
         if trix[-1] < matrix:
             signal = -1
 
+        self.last_signal.append([signal, self.his_data['time']])
+        hands = self.capital / self.multip / self.his_data['last'] * signal
+        self.target_position(hands, self.his_data['last'])
+        pass
+
+class DTW(SimpleBacktest):
+    def __init__(self, start_date, end_date, comission_rate, slip_point, min_point, init_cash, main_file, symbol,
+                 multip, freq='1d', cal_way='open'):
+        super().__init__(start_date, end_date, comission_rate, slip_point, min_point, init_cash, main_file, symbol,
+                         multip, freq, cal_way)
+    def param_add(self, n):
+        # 参数设置
+        self.n1, self.n2, self.n3 = n
+        self.count = 0
+    def signal_cal(self):
+
+        # print('time：', self.his_data['time'])
+        n1 = self.n1
+        n2 = self.n2
+        n3 = self.n3
+        self.count += 1
+        # if n1 <= n2 or n1 <= n3 or n2 <= n3:
+        if n1 <= n2 or n1 <= n3:
+            self.last_signal.append([0, self.his_data['time']])
+
+            self.target_position(0, self.his_data['last'])
+            return
+        if self.count % n3 != 0 and self.count != 1:
+            if len(self.last_signal) == 0:
+                self.target_position(0, self.his_data['last'])
+                return
+            else:
+                signal = self.last_signal[-1][0]
+                self.last_signal.append([signal, self.his_data['time']])
+                hands = self.capital / self.multip / self.his_data['last'] * signal
+                self.target_position(hands, self.his_data['last'])
+                return
+
+        if len(self.his_data['close']) < n1:
+            self.target_position(0, self.his_data['last'])
+            return
+        data = self.his_data['close'][-n1:]
+        df_array = rolling_window(data, n2)
+        df = pd.DataFrame(df_array).T
+        new_array = rolling_window(data, n2 + n3)
+        new_df = pd.DataFrame(new_array).T
+        ret = new_df.iloc[-1, :] / new_df.iloc[-n3-1, :] - 1
+        label = pd.qcut(ret, 20)
+        ret.index = label
+        # label = pd.qcut(ret, 10, ['大亏', '小亏', '不赚不亏', '小赚', '大赚'])
+
+        train = df.iloc[:, :len(label)]
+        train.columns = label
+        test = np.array(df.iloc[:, -1])
+        dist_fast_list = []
+        for i in range(len(train.columns)):
+            # dist_fast, path1 = fastdtw(train.iloc[:, i], test, dist=euclidean)
+            dist_fast = dtw.distance_fast(np.array(train.iloc[:, i]), test)
+            # X = np.vstack([train.iloc[:, i], test])  # 将x,y两个一维数组合并成一个2D数组 ；[[x1,x2,x3...],[y1,y2,y3...]]
+            # dist_fast = pdist(X)  # d2=np.sqrt(（x1-y1)
+            # dist_fast = np.sqrt(np.sum(np.square(train.iloc[:, i] - test)))
+            dist_fast_list.append(dist_fast)
+        dist_fast_df = pd.Series(dist_fast_list, index=label)
+        ret = ret.groupby(by=ret.index).mean()
+
+        dist_fast_df = dist_fast_df.groupby(by=dist_fast_df.index).mean()
+        # tip = dist_fast_df[dist_fast_df == dist_fast_df.min()].index[0]
+        tip = ret[dist_fast_df[dist_fast_df == dist_fast_df.min()].index[0]]
+        # dist_fast_df = pd.Series(dist_fast_list, index=ret)
+        # tt = dist_fast_df.sort_values().iloc[:int(len(dist_fast_df)/3)].index
+        # tip = len(tt[tt > 0.01]) / (len(tt))
+        # tip2 = len(tt[tt < -0.01]) / (len(tt))
+        # tip = np.mean(dist_fast_df.sort_values().iloc[:20].index)
+        # tip = dist_fast_df.sort_values().iloc[:10].index
+        # tip = len(tip[tip>0.01])/len(tip)
+        # tip = len(tt[tt=='大赚'])/len(tt)
+
+        # import matplotlib.pyplot as plt
+        # num = pd.Series(dist_fast_list, index=range(len(dist_fast_list))).sort_values().index[0]
+        # dada = pd.concat([train.iloc[:,num], df.iloc[:, -1]], axis=1)
+        # dada.plot()
+        # plt.show()
+
+
+
+        signal = 0
+        # if tip == '大赚' or tip == '小赚':
+        # if tip == '小赚':
+        if tip > 0.0:
+            signal = 1
+        if tip < -0.0:
+            signal = -1
+        # if tip == '大亏' or tip == '小亏':
+        # if tip == '小亏':
+        # if tip < 0.2:
+        #     signal = -1
+        # signal = -signal
         self.last_signal.append([signal, self.his_data['time']])
         hands = self.capital / self.multip / self.his_data['last'] * signal
         self.target_position(hands, self.his_data['last'])

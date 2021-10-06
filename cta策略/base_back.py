@@ -79,14 +79,18 @@ symbol = 'v'
 symbol_name = '螺纹'
 symbol = 'rb'
 
-symbol_name = '塑料'
-symbol = 'l'
+# symbol_name = '塑料'
+# symbol = 'l'
 
-symbol_name = '棕榈'
-symbol = 'p'
+# symbol_name = '棕榈'
+# symbol = 'p'
 
-symbol_name = '橡胶'
-symbol = 'ru'
+# symbol_name = '橡胶'
+# symbol = 'ru'
+
+n_list_all = [[[200, 300, 400], [20,30,40,60,80],[2,3,4,5]
+               ], ]
+Base_name_all = ['DTW',]
 
 
 slip_point = 1  # 滑点
@@ -95,7 +99,7 @@ min_point = 1  # 最小变动价格
 multip = 10  # 交易乘数
 start_date = '2013-01-01'
 end_date = '2018-01-01'
-# end_date='2021-09-01'
+# end_date='2014-09-01'
 for num in range(len(n_list_all)):
     n_list = n_list_all[num]
     Base_name = Base_name_all[num]
@@ -107,7 +111,7 @@ for num in range(len(n_list_all)):
         result_df = pd.DataFrame()
         jz_df = pd.DataFrame()
         name_list = []
-        if len(n_list) <=2:
+        if len(n_list) <= 3:
             nn_list = list(itertools.product(*n_list))
         else:
             nn_list = n_list
@@ -130,7 +134,7 @@ for num in range(len(n_list_all)):
             name_list.append(str(n))
             roc.param_add(n)
             roc.run()
-            roc.jz_plot(fig_name, filedir+stragety_name+'/', is_show=False)
+            roc.jz_plot(fig_name, filedir+stragety_name+'/', is_show=True)
             result = roc.analysis()
             result['参数'] = str(n)
             print(result)
